@@ -1,0 +1,25 @@
+:root {
+  --main-color: #1f7ef9; // main theme color
+  --theme-color: #1f7ef9;
+
+  --clr11: #1f7ef9;
+
+  --bg11: #ffffff; // main bg
+  --bg12: #f4f4f4; // main bg rev
+  --bg21: #444444;
+  --bg22: #eeeeee; // icon bg
+
+  --bdr11: #f6f6f6;
+  --bdr12: #e8e8ea;
+  --bdr13: #cfcfcf;
+  --bdr14: #eff1f2;
+
+  --txt11: #2f2f2f;
+  --txt12: #666;
+  --txt13: #9eabbe; // light text
+
+  --bs11: 0 5px 30px rgba(0, 0, 0, 0.2); // card shadow 1
+  --bs21: 0 2px 4px -2px rgba(0, 0, 0, 0.06); // header, footer etc.
+}
+
+.dark {}

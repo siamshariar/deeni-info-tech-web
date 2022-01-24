@@ -87,7 +87,7 @@ const Header = () => {
             </div>
             <div className={styles.cell}>
               <div className={styles.btn}>
-                <Link href="/support">
+                <Link href="/donation">
                   <a className={styles.link}>
                     <ArrowRightIcon />
                     <span>Donate now</span>

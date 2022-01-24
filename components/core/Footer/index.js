@@ -18,7 +18,7 @@ const Footer = () => {
 
           <ul className={styles.menu}>
             <li>
-              <Link href="/support">
+              <Link href="/donation">
                 <a>Support</a>
               </Link>
             </li>

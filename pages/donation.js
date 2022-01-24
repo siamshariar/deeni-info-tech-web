@@ -3,8 +3,7 @@ import Header from "../components/core/Header";
 import Footer from "../components/core/Footer";
 import PageContent from "../components/utils/PageContent";
 import HomeBanner from "../components/pages/home/Banner";
-import HomeAbout from "../components/pages/home/About";
-import HomeServices from "../components/pages/home/Services";
+import Donation from "../components/pages/donation";
 
 export default function Home() {
   return (
@@ -21,8 +20,7 @@ export default function Home() {
       <HomeBanner />
 
       <PageContent>
-        <HomeAbout />
-        <HomeServices />
+        <Donation />
       </PageContent>
 
       <Footer />

@@ -28,7 +28,7 @@ const MainNav = ({ open, controller }) => {
           </li>
 
           <li className={styles.page}>
-            <Link href="/support">
+            <Link href="/donation">
               <a>Support Us</a>
             </Link>
           </li>

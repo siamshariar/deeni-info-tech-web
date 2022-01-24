@@ -10,7 +10,7 @@ const HomeServices = () => {
         altText=""
         title="Autumn"
         text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reiciendis veniam commodi id maxime quo, nihil quae ab suscipit cupiditate hic quaerat alias dolores quisquam in voluptatum temporibus minima repellat."
-        link="#"
+        link="/detail"
         grid={false}
       />
       <ServiceCard
@@ -19,7 +19,7 @@ const HomeServices = () => {
         altText=""
         title="Spring"
         text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reiciendis veniam commodi id maxime quo, nihil quae ab suscipit cupiditate hic quaerat alias dolores quisquam in voluptatum temporibus minima repellat."
-        link="#"
+        link="/detail"
         grid={false}
       />
       <ServiceCard
@@ -28,7 +28,7 @@ const HomeServices = () => {
         altText=""
         title="Winter"
         text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reiciendis veniam commodi id maxime quo, nihil quae ab suscipit cupiditate hic quaerat alias dolores quisquam in voluptatum temporibus minima repellat."
-        link="#"
+        link="/detail"
         grid={false}
       />
       <ServiceCard
@@ -37,7 +37,7 @@ const HomeServices = () => {
         // altText=""
         title="Summer"
         text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reiciendis veniam commodi id maxime quo, nihil quae ab suscipit cupiditate hic quaerat alias dolores quisquam in voluptatum temporibus minima repellat."
-        link="#"
+        link="/detail"
         grid={true}
       />
     </div>

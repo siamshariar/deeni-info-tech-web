@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Container from "../../utils/Container";
-import ServiceGrid from "../ServiceGrid/Grid2";
+import ServiceGrid from "../ServiceGrid/Grid";
 import styles from "./index.module.scss";
 
 const ServiceCard = ({

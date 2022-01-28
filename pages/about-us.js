@@ -1,15 +1,15 @@
 import Meta from "../components/core/Meta";
 import Header from "../components/core/Header";
 import Footer from "../components/core/Footer";
+import Banner from "../components/utils/BannerPrimary";
 import PageContent from "../components/utils/PageContent";
-import HomeBanner from "../components/pages/home/Banner";
-import About from "../components/pages/about";
+import AboutContent from "../components/pages/about";
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <>
       <Meta
-        title="Deeni Info Tech"
+        title="About Us | Deeni Info Tech"
         description="A non profitable software company for Deeni projects"
         url="www.deeniinfotech.com"
         image="/img/logo/logo.png"
@@ -17,10 +17,15 @@ export default function Home() {
       />
 
       <Header />
-      <HomeBanner />
+
+      <Banner
+        bgImage="img/banner/banner-about.jpg"
+        title="About Us"
+        subTitle="A non profitable software company for Deeni projects"
+      />
 
       <PageContent>
-        <About />
+        <AboutContent />
       </PageContent>
 
       <Footer />

@@ -5,7 +5,8 @@ This is the client-end repo of the official website of [Deeni Info Tech](http://
 ## Features
 
 - Client end homepage
-- Client end service page
+- Client end detail page
+- Client end about page
 - Client end donation page
 
 ## Tech

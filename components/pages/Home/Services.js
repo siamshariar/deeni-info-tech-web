@@ -37,7 +37,7 @@ const HomeServices = () => {
         // altText=""
         title="Summer"
         text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid reiciendis veniam commodi id maxime quo, nihil quae ab suscipit cupiditate hic quaerat alias dolores quisquam in voluptatum temporibus minima repellat."
-        link="/detail"
+        link="/detail-grid-1"
         grid={true}
       />
     </div>

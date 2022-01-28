@@ -22,7 +22,7 @@
 
 .image {
   width: 100%;
-  max-width: 540px;
+  max-width: 384px;
 }
 
 .image img {
@@ -123,10 +123,12 @@
   .image,
   .detail {
     width: calc(50% - 16px);
+    max-width: 384px;
   }
 
   .detail {
     padding-top: 0;
+    min-width: calc(100% - 384px - 32px);
   }
 
   .left .detail {

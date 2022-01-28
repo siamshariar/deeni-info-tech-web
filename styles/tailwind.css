@@ -9,11 +9,15 @@
   cursor: pointer;
   font-size: 16px;
 }
-.service-grid.row-span-1 {
+.service-grid.col-span-2.row-span-1 {
   height: 90px;
+  /* width: 188px; */
+  width: auto;
 }
-.service-grid.row-span-2 {
-  height: calc(180px + 8px);
+.service-grid.col-span-1.row-span-2 {
+  height: 188px;
+  /* width: 90px; */
+  width: auto;
 }
 .service-grid span {
   transform: scale(1);

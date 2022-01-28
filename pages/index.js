@@ -2,7 +2,7 @@ import Meta from "../components/core/Meta";
 import Header from "../components/core/Header";
 import Footer from "../components/core/Footer";
 import PageContent from "../components/utils/PageContent";
-import HomeBanner from "../components/pages/home/Banner";
+import Banner from "../components/utils/BannerPrimary";
 import HomeAbout from "../components/pages/home/About";
 import HomeServices from "../components/pages/home/Services";
 
@@ -18,7 +18,12 @@ export default function Home() {
       />
 
       <Header />
-      <HomeBanner />
+
+      <Banner
+        bgImage="img/banner/banner-about.jpg"
+        title="Deeni Info Tech"
+        subTitle="A non profitable software company for Deeni projects"
+      />
 
       <PageContent>
         <HomeAbout />

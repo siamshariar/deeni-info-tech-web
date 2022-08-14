@@ -3,8 +3,8 @@ import Header from "../components/core/Header";
 import Footer from "../components/core/Footer";
 import PageContent from "../components/utils/PageContent";
 import Banner from "../components/utils/BannerPrimary";
-import HomeAbout from "../components/pages/home/About";
-import HomeServices from "../components/pages/home/Services";
+import HomeAbout from "../components/pages/Home/About";
+import HomeServices from "../components/pages/Home/Services";
 
 export default function Home() {
   return (

@@ -1,0 +1,140 @@
+.wrapper {
+  display: block;
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.intro {
+  width: 100%;
+  max-width: 644px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.intro .title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.intro .title h2 {
+  text-transform: capitalize;
+  font-family: 'IvyMode', sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 300;
+  color: #b89535;
+}
+.intro .text {
+}
+.intro .text p {
+  white-space: pre-line;
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4a4a49;
+  margin-bottom: 22px;
+}
+.intro .text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.left,
+.right {
+  width: 100%;
+}
+.left {
+}
+.right {
+}
+
+.account {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.account h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 26px;
+  font-family: 'IvyMode';
+  color: #4a4a49;
+}
+.account p {
+  color: #4a4a49;
+  font-family: 'Avenir';
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.account p:last-of-type {
+  margin-bottom: 0;
+}
+.account p span {
+  font-weight: bold;
+}
+
+.highlight {
+  color: #b89535;
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+  .intro {
+    text-align: left;
+    // max-width: 1100px;
+    // margin-left: auto;
+    // margin-right: auto;
+    max-width: 100%;
+  }
+  .intro .title {
+    margin-bottom: 54px;
+    text-align: left;
+  }
+  .intro .title h2 {
+    font-size: 48px;
+  }
+  .intro .text p {
+    font-size: 18px;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // max-width: 1100px;
+    // margin-left: auto;
+    // margin-right: auto;
+    max-width: 100%;
+  }
+  .left,
+  .right {
+    width: calc(50% - 50px);
+    text-align: left;
+  }
+  .account {
+    margin-bottom: 25px;
+  }
+  .account h2 {
+    font-size: 28px;
+    text-align: left;
+  }
+  .account p {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

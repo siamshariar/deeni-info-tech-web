@@ -1,0 +1,13 @@
+/*------- custom styles -------*/
+body {
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--txt11);
+  background: #f6f6f6;
+  height: auto;
+}
+
+// responsive
+@media only screen and (max-width: 576px) {
+}

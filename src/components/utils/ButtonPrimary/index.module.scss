@@ -1,0 +1,50 @@
+.btn {
+}
+.link {
+  height: 48px;
+  width: 177px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: border 0.4s ease;
+  border-radius: 15px;
+}
+
+.rev .link {
+  color: #4a4a49;
+  border-color: rgba(74, 74, 73, 0.2);
+}
+
+.active .link {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.link:hover {
+  border-color: #b89535;
+  color: #b89535;
+}
+
+.link svg {
+  color: inherit;
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  transition: transform 0.4s ease;
+}
+
+.link span {
+  color: inherit;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.link:hover svg {
+  transform: translateX(0.7rem);
+}
+
+.link:hover span {
+  transform: translateX(0.5rem);
+  transition-delay: 0.1s;
+}

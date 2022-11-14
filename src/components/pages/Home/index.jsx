@@ -2,6 +2,7 @@ import PageContent from '../../utils/PageContent';
 import Banner from '../../utils/BannerPrimary';
 import HomeAbout from './About';
 import HomeServices from './Services';
+import HomeScholars from './Scholars';
 import HomeApps from './Apps';
 import HomeFaqs from './Faqs';
 import HomeSubscription from './Subscription';
@@ -19,6 +20,7 @@ const Home = () => {
       <PageContent>
         <HomeAbout />
         <HomeServices />
+        <HomeScholars />
         <HomeApps />
         <HomeFaqs />
         <HomeSubscription />

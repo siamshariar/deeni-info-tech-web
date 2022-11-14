@@ -23,8 +23,8 @@
 }
 
 .link:hover {
-  border-color: #b89535;
-  color: #b89535;
+  border-color: var(--app-theme-color);
+  color: var(--app-theme-color);
 }
 
 .link svg {

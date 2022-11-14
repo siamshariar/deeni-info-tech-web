@@ -2,6 +2,9 @@ import PageContent from '../../utils/PageContent';
 import Banner from '../../utils/BannerPrimary';
 import HomeAbout from './About';
 import HomeServices from './Services';
+import HomeApps from './Apps';
+import HomeFaqs from './Faqs';
+import HomeSubscription from './Subscription';
 import styles from './index.module.scss';
 
 const Home = () => {
@@ -16,6 +19,9 @@ const Home = () => {
       <PageContent>
         <HomeAbout />
         <HomeServices />
+        <HomeApps />
+        <HomeFaqs />
+        <HomeSubscription />
       </PageContent>
     </>
   );

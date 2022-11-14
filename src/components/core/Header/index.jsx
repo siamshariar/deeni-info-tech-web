@@ -3,7 +3,8 @@ import Link from 'next/link';
 import Container from '../../utils/Container';
 import MainNav from '../MainNav';
 import Logo from '../../icons/Logo';
-import DropdownIcon from '../../icons/Dropdown';
+// import DropdownIcon from '../../icons/Dropdown';
+// import Language from '../../utils/Language';
 import Button from '../../utils/ButtonPrimary';
 import styles from './index.module.scss';
 
@@ -72,14 +73,14 @@ const Header = () => {
                   <span></span>
                 </button>
               </div>
-              <div className={styles.lang}>
+              {/* <div className={styles.lang}>
                 <button className={styles.lang_btn}>
                   <span>EN</span>
                   <span className={styles.dropdown_icon}>
                     <DropdownIcon />
                   </span>
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className={styles.cell}>
               <div className={styles.logo}>

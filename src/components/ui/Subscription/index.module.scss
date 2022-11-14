@@ -1,0 +1,83 @@
+.root {
+  padding: 50px 0;
+  background-color: #f8f7f6;
+}
+.content {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin-bottom: 2.5rem;
+}
+.title h2 {
+  font-family: IvyMode, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1em;
+  font-weight: 300;
+  color: #4a4a49;
+  text-align: center;
+}
+.title h2 span {
+  font-weight: 300;
+  color: #b89535;
+}
+
+.text {
+  margin-bottom: 2.5rem;
+}
+.text p {
+  font-family: Avenir, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #4a4a49;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.form input {
+  width: calc(100% - 100px);
+  background-color: #fff;
+  padding: 0 16px;
+}
+.form button {
+  background-color: var(--app-theme-color);
+  width: 100px;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .root {
+    padding: 100px 0;
+  }
+  .title {
+    margin-bottom: 3rem;
+  }
+  .title h2 {
+    font-size: 3.5rem;
+  }
+  .text {
+    margin-bottom: 3rem;
+  }
+  .form {
+    height: 58px;
+  }
+  .form input {
+    width: calc(100% - 120px);
+    padding: 0 20px;
+  }
+  .form button {
+    width: 120px;
+  }
+}

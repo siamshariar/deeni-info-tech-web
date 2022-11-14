@@ -41,7 +41,8 @@
 }
 
 .title {
-  text-align: center;
+  // text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -85,6 +86,7 @@
   text-align: center;
   line-height: 42px;
   transition: color 0.4s ease, border 0.4s ease;
+  border-radius: 15px;
 }
 
 .btn a:hover {

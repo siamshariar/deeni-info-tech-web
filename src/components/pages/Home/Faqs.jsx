@@ -43,6 +43,17 @@ const Panel = ({ question, answer, activeTab, index, activateTab }) => {
     setHeight(ref.current.scrollHeight);
   }, []);
 
+  // useEffect(() => {
+  //   const el = ref.current;
+  //   const handleResize = () => {
+  //     setHeight(el.scrollHeight);
+  //   };
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
+
   return (
     <div
       className={classNames(

@@ -26,6 +26,25 @@ const HomeScholars = () => {
     <div className={styles.root}>
       <Container>
         <div className={styles.content}>
+          <div className={styles.detail}>
+            <div className={styles.title}>
+              <h2>Apps for Scholars</h2>
+            </div>
+            <div className={styles.text}>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aliquid reiciendis veniam commodi id maxime quo, nihil quae ab
+                suscipit cupiditate hic quaerat alias dolores quisquam in
+                voluptatum temporibus minima repellat.
+              </p>
+            </div>
+            <div className={styles.btn}>
+              <Link href={'/'}>
+                <a>Read more</a>
+              </Link>
+            </div>
+          </div>
+
           <div className={styles.slider}>
             <div className={styles.swiper_container}>
               <Swiper
@@ -57,24 +76,6 @@ const HomeScholars = () => {
                     </SwiperSlide>
                   ))}
               </Swiper>
-            </div>
-          </div>
-          <div className={styles.detail}>
-            <div className={styles.title}>
-              <h2>Apps for Scholars</h2>
-            </div>
-            <div className={styles.text}>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aliquid reiciendis veniam commodi id maxime quo, nihil quae ab
-                suscipit cupiditate hic quaerat alias dolores quisquam in
-                voluptatum temporibus minima repellat.
-              </p>
-            </div>
-            <div className={styles.btn}>
-              <Link href={'/'}>
-                <a>Read more</a>
-              </Link>
             </div>
           </div>
         </div>

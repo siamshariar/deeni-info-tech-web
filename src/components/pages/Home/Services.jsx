@@ -32,7 +32,7 @@ const HomeServices = () => {
         grid={false}
       /> */}
       <ServiceCard
-        imagePos="left"
+        imagePos="right"
         // imageSrc="img/service/04.png"
         // altText=""
         title="Dawah in non-muslim countries"

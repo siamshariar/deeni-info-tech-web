@@ -4,6 +4,7 @@ import HomeAbout from './About';
 import HomeServices from './Services';
 import HomeScholars from './Scholars';
 import HomeApps from './Apps';
+import HomeImageSliderSecondary from './ImageSliderSecondary';
 import HomeFaqs from './Faqs';
 import HomeSubscription from './Subscription';
 import styles from './index.module.scss';
@@ -22,6 +23,7 @@ const Home = () => {
         <HomeServices />
         <HomeScholars />
         <HomeApps />
+        <HomeImageSliderSecondary />
         <HomeFaqs />
         <HomeSubscription />
       </PageContent>

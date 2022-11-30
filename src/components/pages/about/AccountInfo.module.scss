@@ -1,0 +1,116 @@
+.root {
+  background-color: var(--app-background-color-secondary);
+}
+.container {
+}
+.content {
+}
+
+.intro {
+  width: 100%;
+  max-width: 644px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.title h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.text {
+}
+.text p {
+  white-space: pre-line;
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+.text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.left,
+.right {
+  width: 100%;
+}
+.left {
+}
+.right {
+}
+
+.account {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.account h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 26px;
+  font-family: var(--app-font-secondary);
+  color: var(--app-text-color-primary);
+}
+.account p {
+  color: var(--app-text-color-primary);
+  font-family: var(--app-font-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.account p:last-of-type {
+  margin-bottom: 0;
+}
+.account p span {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .intro {
+    text-align: left;
+    max-width: 100%;
+  }
+  .title {
+    margin-bottom: 54px;
+    text-align: left;
+  }
+  .title h2 {
+    font-size: 48px;
+  }
+  .text p {
+    font-size: 18px;
+  }
+  .detail {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+  .left,
+  .right {
+    width: calc(50% - 50px);
+    text-align: left;
+  }
+  .account {
+    margin-bottom: 25px;
+  }
+  .account h2 {
+    font-size: 28px;
+    text-align: left;
+  }
+  .account p {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}

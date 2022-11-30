@@ -1,10 +1,9 @@
-/*------- custom styles -------*/
 body {
-  font-family: 'Avenir', sans-serif;
+  font-family: var(--app-font-primary);
   font-size: 16px;
   line-height: 1.5;
-  color: var(--txt11);
-  background: #f6f6f6;
+  color: var(--app-text-color-primary);
+  background: var(--app-background-color-primary);
   height: auto;
 }
 

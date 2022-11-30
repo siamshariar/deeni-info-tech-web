@@ -1,0 +1,34 @@
+.title_r {
+  font-size: 30px;
+  font-family: var(--app-font-secondary);
+  // color: var(--app-text-color-secondary);
+  color: var(--app-text-color-primary);
+  line-height: 1;
+  text-transform: capitalize;
+}
+
+p.paragraph_r {
+  color: var(--app-text-color-primary);
+  font-family: var(--app-font-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+p.paragraph_b {
+  color: var(--app-text-color-primary);
+  font-family: var(--app-font-primary);
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+  .title_r {
+    font-size: 56px;
+  }
+}
+
+// should be at last of this file
+.highlight {
+  color: var(--app-theme-color);
+}

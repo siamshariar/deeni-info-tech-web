@@ -1,0 +1,33 @@
+.root {
+  background-color: var(--app-background-color-primary);
+}
+.container {
+}
+.content {
+  width: 100%;
+  // max-width: 1100px;
+  max-width: 644px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  // margin-bottom: 38px;
+  text-align: center;
+}
+.content h2 {
+  position: relative;
+  margin-bottom: 30px;
+}
+.content p {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .content h2 {
+    margin-bottom: 48px;
+  }
+  .content p {
+    margin-bottom: 40px;
+  }
+}

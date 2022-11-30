@@ -11,9 +11,13 @@
   --app-theme-color: #b89535;
   // --app-theme-color: #21a36c;
 
+  // font family
+  --app-font-primary: 'Avenir', sans-serif;
+  --app-font-secondary: 'IvyMode', sans-serif;
+
   // text color
-  --app-text-color-primary: #555555;
-  --app-text-color-secondary: #111111;
+  --app-text-color-primary: #4a4a49; // main text color
+  --app-text-color-secondary: #111111; // main title color
   --app-text-color-tertiary: #9baab3;
   --app-text-color-designation: #7b7b7b;
   --app-text-color-menu: #666666;

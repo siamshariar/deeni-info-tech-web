@@ -1,7 +1,7 @@
 import Meta from '../components/core/Meta';
 import Banner from '../components/utils/BannerPrimary';
 import PageContent from '../components/utils/PageContent';
-import DonationContent from '../components/pages/donation';
+import DonationContent from '../components/pages/Donation';
 
 export default function Donation() {
   return (

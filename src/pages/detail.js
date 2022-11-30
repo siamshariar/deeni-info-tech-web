@@ -1,7 +1,7 @@
 import Meta from '../components/core/Meta';
 import PageContent from '../components/utils/PageContent';
 import Banner from '../components/utils/BannerPrimary';
-import DetailContent from '../components/pages/detail';
+import DetailContent from '../components/pages/Detail';
 
 export default function DetailPage() {
   return (

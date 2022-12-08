@@ -1,7 +1,9 @@
-import classNames from 'classnames';
 import { useState, useRef } from 'react';
 import Image from 'next/image';
+import classNames from 'classnames';
 import Section from '../../utils/Section';
+import FacebookIcon from '../../icons/Facebook';
+import YoutubeIcon from '../../icons/Youtube';
 import styles from './index.module.scss';
 
 const ContactForm = () => {
@@ -29,27 +31,27 @@ const ContactForm = () => {
   const messageEl = useRef(null);
 
   const handleNameChange = (e) => {
-    e.target.classList.remove('error');
+    e.target.classList.remove(styles.error);
     setName(e.target.value.trim());
   };
 
   const handleSubjectChange = (e) => {
-    e.target.classList.remove('error');
+    e.target.classList.remove(styles.error);
     setSubject(e.target.value.trim());
   };
 
   const handleEmailChange = (e) => {
-    e.target.classList.remove('error');
+    e.target.classList.remove(styles.error);
     setEmail(e.target.value.trim());
   };
 
   const handlePhoneChange = (e) => {
-    e.target.classList.remove('error');
+    e.target.classList.remove(styles.error);
     setPhone(e.target.value.trim());
   };
 
   const handleMessageChange = (e) => {
-    e.target.classList.remove('error');
+    e.target.classList.remove(styles.error);
     setMessage(e.target.value.trim());
   };
 
@@ -64,32 +66,32 @@ const ContactForm = () => {
       /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
 
     if (name === '') {
-      nameEl.current.classList.add('error');
+      nameEl.current.classList.add(styles.error);
       error = true;
     }
 
     // if (subject === '') {
-    // 	subjectEl.current.classList.add('error')
+    // 	subjectEl.current.classList.add(styles.error)
     // 	error = true
     // }
 
     if (email === '') {
-      emailEl.current.classList.add('error');
+      emailEl.current.classList.add(styles.error);
       error = true;
     }
 
     if (!pattern.test(email)) {
-      emailEl.current.classList.add('error');
+      emailEl.current.classList.add(styles.error);
       error = true;
     }
 
     // if (phone === '') {
-    // 	phoneEl.current.classList.add('error')
+    // 	phoneEl.current.classList.add(styles.error)
     // 	error = true
     // }
 
     if (message === '') {
-      messageEl.current.classList.add('error');
+      messageEl.current.classList.add(styles.error);
       error = true;
     }
 
@@ -139,33 +141,35 @@ const ContactForm = () => {
         content: styles.content,
       }}
     >
-      <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-8 xl:col-span-9">
-          <div className="contact-left">
-            {/* <div className="contact-top">
-                    <h1>যোগাযোগ করুন</h1>
-                    <p>
-                      আপনি যদি আপনার প্রশ্ন বা সমস্যার উত্তর না পেয়ে থাকেন, তবে
-                      অনুগ্রহ করে নিচের ফর্ম ব্যবহার করে আমাদের সাথে যোগাযোগ
-                      করুন এবং যত তাড়াতাড়ি সম্ভব আমরা আপনার সাথে যোগাযোগ করবো।
-                    </p>
-                  </div> */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="col-span-1 lg:col-span-8 xl:col-span-9">
+          <div className={styles.left}>
+            <div className={styles.top}>
+              <h1>Contact</h1>
+              <p>
+                Please feel free to contact me at your convenience. You can
+                email to contact us.
+              </p>
+            </div>
 
             <form
-              className="contact-form"
+              className={styles.form}
               action=""
               method="POST"
               onSubmit={(e) => handleSubmit(e)}
             >
-              <div className="contact-top">
-                <h1>যোগাযোগ করুন</h1>
-                <p>আমাদের সাথে যোগাযোগ করার জন্যে ইমেইল করতে পারেন।</p>
-              </div>
+              {/* <div className={styles.top}>
+                <h1>Contact</h1>
+                <p>
+                  Please feel free to contact me at your convenience. You can
+                  email to contact us.
+                </p>
+              </div> */}
 
               <div className="grid grid-cols-12 gap-4">
-                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6">
-                  <div className="contact-input">
-                    <p>আপনার নাম</p>
+                <div className="col-span-12 lg:col-span-6">
+                  <div className={styles.input}>
+                    <p>Your name</p>
                     <input
                       type="text"
                       name="name"
@@ -174,9 +178,9 @@ const ContactForm = () => {
                     />
                   </div>
                 </div>
-                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6">
-                  <div className="contact-input">
-                    <p>বিষয়</p>
+                <div className="col-span-12 lg:col-span-6">
+                  <div className={styles.input}>
+                    <p>Subject</p>
                     <input
                       type="text"
                       name="subject"
@@ -185,9 +189,9 @@ const ContactForm = () => {
                     />
                   </div>
                 </div>
-                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6">
-                  <div className="contact-input">
-                    <p>ইমেইল</p>
+                <div className="col-span-12 lg:col-span-6">
+                  <div className={styles.input}>
+                    <p>Email</p>
                     <input
                       type="text"
                       name="email"
@@ -197,9 +201,9 @@ const ContactForm = () => {
                     />
                   </div>
                 </div>
-                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6">
-                  <div className="contact-input">
-                    <p>ফোন নাম্বার</p>
+                <div className="col-span-12 lg:col-span-6">
+                  <div className={styles.input}>
+                    <p>Phone</p>
                     <input
                       type="text"
                       name="phone"
@@ -209,9 +213,9 @@ const ContactForm = () => {
                     />
                   </div>
                 </div>
-                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12">
-                  <div className="contact-input">
-                    <p>আপনার বার্তা</p>
+                <div className="col-span-12 lg:col-span-12">
+                  <div className={styles.input}>
+                    <p>Your message</p>
                     <textarea
                       name="message"
                       onChange={(e) => handleMessageChange(e)}
@@ -219,10 +223,14 @@ const ContactForm = () => {
                     ></textarea>
                   </div>
                 </div>
-                <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12">
-                  <div className="contact-input">
-                    <button className="btn-r" type="submit" name="contact">
-                      সাবমিট
+                <div className="col-span-12 lg:col-span-12">
+                  <div className={styles.input}>
+                    <button
+                      className={styles.btn} //
+                      type="submit"
+                      name="contact"
+                    >
+                      Submit
                     </button>
                   </div>
                 </div>
@@ -231,10 +239,12 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-4 xl:col-span-3">
-          <div className="contact-right">
-            <div className="sidebar-profile sc-1">
-              <div className="s-profile-image">
+        <div className="col-span-1 lg:col-span-4 xl:col-span-3">
+          <div
+            className={classNames(styles.right, 'grid', 'grid-cols-1', 'gap-8')}
+          >
+            <div className={classNames(styles.profile, styles.card)}>
+              <div className={styles.image}>
                 <Image
                   src={`/img/apps/logo01.png`}
                   alt=""
@@ -245,15 +255,15 @@ const ContactForm = () => {
                 />
               </div>
 
-              <h2 className="s-profile-name">ড. আবু বকর মুহাম্মাদ যাকারিয়া</h2>
+              <h2 className={styles.name}>Deeni Info Tech</h2>
 
-              <ul className="s-profile-social">
+              <ul className={styles.social}>
                 <li>
                   <a
                     href="https://www.facebook.com/AbubakarMdZakaria"
                     // target="_blank"
                   >
-                    <i className="facebook fab fa-facebook-f"></i>
+                    <FacebookIcon />
                   </a>
                 </li>
                 <li>
@@ -261,22 +271,22 @@ const ContactForm = () => {
                     href="https://www.facebook.com/AbubakarMdZakaria"
                     // target="_blank"
                   >
-                    <i className="youtube fab fa-youtube"></i>
+                    <YoutubeIcon />
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div className="contact-address">
-              <p>আমাদের সাথে যোগাযোগ করুন</p>
+            <div className={classNames(styles.address, styles.card)}>
+              <p>Our address</p>
               <ul>
                 <li>
                   <a
-                    href="mailto:contact.mme.nu@gmail.com"
+                    href="mailto:deeniinfotech@gmail.com"
                     // target="_blank"
                   >
-                    <span title="contact.mme.nu@gmail.com">
-                      contact.mme.nu@gmail.com
+                    <span title="deeniinfotech@gmail.com">
+                      deeniinfotech@gmail.com
                     </span>
                   </a>
                 </li>

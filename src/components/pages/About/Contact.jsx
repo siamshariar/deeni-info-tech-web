@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import Section from '../../utils/Section';
 import styles from './Contact.module.scss';
 
 const ContactForm = () => {
@@ -118,102 +119,103 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>Contact Us</h1>
-        <p className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non harum
-          sunt neque delectus
-        </p>
+    <Section
+      classes={{
+        root: styles.root,
+        container: styles.container,
+        content: styles.content,
+      }}
+    >
+      <h1 className={styles.title}>Contact Us</h1>
+      <p className={styles.text}>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non harum sunt
+        neque delectus
+      </p>
 
-        <form
-          className={styles.form}
-          action=""
-          method="POST"
-          onSubmit={(e) => handleSubmit(e)}
-        >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div
-              className={`col-span-1 row-span-1 ${styles.input}`}
-              ref={nameEl}
-            >
-              <span className={styles.label}>Name</span>
-              <input
-                type="text"
-                name="name"
-                autoComplete="off"
-                onFocus={(e) => handleFocusIn(e, nameEl)}
-                onBlur={(e) => handleFocusOut(e, nameEl)}
-                onChange={(e) => handleValueChange(e, nameEl, 'name')}
-                value={value.name}
-              />
-            </div>
-            <div
-              className={`col-span-1 row-span-1 ${styles.input}`}
-              ref={subjectEl}
-            >
-              <span className={styles.label}>Subject</span>
-              <input
-                type="text"
-                name="subject"
-                autoComplete="off"
-                onFocus={(e) => handleFocusIn(e, subjectEl)}
-                onBlur={(e) => handleFocusOut(e, subjectEl)}
-                onChange={(e) => handleValueChange(e, subjectEl, 'subject')}
-                value={value.subject}
-              />
-            </div>
-            <div
-              className={`col-span-1 row-span-1 ${styles.input}`}
-              ref={emailEl}
-            >
-              <span className={styles.label}>Email</span>
-              <input
-                type="text"
-                name="email"
-                autoComplete="off"
-                onFocus={(e) => handleFocusIn(e, emailEl)}
-                onBlur={(e) => handleFocusOut(e, emailEl)}
-                onChange={(e) => handleValueChange(e, emailEl, 'email')}
-                value={value.email}
-              />
-            </div>
-            <div
-              className={`col-span-1 row-span-1 ${styles.input}`}
-              ref={phoneEl}
-            >
-              <span className={styles.label}>Phone</span>
-              <input
-                type="text"
-                name="phone"
-                autoComplete="off"
-                onFocus={(e) => handleFocusIn(e, phoneEl)}
-                onBlur={(e) => handleFocusOut(e, phoneEl)}
-                onChange={(e) => handleValueChange(e, phoneEl, 'phone')}
-                value={value.phone}
-              />
-            </div>
-            <div
-              className={`col-span-1 md:col-span-2 row-span-1 ${styles.input}`}
-              ref={messageEl}
-            >
-              <span className={styles.label}>Message</span>
-              <textarea
-                rows="10"
-                name="message"
-                onFocus={(e) => handleFocusIn(e, messageEl)}
-                onBlur={(e) => handleFocusOut(e, messageEl)}
-                onChange={(e) => handleValueChange(e, messageEl, 'message')}
-                value={value.message}
-              ></textarea>
-            </div>
-            <button className={styles.btn} type="submit">
-              <span>Submit</span>
-            </button>
+      <form
+        className={styles.form}
+        action=""
+        method="POST"
+        onSubmit={(e) => handleSubmit(e)}
+      >
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className={`col-span-1 row-span-1 ${styles.input}`} ref={nameEl}>
+            <span className={styles.label}>Name</span>
+            <input
+              type="text"
+              name="name"
+              autoComplete="off"
+              onFocus={(e) => handleFocusIn(e, nameEl)}
+              onBlur={(e) => handleFocusOut(e, nameEl)}
+              onChange={(e) => handleValueChange(e, nameEl, 'name')}
+              value={value.name}
+            />
           </div>
-        </form>
-      </div>
-    </div>
+          <div
+            className={`col-span-1 row-span-1 ${styles.input}`}
+            ref={subjectEl}
+          >
+            <span className={styles.label}>Subject</span>
+            <input
+              type="text"
+              name="subject"
+              autoComplete="off"
+              onFocus={(e) => handleFocusIn(e, subjectEl)}
+              onBlur={(e) => handleFocusOut(e, subjectEl)}
+              onChange={(e) => handleValueChange(e, subjectEl, 'subject')}
+              value={value.subject}
+            />
+          </div>
+          <div
+            className={`col-span-1 row-span-1 ${styles.input}`}
+            ref={emailEl}
+          >
+            <span className={styles.label}>Email</span>
+            <input
+              type="text"
+              name="email"
+              autoComplete="off"
+              onFocus={(e) => handleFocusIn(e, emailEl)}
+              onBlur={(e) => handleFocusOut(e, emailEl)}
+              onChange={(e) => handleValueChange(e, emailEl, 'email')}
+              value={value.email}
+            />
+          </div>
+          <div
+            className={`col-span-1 row-span-1 ${styles.input}`}
+            ref={phoneEl}
+          >
+            <span className={styles.label}>Phone</span>
+            <input
+              type="text"
+              name="phone"
+              autoComplete="off"
+              onFocus={(e) => handleFocusIn(e, phoneEl)}
+              onBlur={(e) => handleFocusOut(e, phoneEl)}
+              onChange={(e) => handleValueChange(e, phoneEl, 'phone')}
+              value={value.phone}
+            />
+          </div>
+          <div
+            className={`col-span-1 md:col-span-2 row-span-1 ${styles.input}`}
+            ref={messageEl}
+          >
+            <span className={styles.label}>Message</span>
+            <textarea
+              rows="10"
+              name="message"
+              onFocus={(e) => handleFocusIn(e, messageEl)}
+              onBlur={(e) => handleFocusOut(e, messageEl)}
+              onChange={(e) => handleValueChange(e, messageEl, 'message')}
+              value={value.message}
+            ></textarea>
+          </div>
+          <button className={styles.btn} type="submit">
+            <span>Submit</span>
+          </button>
+        </div>
+      </form>
+    </Section>
   );
 };
 

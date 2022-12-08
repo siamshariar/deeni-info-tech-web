@@ -1,4 +1,9 @@
+import { useState } from 'react';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
+import ButtonNext from '../../utils/SwiperButtonPrimary/SwiperButtonNext';
+import ButtonPrev from '../../utils/SwiperButtonPrimary/SwiperButtonPrev';
 import styles from './index.module.scss';
 
 const Slider = () => {
@@ -124,21 +129,43 @@ const Slider = () => {
   //     callChangeSlide(false);
   //   });
   // }
+
+  const [swiperInstance, setSwiperInstance] = useState(null);
+
   return (
     <div className={styles.root}>
       <div className={styles.container}>
         <div className="slider_wrapper">
           <div className="slider img_right">
             <div className="ts_images">
-              <div className="tsi_item">
-                <Image src="/img/slides/01.jpg" alt="hotel" layout="fill" />
-              </div>
-              <div className="tsi_item">
-                <Image src="/img/slides/01.jpg" alt="hotel" layout="fill" />
-              </div>
-              <div className="tsi_item">
-                <Image src="/img/slides/01.jpg" alt="hotel" layout="fill" />
-              </div>
+              <Swiper
+                className={styles.swiper} //
+                spaceBetween={0}
+                slidesPerView={1}
+                loop={true}
+                modules={[Autoplay]}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                onSwiper={(swiper) => setSwiperInstance(swiper)}
+              >
+                <SwiperSlide>
+                  <div className="tsi_item">
+                    <Image src="/img/slides/01.jpg" alt="hotel" layout="fill" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="tsi_item">
+                    <Image src="/img/slides/02.jpg" alt="hotel" layout="fill" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="tsi_item">
+                    <Image src="/img/slides/03.jpg" alt="hotel" layout="fill" />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
 
             <div className="ts_contents">
@@ -158,74 +185,8 @@ const Slider = () => {
               </div>
 
               <div className="ts_ctrl">
-                <div className="scbtn scbtn_prev tsbtn_prev">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="83.354"
-                    height="20.707"
-                    viewBox="0 0 83.354 20.707"
-                  >
-                    <g transform="translate(-1515.646 -3843.646)">
-                      <line
-                        x2="82"
-                        transform="translate(1517 3854)"
-                        fill="none"
-                        stroke="#c2d5c1"
-                        strokeWidth="1"
-                      />
-                      <line
-                        y1="10"
-                        x2="10"
-                        transform="translate(1516 3844)"
-                        fill="none"
-                        stroke="#c2d5c1"
-                        strokeWidth="1"
-                      />
-                      <line
-                        x1="10"
-                        y1="10"
-                        transform="translate(1516 3854)"
-                        fill="none"
-                        stroke="#c2d5c1"
-                        strokeWidth="1"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <div className="scbtn scbtn_next tsbtn_next">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="83.354"
-                    height="20.482"
-                    viewBox="0 0 83.354 20.482"
-                  >
-                    <g transform="translate(-1653 -3843.871)">
-                      <line
-                        y1="9.888"
-                        x2="9.888"
-                        transform="translate(1736 3864) rotate(180)"
-                        fill="none"
-                        stroke="#393939"
-                        strokeWidth="1"
-                      />
-                      <line
-                        x1="9.888"
-                        y1="9.888"
-                        transform="translate(1736 3854.112) rotate(180)"
-                        fill="none"
-                        stroke="#393939"
-                        strokeWidth="1"
-                      />
-                      <line
-                        x2="82"
-                        transform="translate(1653 3854)"
-                        fill="none"
-                        stroke="#393939"
-                        strokeWidth="1"
-                      />
-                    </g>
-                  </svg>
-                </div>
+                <ButtonPrev swiper={swiperInstance} />
+                <ButtonNext swiper={swiperInstance} />
               </div>
             </div>
           </div>

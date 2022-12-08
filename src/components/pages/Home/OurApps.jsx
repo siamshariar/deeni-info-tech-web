@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useSwiper } from 'swiper/react';
 import Image from 'next/image';
-import classNames from 'classnames';
+import ButtonNext from '../../utils/SwiperButtonSecondary/SwiperButtonNext';
+import ButtonPrev from '../../utils/SwiperButtonSecondary/SwiperButtonPrev';
 import Container from '../../utils/Container';
 import Button from '../../utils/ButtonSecondary';
-import styles from './Apps.module.scss';
+import styles from './OurApps.module.scss';
 
-const Apps = () => {
+const OurApps = () => {
   return (
     <div className={styles.root}>
       <div className={styles.slider_wrapper}>
@@ -64,8 +64,8 @@ const Apps = () => {
               </SwiperSlide>
 
               <div className={styles.nav}>
-                <SwiperButtonPrev />
-                <SwiperButtonNext />
+                <ButtonPrev />
+                <ButtonNext />
               </div>
             </Swiper>
           </div>
@@ -100,44 +100,4 @@ const Apps = () => {
   );
 };
 
-const SwiperButtonNext = () => {
-  const swiper = useSwiper();
-  return (
-    <button
-      className={classNames(styles.btn, styles.next)}
-      onClick={() => swiper.slideNext()}
-    >
-      <svg
-        width="16"
-        height="19"
-        viewBox="0 0 16 19"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M9 1L1 9M1 9L9 18M1 9L16 9" stroke="#4B4B4B"></path>
-      </svg>
-    </button>
-  );
-};
-
-const SwiperButtonPrev = () => {
-  const swiper = useSwiper();
-  return (
-    <button
-      className={classNames(styles.btn, styles.prev)}
-      onClick={() => swiper.slidePrev()}
-    >
-      <svg
-        width="16"
-        height="19"
-        viewBox="0 0 16 19"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M9 1L1 9M1 9L9 18M1 9L16 9" stroke="#4B4B4B"></path>
-      </svg>
-    </button>
-  );
-};
-
-export default Apps;
+export default OurApps;

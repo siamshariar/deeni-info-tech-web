@@ -1,0 +1,30 @@
+.btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.next {
+  transform: rotate(180deg);
+}
+.prev {
+}
+.btn svg {
+  width: 25%;
+  height: 25%;
+  transition: transform 0.4s ease;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    width: 64px;
+    height: 64px;
+    margin-right: 8px;
+  }
+  .btn:hover svg {
+    transform: translateX(-0.3rem);
+  }
+}

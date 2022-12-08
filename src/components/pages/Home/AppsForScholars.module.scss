@@ -1,8 +1,11 @@
 .root {
-  padding: 50px 0;
   background-color: #fff;
 }
+.container {
+}
 .content {
+}
+.inner {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -108,27 +111,33 @@
 .btn a:hover {
 }
 
+.nav {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+.nav button:first-child {
+  margin-right: 38px;
+}
+
 @media screen and (min-width: 1024px) {
-  .root {
-    padding: 100px 0;
-  }
-  .content {
-    flex-direction: row-reverse;
+  .inner {
+    flex-direction: row;
   }
   .slider,
   .detail {
     width: calc(50% - 16px);
     max-width: 420px;
   }
-  .slide:hover .image {
-    transform: scale(1.5);
-  }
+  // .slide:hover .image {
+  //   transform: scale(1.5);
+  // }
   .detail {
     padding-top: 0;
     min-width: calc(100% - 420px - 32px);
     justify-content: center;
     align-items: flex-start;
-    padding-left: calc(8.33333% + 16px);
+    padding-right: calc(8.33333% + 16px);
   }
   .title {
     margin-bottom: 25px;
@@ -144,5 +153,12 @@
   .btn a:hover {
     border-color: var(--app-theme-color);
     color: var(--app-theme-color);
+  }
+  .nav {
+    margin-top: 40px;
+    justify-content: flex-start;
+  }
+  .nav button {
+    margin-right: 38px;
   }
 }

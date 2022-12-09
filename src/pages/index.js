@@ -4,6 +4,7 @@ import Banner from '../components/utils/BannerSecondary';
 import PageContent from '../components/utils/PageContent';
 import HomeAbout from '../components/pages/Home/About';
 import HomeServices from '../components/pages/Home/Services';
+import DawahInCountries from '../components/pages/Home/DawahInCountries';
 import AppsForScholars from '../components/pages/Home/AppsForScholars';
 import OurApps from '../components/pages/Home/OurApps';
 import HomeImageSliderSecondary from '../components/pages/Home/ImageSliderSecondary';
@@ -29,7 +30,7 @@ export default function HomePage() {
 
       <PageContent>
         <HomeAbout />
-        <HomeServices />
+        <DawahInCountries />
         <AppsForScholars />
         <OurApps />
         <HomeImageSliderSecondary />

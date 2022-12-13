@@ -1,0 +1,36 @@
+.root {
+  background-color: #f7f7f7;
+}
+.container {
+}
+.content {
+}
+.inner {
+  display: block;
+}
+.left {
+}
+.right {
+}
+.card {
+  min-width: 0;
+  background-color: var(--app-background-color-primary);
+  border-radius: 16px;
+  transition: transform 250ms ease, box-shadow 250ms ease, color 250ms ease;
+  box-shadow: 1px 1px 5px 0 rgb(1 1 1 / 5%);
+  overflow: hidden;
+  padding: 32px;
+  height: auto;
+}
+
+// donate form
+.form {
+  margin-bottom: -20px;
+}
+.form iframe {
+  width: 100%;
+  max-width: 500px;
+  // min-width: 310px;
+  // max-height: none !important;
+  min-height: 520px;
+}

@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Container from '../../utils/Container';
 import MainNav from '../MainNav';
-import Logo from '../../icons/Logo';
+// import Logo from '../../icons/Logo';
+import Logo from '../../utils/Logo';
 // import DropdownIcon from '../../icons/Dropdown';
 // import Language from '../../utils/Language';
 import Button from '../../utils/ButtonPrimary';
@@ -39,7 +40,7 @@ const Header = () => {
   // overlay menu
   const [navOpenStatus, setNavOpenStatus] = useState(false);
 
-  const handleNavOpen = () => (event) => {
+  const handleNavOpen = (event) => {
     if (
       event.type === 'keydown' &&
       (event.key === 'Tab' || event.key === 'Shift')
@@ -65,7 +66,7 @@ const Header = () => {
               <div className={styles.menu_burger}>
                 <button
                   className={styles.hamburger}
-                  onClick={handleNavOpen()}
+                  onClick={(event) => handleNavOpen(event)}
                   ref={hamburger}
                 >
                   <span></span>
@@ -93,7 +94,7 @@ const Header = () => {
             </div>
             <div className={styles.cell}>
               <Button
-                url="/donation"
+                url="/donate"
                 text="Donate now"
                 isReverse={isScrolled}
                 isActive={isActive}

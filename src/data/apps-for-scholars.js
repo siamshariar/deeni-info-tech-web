@@ -1,21 +1,27 @@
 export const apps = [
   {
+    id: '1',
     name: 'A',
     imgPath: '/img/apps/logo01.png',
-    tooltip: 'App for A',
+    tooltip: 'Official website of Dr Monzur-E-Elahi',
     url: '/',
+    excerpt: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, ex vitae!`,
   },
   {
+    id: '2',
     name: 'B',
     imgPath: '/img/apps/logo02.png',
     tooltip: 'App for B',
     url: '/',
+    excerpt: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, ex vitae!`,
   },
   {
+    id: '3',
     name: 'C',
     imgPath: '/img/apps/logo03.png',
     tooltip: 'App for C',
     url: '/',
+    excerpt: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, ex vitae!`,
   },
   {
     name: 'D',

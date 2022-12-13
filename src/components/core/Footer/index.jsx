@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <div className={styles.content}>
           <div className={styles.logo}>
-            <Link href="/about-us">
+            <Link href="/about">
               <a>
                 <Logo />
               </a>
@@ -18,7 +18,7 @@ const Footer = () => {
 
           <ul className={styles.menu}>
             <li>
-              <Link href="/donation">
+              <Link href="/donate">
                 <a>Support</a>
               </Link>
             </li>
@@ -36,7 +36,7 @@ const Footer = () => {
 
           <p className={styles.copyright}>
             <span>&copy; {new Date().getFullYear()} </span>
-            <Link href="/about-us">
+            <Link href="/about">
               <a>Deeni Info Tech</a>
             </Link>
             <span> All Rights Reserved</span>

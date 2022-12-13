@@ -3,10 +3,7 @@ import styles from './index.module.scss';
 
 const Banner = ({ bgImage, title, subTitle }) => {
   return (
-    <div
-      className={styles.wrapper}
-      style={{ backgroundImage: `linear-gradient(0deg, #38633a, #2b96c7)` }}
-    >
+    <div className={styles.wrapper}>
       <div className={styles.base}>
         {/* <div className={styles.image}>
           <img src={bgImage} alt="banner" />

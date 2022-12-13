@@ -29,6 +29,7 @@
   align-items: center;
   cursor: pointer;
   font-size: 14px;
+  transition: background-color 500ms ease-in;
 }
 .service-grid span {
   transform: scale(1);
@@ -38,7 +39,7 @@
   transform: rotate(0deg);
 }
 .service-grid.row-span-2 span {
-  /* transform: rotate(-90deg); */
+  transform: rotate(-90deg);
 }
 .service-grid.row-span-1:hover span:first-child {
   transform: rotate(0deg) scale(1.5);

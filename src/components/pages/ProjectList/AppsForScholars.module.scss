@@ -1,0 +1,133 @@
+.root {
+  background-color: #fff;
+  background-color: #f8f8f8;
+}
+.container {
+}
+.content {
+}
+.inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider {
+  width: 100%;
+  max-width: 420px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+.title {
+  margin-bottom: 20px;
+}
+.title h2 {
+  position: relative;
+  font-size: 30px;
+  font-family: 'IvyMode';
+  color: #4a4a49;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.text p {
+  color: #4a4a49;
+  font-family: 'Avenir';
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.btn a {
+  border: 2px solid #c4c4c4;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'IvyMode';
+  color: #4a4a49;
+  display: block;
+  width: 152px;
+  text-align: center;
+  line-height: 42px;
+  transition: color 0.4s ease, border 0.4s ease;
+  border-radius: 15px;
+}
+.btn a:hover {
+}
+
+.detail_text p {
+  margin-bottom: 24px;
+}
+
+.detail_text h3 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.detail_text ul {
+  margin-bottom: 32px;
+  padding-left: 48px;
+}
+.detail_text ul li {
+  padding-left: 0;
+  list-style-type: disc;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .inner {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .slider,
+  .detail {
+    width: calc(50% - 16px);
+    max-width: 420px;
+  }
+
+  .detail {
+    padding-top: 0;
+    min-width: calc(100% - 420px - 32px);
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: calc(8.33333% + 16px);
+  }
+  .title {
+    margin-bottom: 25px;
+  }
+  .title h2 {
+    font-size: 56px;
+    text-align: left;
+  }
+  .text {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  .btn a:hover {
+    border-color: var(--app-theme-color);
+    color: var(--app-theme-color);
+  }
+}

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -178,9 +179,9 @@ const Slider = () => {
                   placeat illo deleniti officiis obcaecati animi explicabo?
                 </p>
                 <div className="tsc_links">
-                  <a href="#" className="btn_primary">
-                    BOOK
-                  </a>
+                  <Link href="/develop-islamic-applications">
+                    <a className="btn_primary">Read More</a>
+                  </Link>
                 </div>
               </div>
 

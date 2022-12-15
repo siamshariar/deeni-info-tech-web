@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '../../utils/Container';
 import Logo from '../../icons/Logo';
 import styles from './index.module.scss';
@@ -11,7 +12,13 @@ const Footer = () => {
           <div className={styles.logo}>
             <Link href="/about">
               <a>
-                <Logo />
+                {/* <Logo /> */}
+                <Image
+                  src="/img/logo/logo-resiged.png"
+                  alt="logo"
+                  width={140}
+                  height={70}
+                />
               </a>
             </Link>
           </div>

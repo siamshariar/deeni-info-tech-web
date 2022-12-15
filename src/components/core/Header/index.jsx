@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '../../utils/Container';
 import MainNav from '../MainNav';
 // import Logo from '../../icons/Logo';
@@ -87,7 +88,17 @@ const Header = () => {
               <div className={styles.logo}>
                 <Link href="/">
                   <a>
-                    <Logo />
+                    {/* <Logo /> */}
+                    <Image
+                      src={
+                        isScrolled && !isActive
+                          ? '/img/logo/logo-resiged.png'
+                          : '/img/logo/logo-white-resiged.png'
+                      }
+                      alt="logo"
+                      width={200}
+                      height={100}
+                    />
                   </a>
                 </Link>
               </div>

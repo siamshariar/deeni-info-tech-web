@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   transition: background-color 500ms ease-in;
 }
 .service-grid span {
@@ -196,7 +196,7 @@
 
 @media screen and (min-width: 468px) {
   .service-grid-content {
-    font-size: 16px;
+    font-size: 20px;
   }
   .service-grid2 span:first-child {
     margin-bottom: 10px;

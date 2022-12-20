@@ -72,7 +72,9 @@ const Panel = ({ question, answer, activeTab, index, activateTab }) => {
         style={{ height: activeTab === index ? height : 0 }}
         ref={ref}
       >
-        <p className={styles.text}>{answer}</p>
+        <p className={styles.text}>
+          {answer}
+        </p>
       </div>
     </div>
   );

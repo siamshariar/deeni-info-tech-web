@@ -43,7 +43,7 @@ const DawahInCountries = () => {
             >
               <div
                 className="service-grid-content"
-                style={{ backgroundColor: country.bgColor }}
+                style={{ background: "linear-gradient(0deg, " + country.bgColor + ")" }}
               >
                 <span>{country.name}</span>
               </div>
@@ -55,7 +55,7 @@ const DawahInCountries = () => {
             >
               <div
                 className="service-grid-content"
-                style={{ backgroundColor: country.bgColor }}
+                style={{ background: "linear-gradient(90deg, " + country.bgColor + ")" }}
               >
                 <span>{country.name}</span>
               </div>

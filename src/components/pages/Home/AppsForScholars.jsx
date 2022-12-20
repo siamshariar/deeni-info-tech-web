@@ -24,14 +24,16 @@ const SectionAppsForScholars = () => {
         <div className={styles.detail}>
           <div className={styles.title}>
             {/* <h2>Apps for Scholars</h2> */}
-            <h2>Apps for Scholars & Da&apos;wah organizations</h2>
+            <h2>Applications for Scholars & Da&apos;wah organizations</h2>
           </div>
           <div className={styles.text}>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-              reiciendis veniam commodi id maxime quo, nihil quae ab suscipit
-              cupiditate hic quaerat alias dolores quisquam in voluptatum
-              temporibus minima repellat.
+              Develop Islamic websites and mobile apps for Scholars, Da’wah organizations
+              and under their supervision.
+
+              All the Islamic scholars are our assets; they are themselves like an institute.
+              It is so important to keep all of their resources (books, lectures, articles,
+              and research papers) together in one place.
             </p>
           </div>
           <div className={styles.btn}>

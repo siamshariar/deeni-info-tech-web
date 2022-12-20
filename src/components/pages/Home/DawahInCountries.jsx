@@ -23,10 +23,7 @@ const SectionDawahInCountries = () => {
           </div>
           <div className={styles.text}>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-              reiciendis veniam commodi id maxime quo, nihil quae ab suscipit
-              cupiditate hic quaerat alias dolores quisquam in voluptatum
-              temporibus minima repellat.
+              Most of the people of Muslim countries, focusing Da’wah on their country, they also have enough human resources. But non-muslim countries getting lack human resources in their Da’wah work, and sometimes it is difficult for them to get technological support.
             </p>
           </div>
           <div className={styles.btn}>

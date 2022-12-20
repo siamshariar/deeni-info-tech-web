@@ -42,18 +42,18 @@
 }
 
 .page {
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 .page a {
   color: #fff;
   font-family: 'IvyMode', serif;
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 300;
   letter-spacing: 3px;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 }
 .page a:hover {
   opacity: 0.8;
@@ -68,26 +68,26 @@
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   color: #fff;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 3px;
   margin: 0 10px;
 }
 
 .accessibility {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 @media only screen and (min-width: 768px) {
   .page a {
-    font-size: 30px;
+    font-size: 32px;
   }
   .footer a {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 15px;
   }
   .accessibility {
-    margin-top: 32px;
+    margin-top: 15px;
   }
 }

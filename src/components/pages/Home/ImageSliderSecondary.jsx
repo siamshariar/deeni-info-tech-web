@@ -1,16 +1,18 @@
-import Container from '../../utils/Container';
+import Section from '../../utils/Section';
 import Slider from '../../sliders/ImageSliderSecondary';
 import styles from './ImageSliderSecondary.module.scss';
 
-const ImageSliderSecondary = () => {
+const ImageSliderSecondary = ({ displayButton }) => {
   return (
-    <div className={styles.root}>
-      <div className={styles.wrapper}>
-        <Container>
-          <Slider />
-        </Container>
-      </div>
-    </div>
+      <Section
+          classes={{
+              root: styles.root,
+              // container: styles.container,
+              // content: styles.content,
+          }}
+      >
+          <Slider displayButton={displayButton} />
+      </Section>
   );
 };
 

@@ -25,13 +25,13 @@ const Footer = () => {
 
           <ul className={styles.menu}>
             <li>
-              <Link href="/donate">
-                <a>Support</a>
+              <Link href="/about">
+                <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="/grateful">
-                <a>Grateful</a>
+              <Link href="/donate">
+                <a>Donate</a>
               </Link>
             </li>
             <li>

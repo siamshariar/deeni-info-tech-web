@@ -14,7 +14,9 @@ const Button = ({ url, text, isReverse, isActive }) => {
     >
       <Link href={url}>
         <a className={styles.link}>
-          <ArrowRightIcon />
+          <span className={styles.link_svg}>
+            <ArrowRightIcon />
+          </span>
           <span>{text}</span>
         </a>
       </Link>

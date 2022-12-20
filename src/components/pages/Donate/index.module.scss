@@ -12,6 +12,15 @@
 }
 .right {
 }
+
+.donation_container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.donation_container div {
+}
+
 .card {
   min-width: 0;
   background-color: var(--app-background-color-primary);
@@ -26,6 +35,8 @@
 // donate form
 .form {
   margin-bottom: -20px;
+  display: flex;
+  justify-content: center;
 }
 .form iframe {
   width: 100%;
@@ -33,4 +44,33 @@
   // min-width: 310px;
   // max-height: none !important;
   min-height: 520px;
+}
+
+.form div {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .donation_container {
+    padding-bottom: 58px;
+  }
+
+  .donation_container div {
+    background: #f7f7f7;
+    border-radius: 300px;
+  }
+
+  .form iframe {
+    width: 440px;
+  }
+
+  .form div {
+    padding-top: 52px;
+  }
+
+  .donation_container {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
 }

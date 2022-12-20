@@ -2,14 +2,16 @@ import Meta from '../../components/core/Meta';
 import Banner from '../../components/utils/BannerPrimary';
 import PageContent from '../../components/utils/PageContent';
 import PageDetail from '../../components/pages/ProjectList/DevelopIslamicApplications';
+import HomeImageSliderSecondary from "../../components/pages/Home/ImageSliderSecondary";
+import {server} from "../../lib/config";
 
 export default function Page() {
   return (
     <>
       <Meta
-        title="Develop Islamic applications | Deeni Info Tech"
-        description="A non-profitable Software Development organization to spread Deen Islam worldwide"
-        url="www.deeniinfotech.com"
+        title="Develop Islamic applications | DeeniInfoTech.com"
+        description="One of our primary goals is to create more promising Islamic applications. We are focusing more on application Performance & UI."
+        url={`${server}/develop-islamic-applications`}
         image="/img/logo/logo.png"
         type="website"
       />
@@ -21,6 +23,7 @@ export default function Page() {
       />
 
       <PageContent>
+        <HomeImageSliderSecondary displayButton={true} />
         <PageDetail />
       </PageContent>
     </>

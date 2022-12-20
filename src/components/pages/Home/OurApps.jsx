@@ -22,7 +22,7 @@ const OurApps = () => {
                 <div className={styles.slide}>
                   <div className={styles.image}>
                     <Image
-                      src="/img/apps/01.jpg"
+                      src="/img/apps/1.jpg"
                       alt=""
                       layout="fill"
                       objectFit="cover"
@@ -37,7 +37,7 @@ const OurApps = () => {
                 <div className={styles.slide}>
                   <div className={styles.image}>
                     <Image
-                      src="/img/apps/02.jpg"
+                      src="/img/apps/2.jpg"
                       alt=""
                       layout="fill"
                       objectFit="cover"

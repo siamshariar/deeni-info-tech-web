@@ -6,8 +6,9 @@ import { Autoplay } from 'swiper';
 import ButtonNext from '../../utils/SwiperButtonPrimary/SwiperButtonNext';
 import ButtonPrev from '../../utils/SwiperButtonPrimary/SwiperButtonPrev';
 import styles from './index.module.scss';
+import DawahInCountriesStyles from '../../pages/Home/DawahInCountries.module.scss';
 
-const Slider = () => {
+const Slider = ({ displayButton }) => {
   // function initTertiarySlider(slider) {
   //   const images = [...slider.querySelectorAll('.ts_images .tsi_item')];
   //   // const contents = [...slider.querySelectorAll(".ts_contents .tsc_item")];
@@ -51,7 +52,7 @@ const Slider = () => {
   //     let t,
   //       lastImage = slides[active],
   //       newImage = slides[newIndex],
-  //       c = newImage.querySelector('img');
+  //       contact = newImage.querySelector('img');
 
   //     t = forward ? [0, -100] : [0, 100];
 
@@ -136,7 +137,7 @@ const Slider = () => {
   return (
     <div className={styles.root}>
       <div className={styles.container}>
-        <div className="slider_wrapper">
+        <div className={styles.slider_wrapper}>
           <div className="slider img_right">
             <div className="ts_images">
               <Swiper
@@ -146,24 +147,57 @@ const Slider = () => {
                 loop={true}
                 modules={[Autoplay]}
                 autoplay={{
-                  delay: 2500,
+                  delay: 3000,
                   disableOnInteraction: false,
                 }}
                 onSwiper={(swiper) => setSwiperInstance(swiper)}
               >
                 <SwiperSlide>
-                  <div className="tsi_item">
-                    <Image src="/img/slides/01.jpg" alt="hotel" layout="fill" />
+                  <div style={{ display: `flex` }} className="tsi_item">
+                    <Image
+                        src="/img/slides/quran-ac.jpg"
+                        alt=""
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center center"
+                        loading="eager"
+                    />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="tsi_item">
-                    <Image src="/img/slides/02.jpg" alt="hotel" layout="fill" />
+                    <Image
+                        src="/img/slides/hadith-ac.jpg"
+                        alt=""
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center center"
+                        loading="eager"
+                    />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="tsi_item">
-                    <Image src="/img/slides/03.jpg" alt="hotel" layout="fill" />
+                    <Image
+                        src="/img/slides/quran-radio.jpg"
+                        alt=""
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center center"
+                        loading="eager"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="tsi_item">
+                    <Image
+                        src="/img/slides/deeni-tube.jpg"
+                        alt=""
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center center"
+                        loading="eager"
+                    />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -171,18 +205,24 @@ const Slider = () => {
 
             <div className="ts_contents">
               <div className="tsc_item">
-                <h3>Our apps</h3>
+                <h3>Develop Islamic applications</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tenetur veniam dolorum exercitationem magnam nam, ullam
-                  ratione quam aut, quasi aliquid porro! Eius repudiandae
-                  placeat illo deleniti officiis obcaecati animi explicabo?
+                  Alhamdulillah, some useful Islamic applications already exist. But one of our primary goals is to
+                  create more promising Islamic applications. The more we all grow, the more people we will be able
+                  to reach and involve.
                 </p>
-                <div className="tsc_links">
-                  <Link href="/develop-islamic-applications">
-                    <a className="btn_primary">Read More</a>
-                  </Link>
-                </div>
+
+
+                {
+                  displayButton !== true
+                      ? <div className={styles.btn}>
+                        <Link href="/develop-islamic-applications">
+                          <a>Read More</a>
+                        </Link>
+                      </div>
+                      : ''
+                }
+
               </div>
 
               <div className="ts_ctrl">
@@ -198,3 +238,4 @@ const Slider = () => {
 };
 
 export default Slider;
+

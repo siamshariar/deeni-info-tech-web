@@ -4,7 +4,8 @@
 
 .content {
   width: 100%;
-  max-width: 644px;
+  //max-width: 644px;
+  max-width: 810px;
   margin: 0 auto;
   text-align: center;
   // padding-top: 80px;
@@ -30,16 +31,20 @@
 .title h2 {
   margin-bottom: 48px;
   font-family: 'IvyMode', sans-serif;
-  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   color: #4a4a49;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.33;
 }
 
 .highlight {
   color: var(--app-theme-color);
+}
+
+.text_ref {
+  display: block;
+  font-size: 0.8em !important;
 }
 
 .text {
@@ -49,7 +54,7 @@
 .text p {
   white-space: pre-line;
   font-family: 'Avenir', sans-serif;
-  font-size: 16px;
+  font-size: 1.15em;
   font-weight: 400;
   line-height: 1.5;
   color: #4a4a49;
@@ -63,15 +68,30 @@
 .text h2 {
   display: inline;
   font-family: 'IvyMode';
-  font-size: 1rem;
+  font-size: 1.22em;
   font-weight: 400;
-  line-height: 1.8;
-  color: #fff;
+  line-height: 1.5;
+  //color: #fff;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-color: var(--app-theme-color);
-  box-shadow: 8px 1px 0 3px var(--app-theme-color),
-    -8px 1px 0 3px var(--app-theme-color);
+  //background-color: var(--app-theme-color);
+  //box-shadow: 8px 1px 0 3px var(--app-theme-color),
+  //  -8px 1px 0 3px var(--app-theme-color);
+}
+
+.text .highlight_border {
+  border: 1.5px solid var(--app-theme-color);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.text .highlight_border h2 {
+  font-family: "Avenir", sans-serif !important;
+}
+
+.project_header {
+  font-size: 1.2em;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -83,7 +103,11 @@
     font-size: 56px;
   }
   .title h2 {
-    font-size: 28px;
+    font-size: 42px;
     line-height: 1.25;
+  }
+
+  .project_header {
+    font-size: 1.4em;
   }
 }

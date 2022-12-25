@@ -17,6 +17,10 @@
   border-radius: 15px;
 }
 
+.link:focus {
+  color: #fff;
+}
+
 .rev .link {
   color: #4a4a49 !important;
   border-color: rgba(74, 74, 73, 0.2);
@@ -51,8 +55,8 @@
   }
 
   .link:hover {
-    border-color: #4de1aa;
-    color: #4de1aa;
+    border-color: #4de1aa !important;
+    color: #4de1aa !important;
   }
 
   .link:hover svg {

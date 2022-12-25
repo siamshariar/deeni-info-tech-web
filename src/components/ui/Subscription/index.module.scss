@@ -50,11 +50,16 @@
   width: calc(100% - 100px);
   background-color: #fff;
   padding: 0 16px;
+  border-radius: 8px 0 0 8px;
 }
 .form button {
   background-color: var(--app-theme-color);
   width: 100px;
   color: #fff;
+}
+
+.error {
+  border: 1px solid #de3940 !important;
 }
 
 @media screen and (min-width: 1024px) {

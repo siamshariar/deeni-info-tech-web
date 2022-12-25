@@ -15,7 +15,7 @@ export default function Donation() {
         title="Donation | DeeniInfoTech.com"
         description="Sadaqah Jariyah means a continuous, flowing, and ongoing charity. In order to succeed, we need your help to go forward on this journey."
         url={`${server}/donate`}
-        image="/img/logo/logo.png"
+        image="/img/logo/share-preview.png"
         type="website"
       />
 

@@ -43,7 +43,7 @@ const MainNav = ({ open, controller }) => {
 
               <li className={`${styles.page} ${styles.footer}`}>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <a style={{ pointerEvents: `none` }}>OUR GOAL's</a>
+                <a style={{ pointerEvents: `none` }}>OUR GOALs</a>
               </li>
 
               <li

@@ -150,7 +150,7 @@ const ContactForm = () => {
                   <input
                       type="text"
                       name="name"
-                      autoComplete="off"
+                      // autoComplete="off"
                       onFocus={(e) => handleFocusIn(e, nameEl)}
                       onBlur={(e) => handleFocusOut(e, nameEl)}
                       onChange={(e) => handleValueChange(e, nameEl, 'name')}
@@ -180,7 +180,7 @@ const ContactForm = () => {
                   <input
                       type="text"
                       name="email"
-                      autoComplete="off"
+                      // autoComplete="off"
                       onFocus={(e) => handleFocusIn(e, emailEl)}
                       onBlur={(e) => handleFocusOut(e, emailEl)}
                       onChange={(e) => handleValueChange(e, emailEl, 'email')}

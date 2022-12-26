@@ -12,7 +12,7 @@ export default function Page() {
         title="Develop Islamic applications | DeeniInfoTech.com"
         description="One of our primary goals is to create more promising Islamic applications. We are focusing more on application Performance & UI."
         url={`${server}/develop-islamic-applications`}
-        image="/img/logo/logo.png"
+        image={`${server}/img/logo/share-preview.png`}
         type="website"
       />
 

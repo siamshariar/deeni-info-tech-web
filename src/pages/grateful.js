@@ -12,7 +12,7 @@ export default function GratefulPage() {
                 title="Grateful | DeeniInfoTech.com"
                 description="First and foremost , we want to express our sincere gratitude to Allah Subhanahu Wa Ta'ala. We are grateful to everyone who is connected to us."
                 url={`${server}/grateful`}
-                image={`${server}/img/logo/logo.png`}
+                image={`${server}/img/logo/share-preview.png`}
                 type="website"
             />
 

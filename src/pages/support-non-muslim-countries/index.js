@@ -12,7 +12,7 @@ export default function Page() {
             title="Support non-Muslim countries | DeeniInfoTech.com"
             description="Islam is the religion of peace. It is crucial to spread Dawah so that everyone can think and come to their own judgments based on the right path that Islam instructs us to follow."
             url={`${server}/support-non-muslim-countries`}
-            image="/img/logo/logo.png"
+            image={`${server}/img/logo/share-preview.png`}
             type="website"
         />
 

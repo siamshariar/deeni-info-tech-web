@@ -16,7 +16,7 @@ export default function AboutPage() {
         title="About Us | DeeniInfoTech.com"
         description="Deen means religion Islam. Our entire lives and everything we do are for Deen Islam. There are three sets of goals."
         url={`${server}/about`}
-        image={`${server}/img/logo/logo.png`}
+        image={`${server}/img/logo/share-preview.png`}
         type="website"
       />
 

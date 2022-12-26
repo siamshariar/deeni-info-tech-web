@@ -1,0 +1,155 @@
+.root {
+  background-color: #f8f8f8;
+  background-color: #fff;
+}
+.container {
+}
+.content {
+}
+.inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app_in_vn_left_slider {
+  padding-top: 40px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app_in_vn_left_slider {
+  padding-top: 40px;
+}
+
+.image {
+  width: 100%;
+  max-width: 420px;
+}
+// .image img {
+//   width: 100%;
+//   object-fit: cover;
+//   object-position: center center;
+// }
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.detail_left_slider {
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.title h2 {
+  position: relative;
+  font-size: 28px;
+  font-family: 'IvyMode';
+  color: #4a4a49;
+}
+.text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.text p {
+  color: #4a4a49;
+  font-family: 'Avenir';
+  font-size: 1.15em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.btn a {
+  border: 2px solid #c4c4c4;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'IvyMode';
+  /* text-transform: uppercase; */
+  color: #4a4a49;
+  display: block;
+  width: 152px;
+  text-align: center;
+  line-height: 42px;
+  transition: color 0.4s ease, border 0.4s ease;
+  border-radius: 15px;
+}
+.btn a:hover {
+}
+
+@media screen and (min-width: 1024px) {
+  .inner {
+    flex-direction: row-reverse;
+  }
+
+  .app_in_vn_left_slider {
+    flex-direction: unset;
+    margin-top: 80px;
+  }
+
+  .app_in_vn_right_slider {
+    margin-top: 80px;
+  }
+
+  .detail_left_slider {
+    padding-right: 0 !important;
+    padding-left: calc(2% + 16px) !important;
+  }
+
+  .image,
+  .detail {
+    width: calc(50% - 16px);
+    max-width: 420px;
+  }
+  .detail {
+    padding-top: 30px;
+    min-width: calc(100% - 420px - 32px);
+    justify-content: center;
+    align-items: flex-start;
+    //padding-right: calc(8.33333% + 16px);
+  }
+  .title {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .title h2 {
+    font-size: 42px;
+  }
+  // .title h2::before {
+  //   content: "";
+  //   width: 20px;
+  //   height: 2px;
+  //   background-color: #4a4a49;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  // }
+  .text {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  .btn a:hover {
+    border-color: var(--app-theme-color);
+    color: var(--app-theme-color);
+  }
+}

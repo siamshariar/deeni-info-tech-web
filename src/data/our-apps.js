@@ -1,0 +1,38 @@
+export const apps = [
+  {
+    id: '1',
+    name: 'Quran.ac',
+    slg: 'quran-ac',
+    url: 'https://www.quran.ac',
+    imgPath: '/img/our_apps/quran-ac-logo.png',
+    excerpt: 'Quran application. Some of the features are Multi translations, Reader friendly UI, Custom settings, Bookmarks, User login access.',
+    order: 1,
+  },
+  {
+    id: '2',
+    name: 'Hadith.ac',
+    slg: 'hadith-ac',
+    url: 'https://www.hadith.ac',
+    imgPath: '/img/our_apps/hadith-ac-logo.png',
+    excerpt: 'Hadith application. Some of the features are Hadith books & categories, Reader friendly UI, Custom settings, Bookmarks, User login access.',
+    order: 1,
+  },
+  {
+    id: '3',
+    name: 'Quran.radio',
+    slg: 'quran-radio',
+    url: 'https://www.quran.radio',
+    imgPath: '/img/our_apps/quran-radio-logo.png',
+    excerpt: 'Online Quran radio & audio. Users will have experience with both a radio and an audio. The app operates like a radio by default, but the user can select a reciter or a specific chapter.',
+    order: 1,
+  },
+  {
+    id: '4',
+    name: 'DeeniTube',
+    slg: 'deeni-tube',
+    url: 'https://www.deenitube.com',
+    imgPath: '/img/our_apps/deeni-tube-logo.png',
+    excerpt: 'Islamic video application.',
+    order: 1,
+  },
+];

@@ -16,17 +16,17 @@ export default function HomePage() {
   return (
     <>
       <Meta
-        title="Deeni Info Tech"
-        description="A non-profitable Software Development organization to spread Deen Islam worldwide"
+        title="DeeniInfoTech.com"
+        description="A non-profit Software Development organization to spread Deen Islam worldwide. Our main objective is to spread Deen Islam through modern technology all around the world."
         url={server}
-        image={`${server}/img/logo/logo.png`}
+        image={`${server}/img/logo/share-preview.png`}
         type="website"
       />
 
       <Banner
         image="/img/banner/banner-home.png"
         title="Deeni Info Tech"
-        subTitle="A non-profitable Software Development organization to spread Deen Islam worldwide"
+        subTitle="A non-profit Software Development organization to spread Deen Islam worldwide"
       />
 
       <PageContent>

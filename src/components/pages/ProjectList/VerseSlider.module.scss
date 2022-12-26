@@ -1,0 +1,50 @@
+.root {
+  background-color: #f8f8f8;
+  border-radius: 16px;
+}
+.container {
+}
+.content {
+}
+.inner {
+  max-width: 886px;
+  margin: 0 auto;
+  text-align: center;
+}
+.slider {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+}
+.swiper {
+}
+.item {
+}
+.text {
+  font-size: 1.15em;
+  line-height: 1.31;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  white-space: pre-line;
+}
+.label {
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.33;
+  letter-spacing: 1px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+.nav button {
+  margin: 0 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .root {
+    padding: 64px 0 !important;
+  }
+}

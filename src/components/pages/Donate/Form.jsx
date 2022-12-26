@@ -3,14 +3,19 @@ import styles from './index.module.scss';
 const DonateForm = () => {
   return (
     <div className={styles.form}>
-      <iframe
-        src="https://donorbox.org/embed/deeniinfotech?default_interval=o&hide_donation_meter=true"
-        name="donorbox"
-        allowpaymentrequest="allowpaymentrequest"
-        seamless="seamless"
-        // height="900px"
-        // width="100%"
-      ></iframe>
+        <div style={{ background: `url(img/loader.gif) center center no-repeat` }}>
+          <iframe
+            src="https://donorbox.org/embed/deeniinfotech?default_interval=o"
+            name="donorbox"
+            allowpaymentrequest="allowpaymentrequest"
+            seamless="seamless"
+            frameBorder="0"
+            // scrolling="no"
+            height="500px"
+            // width="100%"
+            style={{ maxHeight: `none !important` }}
+          ></iframe>
+        </div>
     </div>
   );
 };

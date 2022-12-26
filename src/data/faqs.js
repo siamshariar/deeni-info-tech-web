@@ -1,31 +1,24 @@
 export const faqs = [
   {
     id: '1',
-    question: 'How long does it take for me to get a refund?',
+    question: 'How to donate?',
     answer:
-      'It typically takes about 5-10 business days for your return to arrive at our fulfillment center and be processed for refund. Once we receive your qualifying return and approve your refund, Zappos will credit your original method of payment. Depending on your financial institution, please allow an additional 2-10 business days for the credit to post to your bank or credit card account. Some customers may qualify for rapid refunds through',
+      'You can visit our donation page, use a card or PayPal account.',
   },
   {
     id: '2',
-    question: 'How do I know my shoe size?',
-    answer:
-      'Because the foot is three-dimensional, any two-dimensional measuring tool, such as a ruler or Brannock device can only approximate your true shoe size. Please also keep in mind that manufacturers use different lasts to construct their shoes, and sizing may vary accordingly.',
+    question: 'Do you accept Zakat?',
+    answer: [<span>We have asked this question to Scholars, answer was Yes. Deeni Info Tech is a non-profit Da’wah organization to spread Islam. But as two opinion exists on this, so please read more form IslamQa "<a href="https://islamqa.info/en/answers/110137/can-zakaah-be-used-for-dawah-purposes" target="_blank">Can zakaah be used for da’wah purposes?</a>".</span>],
   },
   {
     id: '3',
-    question: 'Do you do back orders?',
+    question: 'I don’t have any option to donate online, how can I donate?',
     answer:
-      'No. We do not do back orders. If an item is out of stock the Zappos Customer Loyalty Team will notify you as soon as possible and ask if you would like a replacement item. Out of stock orders will be cancelled unless a replacement item is requested.',
+      'Please get in touch with us if you would want a wider reach.',
   },
   {
     id: '4',
-    question: 'Do you have a price matching policy?',
-    answer: 'Please visit our page to learn about our price matching policy.',
-  },
-  {
-    id: '5',
-    question: 'Do you offer Live Chat support?',
-    answer:
-      'Yes we do! To get in contact with one of our live chat specialists, look for the Live Help button located on the top left hand of the page, to the right of our phone number. If you are unable to see this button, it saddens us to say that we do not have a specialist available to assist via chat.',
+    question: 'What is the goal of Deeni Info Tech? ',
+    answer: 'To spread Deen Islam worldwide with the help of technologies. PLease check more detail in About Us page.',
   },
 ];

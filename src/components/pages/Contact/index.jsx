@@ -144,13 +144,13 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         <div className="col-span-1 lg:col-span-8 xl:col-span-9">
           <div className={styles.left}>
-            <div className={styles.top}>
-              <h1>Contact</h1>
-              <p>
-                Please feel free to contact me at your convenience. You can
-                email to contact us.
-              </p>
-            </div>
+            {/*<div className={styles.top}>*/}
+            {/*  <h1>Contact</h1>*/}
+            {/*  <p>*/}
+            {/*    Please Feel free to contact with us at your convenience. You can*/}
+            {/*    email to contact us.*/}
+            {/*  </p>*/}
+            {/*</div>*/}
 
             <form
               className={styles.form}
@@ -161,7 +161,7 @@ const ContactForm = () => {
               {/* <div className={styles.top}>
                 <h1>Contact</h1>
                 <p>
-                  Please feel free to contact me at your convenience. You can
+                  Please Feel free to contact with us at your convenience. You can
                   email to contact us.
                 </p>
               </div> */}
@@ -207,7 +207,7 @@ const ContactForm = () => {
                     <input
                       type="text"
                       name="phone"
-                      placeholder="+880 1xxxxxxxxx"
+                      placeholder="xxxxxxxxxx (Optional)"
                       onChange={(e) => handlePhoneChange(e)}
                       ref={phoneEl}
                     />
@@ -243,55 +243,50 @@ const ContactForm = () => {
           <div
             className={classNames(styles.right, 'grid', 'grid-cols-1', 'gap-8')}
           >
-            <div className={classNames(styles.profile, styles.card)}>
-              <div className={styles.image}>
-                <Image
-                  src={`/img/apps/logo01.png`}
-                  alt=""
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="center center"
-                  loading="eager"
-                />
-              </div>
-
-              <h2 className={styles.name}>Deeni Info Tech</h2>
-
-              <ul className={styles.social}>
-                <li>
-                  <a
-                    href="https://www.facebook.com/AbubakarMdZakaria"
-                    // target="_blank"
-                  >
-                    <FacebookIcon />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/AbubakarMdZakaria"
-                    // target="_blank"
-                  >
-                    <YoutubeIcon />
-                  </a>
-                </li>
-              </ul>
-            </div>
-
             <div className={classNames(styles.address, styles.card)}>
-              <p>Our address</p>
+              <p>Contact email</p>
               <ul>
                 <li>
                   <a
-                    href="mailto:deeniinfotech@gmail.com"
-                    // target="_blank"
+                      href="mailto:info@deeniinfotech.com"
+                      // target="_blank"
                   >
-                    <span title="deeniinfotech@gmail.com">
-                      deeniinfotech@gmail.com
+                    <span title="info@deeniinfotech.com">
+                      info@deeniinfotech.com
                     </span>
                   </a>
                 </li>
               </ul>
             </div>
+
+            <div className={classNames(styles.profile, styles.card)}>
+              {/*<div className={styles.image}>*/}
+              {/*  <Image*/}
+              {/*    src={`/img/apps/logo01.png`}*/}
+              {/*    alt=""*/}
+              {/*    layout="fill"*/}
+              {/*    objectFit="cover"*/}
+              {/*    objectPosition="center center"*/}
+              {/*    loading="eager"*/}
+              {/*  />*/}
+              {/*</div>*/}
+
+              <h2 className={styles.name}>Connect with us on Facebook</h2>
+
+              <ul className={styles.social}>
+                <li>
+                  <a
+                    href="https://www.facebook.com/deeniinfotech"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FacebookIcon />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
           </div>
         </div>
       </div>

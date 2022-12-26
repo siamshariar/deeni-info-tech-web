@@ -1,8 +1,13 @@
 .btn {
 }
+
+.link_svg {
+  display: none;
+}
+
 .link {
-  height: 48px;
-  width: 177px;
+  height: 30px;
+  width: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,19 +17,18 @@
   border-radius: 15px;
 }
 
+.link:focus {
+  color: #fff;
+}
+
 .rev .link {
-  color: #4a4a49;
+  color: #4a4a49 !important;
   border-color: rgba(74, 74, 73, 0.2);
 }
 
 .active .link {
-  color: #fff;
+  color: #fff !important;
   border-color: rgba(255, 255, 255, 0.2);
-}
-
-.link:hover {
-  border-color: var(--app-theme-color);
-  color: var(--app-theme-color);
 }
 
 .link svg {
@@ -36,15 +40,41 @@
 }
 
 .link span {
-  color: inherit;
+  //color: inherit;
   transition: transform 0.4s ease, color 0.4s ease;
 }
 
-.link:hover svg {
-  transform: translateX(0.7rem);
+@media screen and (min-width: 768px) {
+  .link {
+    height: 48px;
+    width: 177px;
+  }
+  .link_svg {
+    display: block;
+  }
 }
 
-.link:hover span {
-  transform: translateX(0.5rem);
-  transition-delay: 0.1s;
+@media screen and (min-width: 1024px) {
+  .link {
+    height: 48px;
+    width: 177px;
+  }
+
+  .link_svg {
+    display: block;
+  }
+
+  .link:hover {
+    border-color: #4de1aa !important;
+    color: #4de1aa !important;
+  }
+
+  .link:hover svg {
+    transform: translateX(0.7rem);
+  }
+
+  .link:hover span {
+    transform: translateX(0.5rem);
+    transition-delay: 0.1s;
+  }
 }

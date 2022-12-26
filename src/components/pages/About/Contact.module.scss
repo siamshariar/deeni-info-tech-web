@@ -1,5 +1,5 @@
 .root {
-  background-color: #ffffff;
+  background-color: #f8f8f8;
 }
 .container {
 }
@@ -21,7 +21,15 @@
   margin-bottom: 30px;
 }
 
-.form {
+.left {
+  display: block;
+}
+
+form.form {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 1px 1px 5px 0px rgb(1 1 1 / 5%);
+  padding: 32px;
 }
 .input {
   width: calc(100% - 2rem);
@@ -70,7 +78,7 @@
   width: 100%;
   padding: 0.5rem 1rem 1rem;
   font-size: 1rem;
-  line-height: 1;
+  line-height: .7;
   font-family: inherit;
   background: none;
   border: none;
@@ -85,26 +93,170 @@
   box-shadow: none;
 }
 
-.btn {
-  width: calc(100% - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  height: 5rem;
-  background-color: #4a4a49;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-family: 'Avenir', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5em;
+.form .btn {
+  //width: calc(100% - 2rem);
+  //margin-left: 1rem;
+  //margin-right: 1rem;
+  //height: 5rem;
+  //background-color: #4a4a49;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //
+  //font-family: 'Avenir', sans-serif;
+  //font-size: 1rem;
+  //font-weight: 400;
+  //line-height: 1.5em;
+  //color: #4a4a49;
+  //color: #fff;
+  border: 2px solid #c4c4c4;
+  padding: 0;
+  font-size: 16px;
+  font-family: "IvyMode";
   color: #4a4a49;
-  color: #fff;
+  display: block;
+  width: 152px;
+  text-align: center;
+  line-height: 42px;
+  transition: color 0.4s ease, border 0.4s ease;
+  border-radius: 15px;
+  height: 45px;
+  background: transparent;
 }
 
 .error {
   border-bottom: 1px solid red;
+}
+
+
+.address {
+  padding: 2rem;
+  box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+  border-radius: 1rem;
+  background-color: #fff;
+  margin-bottom: 4rem;
+  margin-bottom: 0;
+}
+
+.address > p {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+.address ul {
+  display: block;
+}
+
+.address ul li {
+  font-size: 1rem;
+}
+
+.address ul li a,
+.address ul li p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+// .address ul li a i,
+// .address ul li p i {
+//   width: 2.5rem;
+//   height: 2.5rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: transparent;
+//   border: none;
+//   border-radius: 50%;
+//   outline: 0;
+//   user-select: none;
+//   cursor: pointer;
+//   transition: all 250ms ease;
+//   color: #a0aec0;
+//   font-size: 1.5rem;
+//   margin-right: 0.25rem;
+// }
+
+// .address ul li a i:hover,
+// .address ul li p i:hover {
+//   background-color: #106690;
+//   color: #fff;
+// }
+
+.address ul li a span,
+.address ul li p span {
+  display: block;
+  width: calc(100% - 2.75rem);
+  white-space: normal;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  //overflow: hidden;
+  text-overflow: ellipsis;
+  // word-break: break-all;
+}
+
+.card {
+  width: 100%;
+  padding: 32px;
+  box-shadow: 1px 1px 5px 0px rgba(1, 1, 1, 0.05);
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.profile {
+  width: 100%;
+}
+
+.name {
+  // font-family: Kalpurush;
+  //font-weight: bold;
+  line-height: 1.33;
+  display: block;
+  font-size: 1em;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  //text-align: center;
+}
+
+ul.social {
+  display: flex;
+  justify-content: center;
+}
+
+ul.social li {
+  display: block;
+  margin-right: 0.5rem;
+}
+
+ul.social li:last-child {
+  margin-right: 0;
+}
+
+ul.social li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: 1em;
+  color: #a0aec0;
+  background-color: #edf2f7;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+ul.social li a:hover {
+  background-color: #369fae;
+  color: #fff;
+}
+
+ul.social li a svg {
+  font-size: inherit;
+}
+
+ul.social li a:hover svg {
+  color: inherit;
 }
 
 @media screen and (min-width: 1024px) {
@@ -127,7 +279,8 @@
   .input textarea {
   }
 
-  .btn {
-    width: calc(50% - 2rem);
+  .form .btn:hover {
+    border-color: var(--app-theme-color);
+    color: var(--app-theme-color);
   }
 }

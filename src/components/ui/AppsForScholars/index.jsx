@@ -46,7 +46,7 @@ const AppsForScholars = () => {
             spaceBetween={0}
             modules={[Grid, Autoplay]}
             autoplay={{
-              delay: 2500,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             // loop={true}
@@ -54,25 +54,23 @@ const AppsForScholars = () => {
             onSwiper={(swiper) => setSwiperInstance(swiper)}
           >
             {apps &&
-              apps.map((app, index) => (
+              apps.filter((item) => item.displayInSlider === 1 ).map((app, index) => (
                 <SwiperSlide key={index}>
                   <div
                     className={styles.slide}
                     onMouseEnter={() => setTooltipText(app.tooltip)}
                     onMouseLeave={() => setTooltipText('')}
                   >
-                    <Link href={app.url}>
-                      <a className={styles.image}>
-                        <Image
-                          src={app.imgPath}
-                          alt=""
-                          layout="fill"
-                          objectFit="contain"
-                          objectPosition="center center"
-                          loading="eager"
-                        />
-                      </a>
-                    </Link>
+                    <a href={app.url} target="_blank" rel="noreferrer" className={styles.image}>
+                      <Image
+                        src={app.imgPath}
+                        alt=""
+                        layout="fill"
+                        objectFit="contain"
+                        objectPosition="center center"
+                        loading="eager"
+                      />
+                    </a>
                   </div>
                 </SwiperSlide>
               ))}

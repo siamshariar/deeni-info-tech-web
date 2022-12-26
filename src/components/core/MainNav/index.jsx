@@ -24,50 +24,56 @@ const MainNav = ({ open, controller }) => {
               </li>
 
               <li className={styles.page}>
-                <Link href="/grateful">
-                  <a onClick={(e) => controller(e)}>Grateful</a>
-                </Link>
-              </li>
-
-              <li className={styles.page}>
-                <Link href="/donate">
-                  <a onClick={(e) => controller(e)}>Support Us</a>
-                </Link>
-              </li>
-
-              <li className={styles.page}>
                 <Link href="/contact">
                   <a onClick={(e) => controller(e)}>Contact</a>
                 </Link>
               </li>
 
+              <li className={styles.page}>
+                <Link href="/donate">
+                  <a onClick={(e) => controller(e)}>Donate</a>
+                </Link>
+              </li>
+
+              <li className={styles.page}>
+                <Link href="/grateful">
+                  <a onClick={(e) => controller(e)}>Grateful</a>
+                </Link>
+              </li>
+
               <li className={`${styles.page} ${styles.footer}`}>
-                <Link href="/">
-                  <a onClick={(e) => controller(e)}>Policy</a>
-                </Link>
-                <Link href="/">
-                  <a onClick={(e) => controller(e)}>Legal</a>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                <a style={{ pointerEvents: `none` }}>OUR GOALs</a>
+              </li>
+
+              <li
+                className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
+              >
+                <Link href="/applications-for-scholars-and-dawah-organizations">
+                  <a onClick={(e) => controller(e)}>
+                    Apps for Scholars & Da&apos;wah organizations
+                  </a>
                 </Link>
               </li>
 
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
-                <Link href="/">
-                  <a onClick={(e) => controller(e)}>Accessibility Statement</a>
+                <Link href="/support-non-muslim-countries">
+                  <a onClick={(e) => controller(e)}>
+                    Support Non-Muslim Countries
+                  </a>
                 </Link>
               </li>
 
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
-                <a
-                  href="http://deeniinfotech.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Deeni Info Tech Stories
-                </a>
+                <Link href="/develop-islamic-applications">
+                  <a onClick={(e) => controller(e)}>
+                    Develop Islamic applications
+                  </a>
+                </Link>
               </li>
             </ul>
           </Container>

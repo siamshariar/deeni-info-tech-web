@@ -8,7 +8,6 @@ export default function Meta(props) {
         name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, uc-fitscreen=yes"
       />
-      <meta name="description" content="" />
       <meta name="author" content="" />
       <meta name="keywords" content="" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
@@ -211,8 +210,9 @@ export default function Meta(props) {
 
       {/* page title */}
       <title>
-        {props.title || ''} | {props.description || ''}
+        {props.title || ''}
       </title>
+      <meta name="description" content={props.description || ''} />
 
       {/* Manifest.json */}
       {/*<link rel='manifest' href='/manifest.json' />*/}

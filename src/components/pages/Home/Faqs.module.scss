@@ -42,7 +42,8 @@
   text-align: left;
   padding: 25px 60px 25px 25px;
   font-weight: 500;
-  font-size: 17px;
+  //font-size: 17px;
+  font-size: 1.15em;
   font-family: inherit;
   transition: color 0.2s linear;
   cursor: pointer;
@@ -79,12 +80,17 @@
 }
 .text {
   margin: 5px 25px 25px;
-  font-size: 14px;
+  font-size: 1em;
   color: #756658;
   color: #4a4a49;
   opacity: 0;
   transition: opacity 0.3s linear 0.18s;
 }
+
+.text a {
+  color: #1377FD;
+}
+
 .panel.active .text {
   opacity: 1;
 }

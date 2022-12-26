@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import Section from '../../utils/Section';
 import styles from './Contact.module.scss';
+import classNames from "classnames";
+import FacebookIcon from "../../icons/Facebook";
 
 const ContactForm = () => {
   const [value, setValue] = useState({
@@ -126,95 +128,151 @@ const ContactForm = () => {
         content: styles.content,
       }}
     >
-      <h1 className={styles.title}>Contact Us</h1>
-      <p className={styles.text}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non harum sunt
-        neque delectus
-      </p>
+      {/*<h1 className={styles.title}>Contact Us</h1>*/}
+      {/*<p className={styles.text}>*/}
+      {/*  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non harum sunt*/}
+      {/*  neque delectus*/}
+      {/*</p>*/}
 
-      <form
-        className={styles.form}
-        action=""
-        method="POST"
-        onSubmit={(e) => handleSubmit(e)}
-      >
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className={`col-span-1 row-span-1 ${styles.input}`} ref={nameEl}>
-            <span className={styles.label}>Name</span>
-            <input
-              type="text"
-              name="name"
-              autoComplete="off"
-              onFocus={(e) => handleFocusIn(e, nameEl)}
-              onBlur={(e) => handleFocusOut(e, nameEl)}
-              onChange={(e) => handleValueChange(e, nameEl, 'name')}
-              value={value.name}
-            />
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="col-span-1 lg:col-span-8 xl:col-span-9">
+          <div className={styles.left}>
+            <form
+                className={styles.form}
+                action=""
+                method="POST"
+                onSubmit={(e) => handleSubmit(e)}
+            >
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className={`col-span-1 row-span-1 ${styles.input}`} ref={nameEl}>
+                  <span className={styles.label}>Name</span>
+                  <input
+                      type="text"
+                      name="name"
+                      // autoComplete="off"
+                      onFocus={(e) => handleFocusIn(e, nameEl)}
+                      onBlur={(e) => handleFocusOut(e, nameEl)}
+                      onChange={(e) => handleValueChange(e, nameEl, 'name')}
+                      value={value.name}
+                  />
+                </div>
+                <div
+                    className={`col-span-1 row-span-1 ${styles.input}`}
+                    ref={subjectEl}
+                >
+                  <span className={styles.label}>Subject</span>
+                  <input
+                      type="text"
+                      name="subject"
+                      autoComplete="off"
+                      onFocus={(e) => handleFocusIn(e, subjectEl)}
+                      onBlur={(e) => handleFocusOut(e, subjectEl)}
+                      onChange={(e) => handleValueChange(e, subjectEl, 'subject')}
+                      value={value.subject}
+                  />
+                </div>
+                <div
+                    className={`col-span-1 row-span-1 ${styles.input}`}
+                    ref={emailEl}
+                >
+                  <span className={styles.label}>Email</span>
+                  <input
+                      type="text"
+                      name="email"
+                      // autoComplete="off"
+                      onFocus={(e) => handleFocusIn(e, emailEl)}
+                      onBlur={(e) => handleFocusOut(e, emailEl)}
+                      onChange={(e) => handleValueChange(e, emailEl, 'email')}
+                      value={value.email}
+                  />
+                </div>
+                <div
+                    className={`col-span-1 row-span-1 ${styles.input}`}
+                    ref={phoneEl}
+                >
+                  <span className={styles.label}>Phone</span>
+                  <input
+                      type="text"
+                      name="phone"
+                      autoComplete="off"
+                      onFocus={(e) => handleFocusIn(e, phoneEl)}
+                      onBlur={(e) => handleFocusOut(e, phoneEl)}
+                      onChange={(e) => handleValueChange(e, phoneEl, 'phone')}
+                      value={value.phone}
+                  />
+                </div>
+                <div
+                    className={`col-span-1 md:col-span-2 row-span-1 ${styles.input}`}
+                    ref={messageEl}
+                >
+                  <span className={styles.label}>Message</span>
+                  <textarea
+                      rows="10"
+                      name="message"
+                      onFocus={(e) => handleFocusIn(e, messageEl)}
+                      onBlur={(e) => handleFocusOut(e, messageEl)}
+                      onChange={(e) => handleValueChange(e, messageEl, 'message')}
+                      value={value.message}
+                  ></textarea>
+                </div>
+                <button className={styles.btn} type="submit">
+                  <span>Submit</span>
+                </button>
+              </div>
+            </form>
           </div>
-          <div
-            className={`col-span-1 row-span-1 ${styles.input}`}
-            ref={subjectEl}
-          >
-            <span className={styles.label}>Subject</span>
-            <input
-              type="text"
-              name="subject"
-              autoComplete="off"
-              onFocus={(e) => handleFocusIn(e, subjectEl)}
-              onBlur={(e) => handleFocusOut(e, subjectEl)}
-              onChange={(e) => handleValueChange(e, subjectEl, 'subject')}
-              value={value.subject}
-            />
-          </div>
-          <div
-            className={`col-span-1 row-span-1 ${styles.input}`}
-            ref={emailEl}
-          >
-            <span className={styles.label}>Email</span>
-            <input
-              type="text"
-              name="email"
-              autoComplete="off"
-              onFocus={(e) => handleFocusIn(e, emailEl)}
-              onBlur={(e) => handleFocusOut(e, emailEl)}
-              onChange={(e) => handleValueChange(e, emailEl, 'email')}
-              value={value.email}
-            />
-          </div>
-          <div
-            className={`col-span-1 row-span-1 ${styles.input}`}
-            ref={phoneEl}
-          >
-            <span className={styles.label}>Phone</span>
-            <input
-              type="text"
-              name="phone"
-              autoComplete="off"
-              onFocus={(e) => handleFocusIn(e, phoneEl)}
-              onBlur={(e) => handleFocusOut(e, phoneEl)}
-              onChange={(e) => handleValueChange(e, phoneEl, 'phone')}
-              value={value.phone}
-            />
-          </div>
-          <div
-            className={`col-span-1 md:col-span-2 row-span-1 ${styles.input}`}
-            ref={messageEl}
-          >
-            <span className={styles.label}>Message</span>
-            <textarea
-              rows="10"
-              name="message"
-              onFocus={(e) => handleFocusIn(e, messageEl)}
-              onBlur={(e) => handleFocusOut(e, messageEl)}
-              onChange={(e) => handleValueChange(e, messageEl, 'message')}
-              value={value.message}
-            ></textarea>
-          </div>
-          <button className={styles.btn} type="submit">
-            <span>Submit</span>
-          </button>
         </div>
-      </form>
+
+        <div className="col-span-1 lg:col-span-4 xl:col-span-3">
+          <div
+              className={classNames('grid', 'grid-cols-1', 'gap-8')}
+          >
+            <div className={classNames(styles.address, styles.card)}>
+              <p>Contact email</p>
+              <span style={{ fontSize: `1em`, display: `block` }}>
+                <a href="mailto:info@deeniinfotech.com">
+                    <span title="info@deeniinfotech.com">
+                      info@deeniinfotech.com
+                    </span>
+                </a>
+              </span>
+            </div>
+
+            <div className={classNames(styles.profile, styles.card)}>
+              {/*<div className={styles.image}>*/}
+              {/*  <Image*/}
+              {/*    src={`/img/apps/logo01.png`}*/}
+              {/*    alt=""*/}
+              {/*    layout="fill"*/}
+              {/*    objectFit="cover"*/}
+              {/*    objectPosition="center center"*/}
+              {/*    loading="eager"*/}
+              {/*  />*/}
+              {/*</div>*/}
+
+              <h2 className={styles.name}>Connect with us on Facebook</h2>
+
+              <ul className={styles.social}>
+                <li>
+                  <a
+                      href="https://www.facebook.com/deeniinfotech"
+                      target="_blank"
+                  >
+                    <FacebookIcon />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+
     </Section>
   );
 };

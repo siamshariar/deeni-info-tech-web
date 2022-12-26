@@ -1,19 +1,23 @@
 import Link from 'next/link';
 import styles from './index.module.scss';
 
-const Card = ({ title, imagePath, url, excerpt }) => {
+const Card = ({ name, title, imagePath, url, excerpt }) => {
   return (
     <div className={styles.root}>
       <div className={styles.container}>
-        <div className={styles.image}>
-          <div className={styles.img}>
-            <img src={imagePath} alt="" />
+        <a href={url} target="_blank">
+          <div className={styles.image}>
+            <div className={styles.img}>
+              <img src={imagePath} alt="" />
+            </div>
           </div>
-        </div>
+        </a>
         <div className={styles.content}>
-          <div className={styles.title}>{title}</div>
+          <a href={url} target="_blank">
+            <div className={styles.title}>{name}</div>
+          </a>
           <div className={styles.excerpt}>
-            {excerpt} <span>See more</span>
+            {excerpt}
           </div>
         </div>
       </div>

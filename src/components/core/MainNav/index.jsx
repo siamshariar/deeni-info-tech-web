@@ -43,30 +43,36 @@ const MainNav = ({ open, controller }) => {
 
               <li className={`${styles.page} ${styles.footer}`}>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  <a style={{ pointerEvents: `none` }}>OUR GOAL's</a>
+                <a style={{ pointerEvents: `none` }}>OUR GOAL's</a>
               </li>
 
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
                 <Link href="/applications-for-scholars-and-dawah-organizations">
-                  <a onClick={(e) => controller(e)}>Apps for Scholars & Da'wah organizations</a>
+                  <a onClick={(e) => controller(e)}>
+                    Apps for Scholars & Da&apos;wah organizations
+                  </a>
                 </Link>
               </li>
 
               <li
-                  className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
+                className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
                 <Link href="/support-non-muslim-countries">
-                  <a onClick={(e) => controller(e)}>Support Non-Muslim Countries</a>
+                  <a onClick={(e) => controller(e)}>
+                    Support Non-Muslim Countries
+                  </a>
                 </Link>
               </li>
 
               <li
-                  className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
+                className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
                 <Link href="/develop-islamic-applications">
-                  <a onClick={(e) => controller(e)}>Develop Islamic applications</a>
+                  <a onClick={(e) => controller(e)}>
+                    Develop Islamic applications
+                  </a>
                 </Link>
               </li>
             </ul>

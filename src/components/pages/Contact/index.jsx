@@ -278,6 +278,7 @@ const ContactForm = () => {
                   <a
                     href="https://www.facebook.com/deeniinfotech"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <FacebookIcon />
                   </a>

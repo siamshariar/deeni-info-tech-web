@@ -278,7 +278,8 @@
 //   transition-delay: 0.1s;
 // }
 
-@media screen and (min-width: 1024px) {
+// @media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .cell {
     min-width: 200px;
   }

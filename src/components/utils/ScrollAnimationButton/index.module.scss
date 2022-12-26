@@ -1,0 +1,288 @@
+.root {
+  --colorBg: #487ea2;
+  --colorOutline: #ffffff;
+  // --colorOutlineFade: #4e5559;
+  --colorOutlineFade: #0b314a;
+  --colorOutlineFadeText: #4e5559; // new added
+  --widthMouse: 30px;
+  --heightMouse: 52px;
+  --borderMouse: 4px;
+  --posMouse: 8px;
+  --posText: 2px;
+  --sizeTrackball: 8px;
+  --posTrackball: 12px;
+  --shrinkTrackball: 0.4;
+  --animDuration: 5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--colorBg);
+  height: auto;
+  padding: 16px;
+  background-color: #222a30;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  z-index: 999;
+}
+
+@media screen and (min-width: 1024px) {
+  .root {
+    --colorBg: #335d7b;
+    --colorOutlineFadeText: #4e5559;
+    --widthMouse: 40px;
+    --heightMouse: 70px;
+    --borderMouse: 4px;
+    --sizeTrackball: 8px;
+    --posTrackball: 16px;
+
+    bottom: 40px;
+  }
+}
+
+.mouse {
+  background: var(--colorOutlineFade)
+    linear-gradient(
+      transparent 0%,
+      transparent 50%,
+      var(--colorOutline) 50%,
+      var(--colorOutline) 100%
+    );
+  position: relative;
+  width: var(--widthMouse);
+  height: var(--heightMouse);
+  border-radius: 100px;
+  background-size: 100% 200%;
+  animation: colorSlide var(--animDuration) linear infinite,
+    nudgeMouse var(--animDuration) ease-out infinite;
+  cursor: pointer;
+}
+.mouse:before,
+.mouse:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.mouse:before {
+  width: calc(var(--widthMouse) - var(--borderMouse));
+  height: calc(var(--heightMouse) - var(--borderMouse));
+  background-color: var(--colorBg);
+  border-radius: 100px;
+}
+.mouse:after {
+  background-color: var(--colorOutline);
+  width: var(--sizeTrackball);
+  height: var(--sizeTrackball);
+  border-radius: 100%;
+  animation: trackBallSlide var(--animDuration) linear infinite;
+}
+
+p.text {
+  // margin-top: 50px;
+  margin-top: 25px;
+  // font-family: 'Cabin', sans-serif;
+  font-family: 'Avenir', sans-serif;
+  letter-spacing: 12px;
+  text-indent: 12px;
+  color: var(--colorOutline);
+  animation: colorText var(--animDuration) ease-out infinite,
+    nudgeText var(--animDuration) ease-out infinite;
+}
+
+@keyframes colorSlide {
+  0% {
+    background-position: 0% 100%;
+  }
+  20% {
+    background-position: 0% 0%;
+  }
+  21% {
+    background-color: var(--colorOutlineFade);
+  }
+  29.99% {
+    background-color: var(--colorOutline);
+    background-position: 0% 0%;
+  }
+  30% {
+    background-color: var(--colorOutlineFade);
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  51% {
+    background-color: var(--colorOutlineFade);
+  }
+  59% {
+    background-color: var(--colorOutline);
+    background-position: 0% 0%;
+  }
+  60% {
+    background-color: var(--colorOutlineFade);
+    background-position: 0% 100%;
+  }
+  80% {
+    background-position: 0% 0%;
+  }
+  81% {
+    background-color: var(--colorOutlineFade);
+  }
+  90%,
+  100% {
+    background-color: var(--colorOutline);
+  }
+}
+
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(calc(var(--posTrackball) * -1));
+  }
+  6% {
+    opacity: 1;
+    transform: scale(0.9) translateY(calc(var(--posTrackball) / 4));
+  }
+  14% {
+    opacity: 0;
+    transform: scale(var(--shrinkTrackball))
+      translateY(calc(var(--posTrackball) * 2));
+  }
+  15%,
+  19% {
+    opacity: 0;
+    transform: scale(var(--shrinkTrackball))
+      translateY(calc(var(--posTrackball) * -1));
+  }
+  28%,
+  29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(calc(var(--posTrackball) * -1));
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(calc(var(--posTrackball) * -1));
+  }
+  36% {
+    opacity: 1;
+    transform: scale(0.9) translateY(calc(var(--posTrackball) / 4));
+  }
+  44% {
+    opacity: 0;
+    transform: scale(var(--shrinkTrackball))
+      translateY(calc(var(--posTrackball) * 2));
+  }
+  45%,
+  49% {
+    opacity: 0;
+    transform: scale(var(--shrinkTrackball))
+      translateY(calc(var(--posTrackball) * -1));
+  }
+  58%,
+  59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(calc(var(--posTrackball) * -1));
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(calc(var(--posTrackball) * -1));
+  }
+  66% {
+    opacity: 1;
+    transform: scale(0.9) translateY(calc(var(--posTrackball) / 4));
+  }
+  74% {
+    opacity: 0;
+    transform: scale(var(--shrinkTrackball))
+      translateY(calc(var(--posTrackball) * 2));
+  }
+  75%,
+  79% {
+    opacity: 0;
+    transform: scale(var(--shrinkTrackball))
+      translateY(calc(var(--posTrackball) * -1));
+  }
+  88%,
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(calc(var(--posTrackball) * -1));
+  }
+}
+
+@keyframes nudgeMouse {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(var(--posMouse));
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--posMouse));
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(var(--posMouse));
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nudgeText {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(var(--posText));
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--posText));
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(var(--posText));
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorText {
+  21% {
+    // color: var(--colorOutlineFade);
+    color: var(--colorOutlineFadeText);
+  }
+  30% {
+    color: var(--colorOutline);
+  }
+  51% {
+    // color: var(--colorOutlineFade);
+    color: var(--colorOutlineFadeText);
+  }
+  60% {
+    color: var(--colorOutline);
+  }
+  81% {
+    // color: var(--colorOutlineFade);
+    color: var(--colorOutlineFadeText);
+  }
+  90% {
+    color: var(--colorOutline);
+  }
+}

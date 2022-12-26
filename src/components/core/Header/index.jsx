@@ -109,6 +109,7 @@ const Header = () => {
                 text="Donate now"
                 isReverse={isScrolled}
                 isActive={isActive}
+                controller={handleNavOpen}
               />
             </div>
           </div>

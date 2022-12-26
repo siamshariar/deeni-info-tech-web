@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Section from '../Section';
 import styles from './index.module.scss';
+import ScrollAnimationButton from '../ScrollAnimationButton';
 
 const Banner = ({ image, title, subTitle }) => {
   return (
@@ -44,6 +45,8 @@ const Banner = ({ image, title, subTitle }) => {
             </div>
           </Section>
         </div>
+
+        <ScrollAnimationButton />
       </div>
     </div>
   );

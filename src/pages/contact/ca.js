@@ -12,7 +12,7 @@ export default function ContactPage() {
         title="Contact | DeeniInfoTech.com"
         description="A non-profit Software Development organization to spread Deen Islam worldwide"
         url={`${server}/contact`}
-        image={`${server}/img/logo/logo.png`}
+        image={`${server}/img/logo/share-preview.png`}
         type="website"
       />
 

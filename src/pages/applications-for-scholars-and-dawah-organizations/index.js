@@ -11,7 +11,7 @@ export default function Page() {
         title="Applications for Scholars & Da'wah organizations | DeeniInfoTech.com"
         description="Develop Islamic websites and mobile applications for Scholars, Da'wah organizations and Islamic applications under their supervision. Islamic scholars are our assets; they are themselves like an institute."
         url={`${server}/applications-for-scholars-and-dawah-organizations`}
-        image="/img/logo/logo.png"
+        image={`${server}/img/logo/share-preview.png`}
         type="website"
       />
 

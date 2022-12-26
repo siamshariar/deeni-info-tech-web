@@ -1,5 +1,6 @@
 import Container from '../Container';
 import styles from './index.module.scss';
+import ScrollAnimationButton from '../ScrollAnimationButton';
 
 const Banner = ({ bgImage, title, subTitle }) => {
   return (
@@ -16,6 +17,8 @@ const Banner = ({ bgImage, title, subTitle }) => {
             </div>
           </Container>
         </div>
+
+        <ScrollAnimationButton />
       </div>
     </div>
   );

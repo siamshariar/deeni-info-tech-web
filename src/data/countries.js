@@ -3,7 +3,7 @@ export const countries = [
     id: '1',
     name: 'Vietnam',
     imagePath: '/img/countries/icons8-australia-48.png',
-    bgColor: '#e80013 0,#fce802 50%,#fce802 50%,#e80013 100%',
+    bgColor: '#e80013 0,#e3d210 50%,#e3d210 50%,#e80013 100%',
   },
   {
     id: '2',
@@ -15,7 +15,7 @@ export const countries = [
     id: '3',
     name: 'Philippine',
     imagePath: '/img/countries/icons8-belgium-48.png',
-    bgColor: '#0a2165 0,#e3e2d8 50%,#e3e2d8 50%,#bd0a3c 100%',
+    bgColor: '#0a2165 0,#dfdcc5 50%,#dfdcc5 50%,#bd0a3c 100%',
   },
   {
     id: '4',
@@ -27,7 +27,7 @@ export const countries = [
     id: '5',
     name: 'China',
     imagePath: '/img/countries/icons8-cameroon-48.png',
-    bgColor: '#ef151f 0,#fefe01 50%,#fefe01 50%,#ef151f 100%',
+    bgColor: '#e80013 0,#e3d210 50%,#e3d210 50%,#e80013 100%',
   },
   {
     id: '6',
@@ -51,7 +51,7 @@ export const countries = [
     id: '9',
     name: 'France',
     imagePath: '/img/countries/icons8-colombia-48.png',
-    bgColor: '#082153 0,#eaeaea 50%,#eaeaea 50%,#d00821 100%',
+    bgColor: '#082153 0,#d1cfcf 50%,#d1cfcf 50%,#d00821 100%',
   },
   {
     id: '10',
@@ -69,7 +69,7 @@ export const countries = [
     id: '12',
     name: 'Denmark',
     imagePath: '/img/countries/icons8-cyprus-48.png',
-    bgColor: '#ca072a 0,#f1eaea 50%,#f1eaea 50%,#ca072a 100%',
+    bgColor: '#ca072a 0,#d2cece 50%,#d2cece 50%,#ca072a 100%',
   },
   {
     id: '13',
@@ -123,7 +123,7 @@ export const countries = [
     id: '21',
     name: 'Italy',
     imagePath: '/img/countries/icons8-india-48.png',
-    bgColor: '#2f9444 0,#efefef 50%,#efefef 50%,#d02634 100%',
+    bgColor: '#2f9444 0,#dfdfdf 50%,#dfdfdf 50%,#d02634 100%',
   },
   {
     id: '22',

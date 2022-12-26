@@ -61,18 +61,16 @@ const AppsForScholars = () => {
                     onMouseEnter={() => setTooltipText(app.tooltip)}
                     onMouseLeave={() => setTooltipText('')}
                   >
-                    {/*<Link href={app.url}>*/}
-                      <a className={styles.image}>
-                        <Image
-                          src={app.imgPath}
-                          alt=""
-                          layout="fill"
-                          objectFit="contain"
-                          objectPosition="center center"
-                          loading="eager"
-                        />
-                      </a>
-                    {/*</Link>*/}
+                    <a href={app.url} target="_blank" rel="noreferrer" className={styles.image}>
+                      <Image
+                        src={app.imgPath}
+                        alt=""
+                        layout="fill"
+                        objectFit="contain"
+                        objectPosition="center center"
+                        loading="eager"
+                      />
+                    </a>
                   </div>
                 </SwiperSlide>
               ))}

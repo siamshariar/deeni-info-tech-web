@@ -61,9 +61,9 @@ const HomeAbout = () => {
 
           <div style={{ marginTop: `22px` }} className={styles.title}>
             <h2 style={{ fontSize: `1.4em`, marginBottom: `0` }}>
-              We are working for
+              We are working for the following
               <span className={styles.highlight}> three </span>
-              sets of <span className={styles.highlight}>goals</span>(listed below).
+              sets of <span className={styles.highlight}>goals</span>.
             </h2>
           </div>
 

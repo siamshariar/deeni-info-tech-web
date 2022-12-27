@@ -9,27 +9,27 @@ export default function Meta(props) {
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, uc-fitscreen=yes"
       />
       <meta name="author" content="" />
-      <meta name="keywords" content="" />
+      <meta name="keywords" content="Deeni Info Tech" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 
       {/* Android phone */}
-      <meta name="theme-color" content="#317EFB" />
+      <meta name="theme-color" content="#071625" />
       <meta name="mobile-web-app-capable" content="yes" />
 
       {/* iOS phone */}
-      <meta name="apple-mobile-web-app-title" content="" />
+      <meta name="apple-mobile-web-app-title" content="Deeni Info Tech" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#317EFB" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="#071625" />
 
       {/* Windows phone */}
-      <meta name="msapplication-navbutton-color" content="#317EFB" />
-      <meta name="msapplication-TileColor" content="#2B5797" />
+      <meta name="msapplication-navbutton-color" content="#071625" />
+      <meta name="msapplication-TileColor" content="#2d898c" />
       {/* <meta name="msapplication-TileImage" content="ms-icon-144x144.png" /> */}
       {/* <meta name="msapplication-config" content="browserconfig.xml" /> */}
 
       {/* Pinned Sites */}
-      <meta name="application-name" content="Application Name" />
-      <meta name="msapplication-tooltip" content="Tooltip Text" />
+      <meta name="application-name" content="Deeni Info Tech" />
+      <meta name="msapplication-tooltip" content="Deeni Info Tech" />
       <meta name="msapplication-starturl" content="/" />
 
       {/* Tap highlighting */}

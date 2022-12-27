@@ -94,12 +94,12 @@ export default function Meta(props) {
       {/* meta information for twitter */}
       <meta
         name="twitter:card" //
-        content=""
+        content="summary_large_image"
         key="twcard"
       />
       <meta
         name="twitter:site" //
-        content=""
+        content="@deeniinfotech"
         key="twsite"
       />
       <meta
@@ -209,9 +209,7 @@ export default function Meta(props) {
       />
 
       {/* page title */}
-      <title>
-        {props.title || ''}
-      </title>
+      <title>{props.title || ''}</title>
       <meta name="description" content={props.description || ''} />
 
       {/* Manifest.json */}

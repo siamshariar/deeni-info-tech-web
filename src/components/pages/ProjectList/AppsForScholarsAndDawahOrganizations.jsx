@@ -62,7 +62,7 @@ const AppsForScholarsAndDawahOrganizations = () => {
           </div>
 
           <div className={styles.slider}>
-            <AppsForScholars />
+            <AppsForScholars detailPage={true} />
           </div>
         </div>
       </Section>

@@ -6,7 +6,6 @@ import { Autoplay } from 'swiper';
 import ButtonNext from '../../utils/SwiperButtonPrimary/SwiperButtonNext';
 import ButtonPrev from '../../utils/SwiperButtonPrimary/SwiperButtonPrev';
 import styles from './index.module.scss';
-import DawahInCountriesStyles from '../../pages/Home/DawahInCountries.module.scss';
 
 const Slider = ({ displayButton }) => {
   // function initTertiarySlider(slider) {
@@ -139,69 +138,137 @@ const Slider = ({ displayButton }) => {
       <div className={styles.container}>
         <div className={styles.slider_wrapper}>
           <div className="slider img_right">
-            <div className="ts_images">
-              <Swiper
-                className={styles.swiper} //
-                spaceBetween={0}
-                slidesPerView={1}
-                loop={true}
-                modules={[Autoplay]}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                onSwiper={(swiper) => setSwiperInstance(swiper)}
-              >
-                <SwiperSlide>
-                  <div style={{ display: `flex` }} className="tsi_item">
-                    <Image
-                        src="/img/slides/quran-ac.jpg"
-                        alt=""
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center center"
-                        loading="eager"
-                    />
+            {
+              displayButton !== true
+                  ? <Link href="/develop-islamic-applications">
+                      <div style={{ cursor: `pointer` }} className="ts_images">
+                        <Swiper
+                            className={styles.swiper} //
+                            spaceBetween={0}
+                            slidesPerView={1}
+                            loop={true}
+                            modules={[Autoplay]}
+                            autoplay={{
+                              delay: 4000,
+                              disableOnInteraction: false,
+                            }}
+                            onSwiper={(swiper) => setSwiperInstance(swiper)}
+                        >
+                          <SwiperSlide>
+                            <div style={{ display: `flex` }} className="tsi_item">
+                              <Image
+                                  src="/img/slides/quran-ac.jpg"
+                                  alt=""
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center center"
+                                  loading="eager"
+                              />
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tsi_item">
+                              <Image
+                                  src="/img/slides/hadith-ac.jpg"
+                                  alt=""
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center center"
+                                  loading="eager"
+                              />
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tsi_item">
+                              <Image
+                                  src="/img/slides/quran-radio.jpg"
+                                  alt=""
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center center"
+                                  loading="eager"
+                              />
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tsi_item">
+                              <Image
+                                  src="/img/slides/deeni-tube.jpg"
+                                  alt=""
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center center"
+                                  loading="eager"
+                              />
+                            </div>
+                          </SwiperSlide>
+                        </Swiper>
+                      </div>
+                    </Link>
+                  : <div className="ts_images">
+                    <Swiper
+                        className={styles.swiper} //
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        loop={true}
+                        modules={[Autoplay]}
+                        autoplay={{
+                          delay: 4000,
+                          disableOnInteraction: false,
+                        }}
+                        onSwiper={(swiper) => setSwiperInstance(swiper)}
+                    >
+                      <SwiperSlide>
+                        <div style={{ display: `flex` }} className="tsi_item">
+                          <Image
+                              src="/img/slides/quran-ac.jpg"
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              loading="eager"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="tsi_item">
+                          <Image
+                              src="/img/slides/hadith-ac.jpg"
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              loading="eager"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="tsi_item">
+                          <Image
+                              src="/img/slides/quran-radio.jpg"
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              loading="eager"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="tsi_item">
+                          <Image
+                              src="/img/slides/deeni-tube.jpg"
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              loading="eager"
+                          />
+                        </div>
+                      </SwiperSlide>
+                    </Swiper>
                   </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="tsi_item">
-                    <Image
-                        src="/img/slides/hadith-ac.jpg"
-                        alt=""
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center center"
-                        loading="eager"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="tsi_item">
-                    <Image
-                        src="/img/slides/quran-radio.jpg"
-                        alt=""
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center center"
-                        loading="eager"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="tsi_item">
-                    <Image
-                        src="/img/slides/deeni-tube.jpg"
-                        alt=""
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center center"
-                        loading="eager"
-                    />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
+            }
 
             <div className="ts_contents">
               <div className="tsc_item">

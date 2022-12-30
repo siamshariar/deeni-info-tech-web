@@ -9,7 +9,7 @@ import ButtonPrev from '../../utils/SwiperButtonPrimary/SwiperButtonPrev';
 import Tooltip from '../../utils/Tooltip';
 import styles from './index.module.scss';
 
-const AppsForScholars = () => {
+const AppsForScholars = ({ detailPage }) => {
   const [isTooltipShown, setIsTooltipShown] = useState(false);
   const [tooltipText, setTooltipText] = useState('');
   const [swiperInstance, setSwiperInstance] = useState(null);
@@ -30,55 +30,108 @@ const AppsForScholars = () => {
       <Tooltip isShown={isTooltipShown} text={tooltipText} />
 
       <div className={styles.slider}>
-        <div
-          className={styles.swiper_container}
-          onMouseEnter={() => setIsTooltipShown(true)}
-          onMouseLeave={() => setIsTooltipShown(false)}
-          onMouseMove={(e) => handleMouseMove(e)}
-        >
-          <Swiper
-            className={styles.swiper}
-            slidesPerView={2}
-            slidesPerGroup={2}
-            grid={{
-              rows: 3,
-            }}
-            spaceBetween={0}
-            modules={[Grid, Autoplay]}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            // loop={true}
-            // loopFillGroupWithBlank={true}
-            onSwiper={(swiper) => setSwiperInstance(swiper)}
-          >
-            {apps &&
-              apps.filter((item) => item.displayInSlider === 1 ).map((app, index) => (
-                <SwiperSlide key={index}>
-                  <div
-                    className={styles.slide}
-                    onMouseEnter={() => setTooltipText(app.tooltip)}
-                    onMouseLeave={() => setTooltipText('')}
-                  >
-                    {/*<Link href={app.url}>*/}
-                      <a className={styles.image}>
-                        <Image
-                          src={app.imgPath}
-                          alt=""
-                          layout="fill"
-                          objectFit="contain"
-                          objectPosition="center center"
-                          loading="eager"
-                        />
-                      </a>
-                    {/*</Link>*/}
-                  </div>
-                </SwiperSlide>
-              ))}
-          </Swiper>
-        </div>
 
+        {
+          detailPage !== true
+              ? <Link href="/applications-for-scholars-and-dawah-organizations">
+                  <div
+                      className={styles.swiper_container}
+                      onMouseEnter={() => setIsTooltipShown(true)}
+                      onMouseLeave={() => setIsTooltipShown(false)}
+                      onMouseMove={(e) => handleMouseMove(e)}
+                  >
+                    <Swiper
+                        className={styles.swiper}
+                        slidesPerView={2}
+                        slidesPerGroup={2}
+                        grid={{
+                          rows: 3,
+                        }}
+                        spaceBetween={0}
+                        modules={[Grid, Autoplay]}
+                        autoplay={{
+                          delay: 5000,
+                          disableOnInteraction: false,
+                        }}
+                        // loop={true}
+                        // loopFillGroupWithBlank={true}
+                        onSwiper={(swiper) => setSwiperInstance(swiper)}
+                    >
+                      {apps &&
+                          apps.filter((item) => item.displayInSlider === 1 ).map((app, index) => (
+                              <SwiperSlide key={index}>
+                                <div
+                                    className={styles.slide}
+                                    onMouseEnter={() => setTooltipText(app.tooltip)}
+                                    onMouseLeave={() => setTooltipText('')}
+                                >
+                                  {/*<Link href={app.url}>*/}
+                                  <a className={styles.image}>
+                                    <Image
+                                        src={app.imgPath}
+                                        alt=""
+                                        layout="fill"
+                                        objectFit="contain"
+                                        objectPosition="center center"
+                                        loading="eager"
+                                    />
+                                  </a>
+                                  {/*</Link>*/}
+                                </div>
+                              </SwiperSlide>
+                          ))}
+                    </Swiper>
+                  </div>
+              </Link>
+              : <div
+                  className={styles.swiper_container}
+                  onMouseEnter={() => setIsTooltipShown(true)}
+                  onMouseLeave={() => setIsTooltipShown(false)}
+                  onMouseMove={(e) => handleMouseMove(e)}
+              >
+                <Swiper
+                    className={styles.swiper}
+                    slidesPerView={2}
+                    slidesPerGroup={2}
+                    grid={{
+                      rows: 3,
+                    }}
+                    spaceBetween={0}
+                    modules={[Grid, Autoplay]}
+                    autoplay={{
+                      delay: 5000,
+                      disableOnInteraction: false,
+                    }}
+                    // loop={true}
+                    // loopFillGroupWithBlank={true}
+                    onSwiper={(swiper) => setSwiperInstance(swiper)}
+                >
+                  {apps &&
+                      apps.filter((item) => item.displayInSlider === 1 ).map((app, index) => (
+                          <SwiperSlide key={index}>
+                            <div
+                                className={styles.slide}
+                                onMouseEnter={() => setTooltipText(app.tooltip)}
+                                onMouseLeave={() => setTooltipText('')}
+                            >
+                              {/*<Link href={app.url}>*/}
+                              <a className={styles.image}>
+                                <Image
+                                    src={app.imgPath}
+                                    alt=""
+                                    layout="fill"
+                                    objectFit="contain"
+                                    objectPosition="center center"
+                                    loading="eager"
+                                />
+                              </a>
+                              {/*</Link>*/}
+                            </div>
+                          </SwiperSlide>
+                      ))}
+                </Swiper>
+              </div>
+        }
         <div className={styles.nav}>
           <ButtonPrev swiper={swiperInstance} />
           <ButtonNext swiper={swiperInstance} />

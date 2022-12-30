@@ -201,6 +201,12 @@ export default function Meta(props) {
         sizes="72x72"
       /> */}
 
+        {
+            props.noindex === true
+                ? <meta name="robots" content="noindex" />
+                : ''
+        }
+
       {/* Others */}
       <link
         href="/img/favicon/favicon.ico"

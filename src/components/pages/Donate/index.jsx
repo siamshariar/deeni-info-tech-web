@@ -8,6 +8,7 @@ import classNames from "classnames";
 
 const DonateContent = () => {
   return (
+    <div id="donate">
     <Section
       classes={{
         root: styles.root,
@@ -51,7 +52,7 @@ const DonateContent = () => {
 
                 <div className={styles.card}>
                   <p style={{ fontSize: `1em`, marginBottom: `1rem` }}>
-                    Do you have any inquiry?
+                    Do you have any inquiry or don’t have any option to donate online?
                   </p>
                   <span style={{ fontSize: `1em`, display: `block` }}>
                     Please <span style={{ color: `#1377FD` }}> <Link href="/contact">contact with us</Link></span>
@@ -65,6 +66,7 @@ const DonateContent = () => {
         </div>
       </div>
     </Section>
+    </div>
   );
 };
 

@@ -66,7 +66,7 @@ const SupportNonMuslimCountries = () => {
           </div>
 
           <div className={styles.slider}>
-            <DawahInCountries />
+            <DawahInCountries detailPage={true} />
           </div>
         </div>
 

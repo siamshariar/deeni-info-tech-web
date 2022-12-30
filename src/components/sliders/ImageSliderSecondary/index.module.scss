@@ -21,7 +21,8 @@
   height: auto;
 }
 .btn a {
-  border: 2px solid #c4c4c4;
+  //border: 2px solid #c4c4c4;
+  border: 2px solid var(--app-theme-color);
   padding: 0;
   font-size: 16px;
   font-family: 'IvyMode';

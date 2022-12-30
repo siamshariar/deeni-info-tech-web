@@ -14,6 +14,7 @@ export default function ContactPage() {
         url={`${server}/contact`}
         image={`${server}/img/logo/share-preview.png`}
         type="website"
+        noindex={true}
       />
 
       <Banner

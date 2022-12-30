@@ -27,7 +27,7 @@ const VerseSlider = () => {
             loop={true}
             modules={[Autoplay]}
             autoplay={{
-              delay: 3000,
+              delay: 8000,
               disableOnInteraction: false,
             }}
             onSwiper={(swiper) => setSwiperInstance(swiper)}

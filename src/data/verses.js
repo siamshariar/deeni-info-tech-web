@@ -1,7 +1,7 @@
 export const verses = [
   {
     id: '1',
-    chapterNo: '2',
+    chapterNo: '3',
     verseNo: '104',
     text: `And there has to be a group of people from among you who call towards the good, and bid the Fair and forbid the Unfair. And it is these who are successful.`,
   },

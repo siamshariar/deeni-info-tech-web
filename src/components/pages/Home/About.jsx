@@ -19,7 +19,7 @@ const HomeAbout = () => {
           <div className={styles.text}>
             <p>
               Indeed, the religion in the sight of Allah is Islam.
-              <span className={styles.text_ref}>[Al Quran - 3 : 9]</span>
+              <span className={styles.text_ref}>[Al Quran - 3 : 19]</span>
             </p>
 
             <p>

@@ -173,7 +173,7 @@ export const apps = [
     name: 'MasjidAlNoorHanoi.com',
     slg: '“MasjidAlNoorHanoi',
     url: 'http://MasjidAlNoorHanoi.com/',
-    imgPath: '/img/apps/MasjidAlNoorHanoi.png',
+    imgPath: '/img/apps/mashjid-al-hanoi.jpg',
     tooltip: 'Website of Masjid Al Noor Hanoi, Vietnam',
     excerpt: 'Website of Masjid Al Noor Hanoi, Vietnam',
     isProject: 1,

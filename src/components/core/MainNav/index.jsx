@@ -31,13 +31,19 @@ const MainNav = ({ open, controller }) => {
 
               <li className={styles.page}>
                 <Link href="/donate">
-                  <a onClick={(e) => controller(e)}>Donate</a>
+                  <a onClick={(e) => controller(e)}>Donation</a>
                 </Link>
               </li>
 
               <li className={styles.page}>
                 <Link href="/grateful">
                   <a onClick={(e) => controller(e)}>Grateful</a>
+                </Link>
+              </li>
+
+              <li className={styles.page}>
+                <Link href="/scholars-recommendation">
+                  <a style={{fontSize: `18px`}} onClick={(e) => controller(e)}>Scholars Recommendation</a>
                 </Link>
               </li>
 
@@ -51,7 +57,7 @@ const MainNav = ({ open, controller }) => {
               >
                 <Link href="/applications-for-scholars-and-dawah-organizations">
                   <a onClick={(e) => controller(e)}>
-                    Apps for Scholars & Da&apos;wah organizations
+                    Applications for Scholars & Da&apos;wah organizations
                   </a>
                 </Link>
               </li>
@@ -59,9 +65,9 @@ const MainNav = ({ open, controller }) => {
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
-                <Link href="/support-non-muslim-countries">
+                <Link href="/applications-for-non-muslim-countries">
                   <a onClick={(e) => controller(e)}>
-                    Support Non-Muslim Countries
+                    Applications for Non-Muslim Countries
                   </a>
                 </Link>
               </li>

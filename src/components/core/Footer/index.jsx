@@ -44,9 +44,9 @@ const Footer = () => {
           <p className={styles.copyright}>
             <span>&copy; {new Date().getFullYear()} </span>
             <Link href="/about">
-              <a>Deeni Info Tech</a>
+              <a>Deeni Info Tech.</a>
             </Link>
-            <span> All Rights Reserved</span>
+            <span> All Rights Reserved.</span>
           </p>
         </div>
       </Container>

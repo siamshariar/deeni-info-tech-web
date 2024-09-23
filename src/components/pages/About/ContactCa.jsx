@@ -229,7 +229,7 @@ const ContactForm = () => {
               className={classNames('grid', 'grid-cols-1', 'gap-8')}
           >
             <div className={classNames(styles.address, styles.card)}>
-              <p>Contact email</p>
+              <p>Contact email - Canada</p>
               <span style={{ fontSize: `1em`, display: `block` }}>
                 <a href="mailto:canada@deeniinfotech.com">
                     <span title="canada@deeniinfotech.com">

@@ -54,7 +54,7 @@ const AppsForScholarsAndDawahOrganizations = () => {
               </p>
               <p>
                 Another sort of support is to develop Islamic applications under
-                scholars&apos; and dawah organizations&apos; supervision.{' '}
+                Scholars&apos; and Da'wah organizations&apos; supervision.{' '}
                 <span>Such as Quran, Hadith, Zakat, Hajj.</span>
               </p>
 

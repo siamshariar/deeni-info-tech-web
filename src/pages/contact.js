@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <Meta
         title="Contact | DeeniInfoTech.com"
-        description="Feel free to contact with us at your convenience. DeeniInfoTech is a non-profit Software Development organization to spread Deen Islam worldwide."
+        description="Feel free to contact with us at your convenience. DeeniInfoTech is a non-profit Software Development organization to spread the message of Islam worldwide."
         url={`${server}/contact`}
         image={`${server}/img/logo/share-preview.png`}
         type="website"

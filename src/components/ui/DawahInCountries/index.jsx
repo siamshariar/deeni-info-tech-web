@@ -32,7 +32,7 @@ const DawahInCountries = ({ detailPage }) => {
     <>
       {
         detailPage !== true
-          ? <Link href="/support-non-muslim-countries" >
+          ? <Link href="/applications-for-non-muslim-countries" >
               <div className="grid grid-cols-4 gap-2">
                 {countries &&
                     countries.map((country, index) => {

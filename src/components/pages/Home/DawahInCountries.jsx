@@ -18,7 +18,7 @@ const SectionDawahInCountries = () => {
         </div>
         <div className={styles.detail}>
           <div className={styles.title}>
-            <h2>Support Non-Muslim Countries</h2>
+            <h2>Applications for Non-Muslim Countries</h2>
             {/* <h2>Dawah in non-muslim countries</h2> */}
           </div>
           <div className={styles.text}>
@@ -27,7 +27,7 @@ const SectionDawahInCountries = () => {
             </p>
           </div>
           <div className={styles.btn}>
-            <Link href="/support-non-muslim-countries">
+            <Link href="/applications-for-non-muslim-countries">
               <a>Read more</a>
             </Link>
           </div>

@@ -31,7 +31,7 @@ const SupportNonMuslimCountries = () => {
           <div className={styles.detail}>
             <div className={styles.title}>
               {/* <h2>Apps for Scholars</h2> */}
-              <h2>Support non-Muslim countries</h2>
+              <h2>Applications for Non-Muslim Countries</h2>
             </div>
             {/*<div className={styles.text}>*/}
             {/*  <p>*/}
@@ -82,7 +82,7 @@ const SupportNonMuslimCountries = () => {
               </p>
               <p>
                 We are collaborating with these criteria(
-                <span style={{ color: `#1377FD` }}><Link href="/support-non-muslim-countries#applications">described below</Link></span>
+                <span style={{ color: `#1377FD` }}><Link href="/applications-for-non-muslim-countries#applications">described below</Link></span>
                 ) in non-Muslim countries
                 with the support of specific countries&apos; scholars and Muslim
                 communities. All of these applications are in their native

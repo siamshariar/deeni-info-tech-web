@@ -23,7 +23,7 @@ export default function AboutPage() {
       <Banner
         bgImage="img/banner/banner-about.jpg"
         title="About Us"
-        subTitle="A non-profit Software Development organization to spread Deen Islam worldwide"
+        subTitle="A non-profit Software Development organization to spread the message of Islam worldwide"
       />
 
         <PageContent>

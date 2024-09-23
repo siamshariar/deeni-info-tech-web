@@ -17,7 +17,7 @@ export default function HomePage() {
     <>
       <Meta
         title="DeeniInfoTech.com"
-        description="A non-profit Software Development organization to spread Deen Islam worldwide. Our main objective is to spread Deen Islam through modern technology all around the world."
+        description="A non-profit Software Development organization to spread the message of Islam worldwide. Our main objective is to spread Deen Islam through modern technology all around the world."
         url={server}
         image={`${server}/img/logo/share-preview.png`}
         type="website"
@@ -26,7 +26,7 @@ export default function HomePage() {
       <Banner
         image="/img/banner/banner-home.png"
         title="Deeni Info Tech"
-        subTitle="A non-profit Software Development organization to spread Deen Islam worldwide"
+        subTitle="A non-profit Software Development organization to spread the message of Islam worldwide"
       />
 
       <PageContent>

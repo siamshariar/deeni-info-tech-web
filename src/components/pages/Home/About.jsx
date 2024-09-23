@@ -52,7 +52,7 @@ const HomeAbout = () => {
             {/*    Da&apos;wah Organizations and Islamic applications under their*/}
             {/*    supervision.*/}
             {/*  </li>*/}
-            {/*  <li>Support non-Muslim countries.</li>*/}
+            {/*  <li>Applications for Non-Muslim Countries.</li>*/}
             {/*  <li>Develop Islamic applications.</li>*/}
             {/*</ul>*/}
 

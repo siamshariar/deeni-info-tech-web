@@ -105,7 +105,7 @@ const Header = () => {
             </div>
             <div className={styles.cell}>
               <Button
-                url="/donate"
+                url="/donate#donation-form"
                 text="Donate now"
                 isReverse={isScrolled}
                 isActive={isActive}

@@ -22,6 +22,10 @@ export default function Document() {
                   `,
                 }}
             />
+            {/*TODO: Check if this impact page loading*/}
+            <link rel="prefetch" href="/donate" as="document"/>
+            <link rel="prefetch" href="/about" as="document"/>
+            <link rel="prefetch" href="/contact" as="document"/>
         </Head>
       <body>
         <Main />

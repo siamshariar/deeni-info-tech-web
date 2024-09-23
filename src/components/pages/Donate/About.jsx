@@ -4,7 +4,7 @@ import styles from '../Home/About.module.scss';
 
 const DonationAbout = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="sadaqah-jariyah" className={styles.wrapper}>
       <Container>
         <div className={styles.content}>
           {/*<div className={styles.title}>*/}
@@ -37,7 +37,7 @@ const DonationAbout = () => {
             </p>
 
             <p>
-              Let’s join together to <span className={styles.highlight}>Spread Dawah</span>.
+              Let’s join together to <span className={styles.highlight}>Spread Da'wah</span>.
             </p>
 
             <p>
@@ -52,7 +52,7 @@ const DonationAbout = () => {
 
             <div className={styles.highlight_border}>
               <h2 style={{ marginTop: `22px`}}>
-                Together we can do better In Sha Allah.
+                Together we can do better In'Sha Allah.
               </h2>
             </div>
 

@@ -9,8 +9,8 @@ export default function ContactPage() {
   return (
     <>
       <Meta
-        title="Contact | DeeniInfoTech.com"
-        description="A non-profit Software Development organization to spread Deen Islam worldwide"
+        title="Contact - Canada | DeeniInfoTech.com"
+        description="A non-profit Software Development organization to spread the message of Islam worldwide"
         url={`${server}/contact`}
         image={`${server}/img/logo/share-preview.png`}
         type="website"
@@ -19,7 +19,7 @@ export default function ContactPage() {
 
       <Banner
         bgImage="img/banner/banner-about.jpg"
-        title="Contact"
+        title="Contact - Canada"
         subTitle="Feel free to contact with us at your convenience"
       />
 

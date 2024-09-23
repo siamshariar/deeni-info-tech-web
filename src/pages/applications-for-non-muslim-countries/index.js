@@ -9,16 +9,16 @@ export default function Page() {
   return (
     <>
         <Meta
-            title="Support non-Muslim countries | DeeniInfoTech.com"
+            title="Applications for Non-Muslim Countries | DeeniInfoTech.com"
             description="Islam is the religion of peace. It is crucial to spread Dawah so that everyone can think and come to their own judgments based on the right path that Islam instructs us to follow."
-            url={`${server}/support-non-muslim-countries`}
+            url={`${server}/applications-for-non-muslim-countries`}
             image={`${server}/img/logo/share-preview.png`}
             type="website"
         />
 
       <Banner
         bgImage="img/banner/banner-about.jpg"
-        title="Support non-Muslim countries"
+        title="Applications for Non-Muslim Countries"
         subTitle=""
       />
 

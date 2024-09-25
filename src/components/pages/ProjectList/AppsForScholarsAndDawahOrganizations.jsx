@@ -113,15 +113,20 @@ const AppsForScholarsAndDawahOrganizations = () => {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {apps.filter((item) => item.isInProgress === 0 ).map((app, index) => (
+          {apps &&
+            apps
+              .filter((item) => item.displayInSlider === 1)
+              .map((app, index) => (
+              <a href={`/p/${app.slug}`} target="" rel="noopener noreferrer" className={styles.image}>
                 <Card
                     key={app.id}
                     name={app.name}
                     title={app.tooltip}
                     imagePath={app.imgPath}
-                    url={app.url}
+                    url={`/p/${app.slug}`}
                     excerpt={app.excerpt}
                 />
+              </a>
             ))}
           </div>
         </div>

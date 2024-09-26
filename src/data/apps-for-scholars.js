@@ -13,6 +13,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Sheikh Dr Monzur-E-Elahi',
     detailPageText: 'Dr. Mohammad Manzoor Elahi is a renowned Islamic scholar, researcher, and media personality, currently serving as an Associate Professor at the National University in the Department of Islamic Studies. Since 2004, he has been actively involved in Islamic preaching and discussions on TV and YouTube, nationally and internationally. He has delivered insightful talks at various universities and international Islamic centers. Dr. Elahi founded Taibah Academy and Kulliyatul Quranil Karim Wad-Dirasat Al-Islamiyah to promote Islamic education among Bengali speakers. His contributions continue to inspire through his teaching and public speaking.',
+    isOneWebsite: true,
     website: {
       text: 'www.MonzurEElahi.com',
       images: [

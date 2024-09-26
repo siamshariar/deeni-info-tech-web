@@ -44,6 +44,18 @@ const ProjectDetail = ({ app }) => {
               <p>
                 <span className={aboutStyles.highlight}>Deeni Info Tech</span> has developed the following applications for {app.organizationName}.
               </p>
+
+              {app.isOneWebsite && (
+                    <p>
+                        <Link href={`/p/${app.slug}#website`}>
+                            <a>
+                                {/*<span className={aboutStyles.highlight}>Android</span> */}
+                                <span style={{ color: `#1377FD` }}>Website</span>
+                            </a>
+                        </Link>
+                    </p>
+                )}
+
                 {app.hasAllApp && (
                     <p>
                         <Link href={`/p/${app.slug}#play_store`}>
@@ -80,7 +92,7 @@ const ProjectDetail = ({ app }) => {
             content: styles.content,
           }}
       >
-
+        
           {/*TODO: Handle slider section by condition*/}
           {app.hasAllApp && (
               <>
@@ -92,7 +104,7 @@ const ProjectDetail = ({ app }) => {
 
               </>
           )}
-
+          
           {app.mobileView && (
               <div className={countriesStyles.inner}>
                   <div className={countriesStyles.image}>

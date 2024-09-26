@@ -23,6 +23,16 @@ export const apps = [
         '/img/apps/monzureelahi/website/w5.png',
       ]
     },
+    mobileView: {
+      link: '',
+      images: [
+        '/img/apps/monzureelahi/mobile/m0.png',
+        '/img/apps/monzureelahi/mobile/m1.png',
+        '/img/apps/monzureelahi/mobile/m2.png',
+        '/img/apps/monzureelahi/mobile/m3.png',
+        '/img/apps/monzureelahi/mobile/m4.png',
+      ]
+    },
   },
   {
     id: '10',

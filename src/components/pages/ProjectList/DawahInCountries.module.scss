@@ -48,7 +48,10 @@
   width: 100%;
   padding-top: 5px;
 }
-
+.websitessc {
+  width: calc(100% - 5px);
+  max-width: 800px;
+}
 .detail_left_slider {
 }
 
@@ -124,6 +127,10 @@
   .detail {
     width: calc(50% - 16px);
     max-width: 420px;
+  }
+  .websitessc {
+    width: calc(100% - 16px);
+    max-width: 520px;
   }
   .detail {
     padding-top: 30px;

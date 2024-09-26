@@ -130,7 +130,7 @@ const ProjectDetail = ({ app }) => {
                       <div className={countriesStyles.title}>
                           <h2 className={aboutStyles.highlight}>Mobile view</h2>
                           <a href={app.playStore && app.playStore.link} target="_blank">
-                              <img style={{height: `90px`, width: `210px`}} src="/img/mobile-view-badge.png" />
+                              <img style={{height: `40px`, width: `auto`}} src="/img/play-store-badge.png" />
                           </a>
                       </div>
                       <div className={countriesStyles.text}>

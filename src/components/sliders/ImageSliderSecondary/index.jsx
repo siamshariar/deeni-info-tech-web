@@ -157,19 +157,7 @@ const Slider = ({ displayButton }) => {
                           <SwiperSlide>
                             <div style={{ display: `flex` }} className="tsi_item">
                               <Image
-                                  src="/img/slides/quran-ac.jpg"
-                                  alt=""
-                                  layout="fill"
-                                  objectFit="cover"
-                                  objectPosition="center center"
-                                  loading="eager"
-                              />
-                            </div>
-                          </SwiperSlide>
-                          <SwiperSlide>
-                            <div className="tsi_item">
-                              <Image
-                                  src="/img/slides/hadith-ac.jpg"
+                                  src="/img/slides/quran-tube-webb.jpg"
                                   alt=""
                                   layout="fill"
                                   objectFit="cover"
@@ -202,6 +190,30 @@ const Slider = ({ displayButton }) => {
                               />
                             </div>
                           </SwiperSlide>
+                          <SwiperSlide>
+                            <div style={{ display: `flex` }} className="tsi_item">
+                              <Image
+                                  src="/img/slides/quran-ac_2025.jpg"
+                                  alt=""
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center center"
+                                  loading="eager"
+                              />
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className="tsi_item">
+                              <Image
+                                  src="/img/slides/hadith_ac_2025.jpg"
+                                  alt=""
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center center"
+                                  loading="eager"
+                              />
+                            </div>
+                          </SwiperSlide>
                         </Swiper>
                       </div>
                     </Link>
@@ -218,22 +230,10 @@ const Slider = ({ displayButton }) => {
                         }}
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                     >
-                      <SwiperSlide>
-                        <div style={{ display: `flex` }} className="tsi_item">
-                          <Image
-                              src="/img/slides/quran-ac.jpg"
-                              alt=""
-                              layout="fill"
-                              objectFit="cover"
-                              objectPosition="center center"
-                              loading="eager"
-                          />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
+                       <SwiperSlide>
                         <div className="tsi_item">
                           <Image
-                              src="/img/slides/hadith-ac.jpg"
+                              src="/img/slides/quran-tube-webb.jpg"
                               alt=""
                               layout="fill"
                               objectFit="cover"
@@ -242,7 +242,7 @@ const Slider = ({ displayButton }) => {
                           />
                         </div>
                       </SwiperSlide>
-                      <SwiperSlide>
+                       <SwiperSlide>
                         <div className="tsi_item">
                           <Image
                               src="/img/slides/quran-radio.jpg"
@@ -266,6 +266,31 @@ const Slider = ({ displayButton }) => {
                           />
                         </div>
                       </SwiperSlide>
+                      <SwiperSlide>
+                        <div style={{ display: `flex` }} className="tsi_item">
+                          <Image
+                              src="/img/slides/quran-ac_2025.jpg"
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              loading="eager"
+                          />
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="tsi_item">
+                          <Image
+                              src="/img/slides/hadith_ac_2025.jpg"
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              loading="eager"
+                          />
+                        </div>
+                      </SwiperSlide>
+                     
                     </Swiper>
                   </div>
             }

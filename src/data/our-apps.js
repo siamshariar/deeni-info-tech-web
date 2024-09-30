@@ -1,5 +1,14 @@
 export const apps = [
   {
+    id: '5',
+    name: 'Quran.tube',
+    slug: 'quran-tube',
+    url: 'https://www.quran.tube',
+    imgPath: '/img/our_apps/quran-tube-white-logo.png',
+    excerpt: 'Islamic video application.',
+    order: 1,
+  },
+  {
     id: '3',
     name: 'Quran.radio',
     slug: 'quran-radio',

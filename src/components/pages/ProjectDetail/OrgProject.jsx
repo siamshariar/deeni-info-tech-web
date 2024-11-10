@@ -175,9 +175,9 @@ const ProjectDetail = ({ app }) => {
                               <img style={{height: `40px`, width: `auto`}} src="/img/play-store-badge.png" />
                           </a>
                       </div>
-                      <div className={countriesStyles.text}>
+                      <div className={countriesStyles.text2}>
 
-                          <div className={styles.app_info_wrapper}>
+                          <div className={styles.app_info_wrapper2}>
                               {/*<span className={styles.app_icon}>*/}
                               {/*  <InstallMobileIcon />*/}
                               {/*</span>*/}
@@ -247,7 +247,7 @@ const ProjectDetail = ({ app }) => {
           {app.website && (
               <>
                   {app.hasAllApp && (
-                      <div style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner, countriesStyles.app_in_vn_right_slider)}>
+                      <div style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner2, countriesStyles.app_in_vn_right_slider)}>
                           <div className={countriesStyles.websitessc}>
                               <Swiper
                                   spaceBetween={0}
@@ -267,7 +267,7 @@ const ProjectDetail = ({ app }) => {
                                   ))}
                               </Swiper>
                           </div>
-                          <div id="website" className={countriesStyles.detail}>
+                          <div id="website" className={countriesStyles.detail2}>
                               <div className={countriesStyles.title}>
                                   <h2 className={aboutStyles.highlight}>Website</h2>
                               </div>

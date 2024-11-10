@@ -61,14 +61,14 @@ const AppsForScholars = ({ detailPage }) => {
                         apps
                           .filter((item) => item.displayInSlider === 1)
                           .map((app, index) => (
-                            <SwiperSlide key={index}>
+                            <SwiperSlide className={styles.slider} key={index}>
                               <div
                                 className={styles.slide}
                                 onMouseEnter={() => setTooltipText(app.tooltip)}
                                 onMouseLeave={() => setTooltipText('')}
                               >
                                 <a href={`/p/${app.slug}`} target="" rel="noopener noreferrer" className={styles.image}>
-                                  <Image
+                                  <img
                                     src={app.imgPath}
                                     alt={app.slug}
                                     layout="fill"
@@ -116,7 +116,7 @@ const AppsForScholars = ({ detailPage }) => {
                             onMouseLeave={() => setTooltipText('')}
                           >
                             <a href={`/p/${app.slug}`} target="" rel="noopener noreferrer" className={styles.image}>
-                              <Image
+                              <img
                                 src={app.imgPath}
                                 alt={app.slug}
                                 layout="fill"

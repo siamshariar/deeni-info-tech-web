@@ -5,7 +5,7 @@ export const apps = [
     slug: 'quran-tube',
     url: 'https://www.quran.tube',
     imgPath: '/img/our_apps/quran-tube-white-logo.png',
-    excerpt: 'Islamic video application.',
+    excerpt: 'Discover the beauty of Quran recitation videos with quran.tube, a platform that provides a diverse range of islamic video and reciters. Immerse yourself in the authenticity of islamic videos. Additionally, enjoy the convenience of saving favorites and tracking your previous viewing sessions. Explore the beauty of the Islam at your fingertips.',
     order: 1,
   },
   {
@@ -14,7 +14,7 @@ export const apps = [
     slug: 'quran-radio',
     url: 'https://www.quran.radio',
     imgPath: '/img/our_apps/quran-radio-logo.png',
-    excerpt: 'Discover the beauty of Quranic recitations with Quran.radio, a platform that provides a diverse range of live radio and reciters.',
+    excerpt: 'Discover the beauty of Quranic recitations with Quran.radio, a platform that provides a diverse range of live radio and reciters. Immerse yourself in the authenticity of real-time broadcasts in the Live mode, or enjoy the serenity of recorded recitations in the Reciters mode. Additionally, enjoy the convenience of saving favorites and tracking your previous listening sessions. Explore the beauty of the Quran at your fingertips.',
     order: 1,
   },
   {
@@ -23,7 +23,7 @@ export const apps = [
     slug: 'deeni-tube',
     url: 'https://www.deenitube.com',
     imgPath: '/img/our_apps/deeni-tube-logo.png',
-    excerpt: 'Islamic video application.',
+    excerpt: 'Discover the beauty of Islamic videos with deeni.tube, a platform that provides a diverse range of islamic video and reciters. Immerse yourself in the authenticity of islamic videos. Additionally, enjoy the convenience of saving favorites and tracking your previous viewing sessions. Explore the beauty of the Islam at your fingertips.',
     order: 1,
   },
   {
@@ -32,7 +32,7 @@ export const apps = [
     slug: 'quran-ac',
     url: 'https://www.quran.ac',
     imgPath: '/img/our_apps/quran-ac-logo.png',
-    excerpt: 'Quran application. Some of the features are Multi translations, Reader friendly UI, Custom settings, Bookmarks, User login access.',
+    excerpt: 'Discover the beauty of Quranic words with Quran.ac, A platform that provides Quran translation in different languages. Immerse yourself in the authentic feeling of reading the real Quran. Additionally, enjoy the convenience of saving favorites and tracking your previous reading sessions. Explore the beauty of the Quran at your fingertips.',
     order: 1,
   },
   {
@@ -41,7 +41,7 @@ export const apps = [
     slug: 'hadith-ac',
     url: 'https://www.hadith.ac',
     imgPath: '/img/our_apps/hadith-ac-logo.png',
-    excerpt: 'Hadith application. Some of the features are Hadith books & categories, Reader friendly UI, Custom settings, Bookmarks, User login access.',
+    excerpt: 'Discover the beauty of Hadith with Hadith.ac, a platform that provides authentic Hadith source. Immerse yourself in the authenticity of real Hadith reading experience. Additionally, enjoy the convenience of saving favorites and tracking your previous reading sessions. Explore the beauty of the Hadith at your fingertips.',
     order: 1,
   },
 ];

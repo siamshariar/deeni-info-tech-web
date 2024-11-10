@@ -67,12 +67,22 @@
   cursor: pointer;
   padding: 3px 3px 0;
 }
+
+/* Line break 1 */
+
+/* Line break 2 */
 .excerpt {
-  display: inline-block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limits the text to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #a0aec0;
   font-size: 1em;
-  padding: 20px 20px;
+  padding: 0px 20px;
 }
+
+
 .excerpt span {
   color: var(--app-theme-color);
   cursor: pointer;

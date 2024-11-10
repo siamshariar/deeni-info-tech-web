@@ -156,7 +156,7 @@ const Slider = ({ displayButton }) => {
                         >
                           <SwiperSlide>
                             <div style={{ display: `flex` }} className="tsi_item">
-                              <Image
+                              <img
                                   src="/img/slides/quran-tube-webb.jpg"
                                   alt=""
                                   layout="fill"
@@ -168,7 +168,7 @@ const Slider = ({ displayButton }) => {
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tsi_item">
-                              <Image
+                              <img
                                   src="/img/slides/quran-radio.jpg"
                                   alt=""
                                   layout="fill"
@@ -180,7 +180,7 @@ const Slider = ({ displayButton }) => {
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tsi_item">
-                              <Image
+                              <img
                                   src="/img/slides/deeni-tube.jpg"
                                   alt=""
                                   layout="fill"
@@ -192,7 +192,7 @@ const Slider = ({ displayButton }) => {
                           </SwiperSlide>
                           <SwiperSlide>
                             <div style={{ display: `flex` }} className="tsi_item">
-                              <Image
+                              <img
                                   src="/img/slides/quran-ac_2025.jpg"
                                   alt=""
                                   layout="fill"
@@ -204,7 +204,7 @@ const Slider = ({ displayButton }) => {
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tsi_item">
-                              <Image
+                              <img
                                   src="/img/slides/hadith_ac_2025.jpg"
                                   alt=""
                                   layout="fill"
@@ -232,7 +232,7 @@ const Slider = ({ displayButton }) => {
                     >
                        <SwiperSlide>
                         <div className="tsi_item">
-                          <Image
+                          <img
                               src="/img/slides/quran-tube-webb.jpg"
                               alt=""
                               layout="fill"
@@ -244,7 +244,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                        <SwiperSlide>
                         <div className="tsi_item">
-                          <Image
+                          <img
                               src="/img/slides/quran-radio.jpg"
                               alt=""
                               layout="fill"
@@ -256,7 +256,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="tsi_item">
-                          <Image
+                          <img
                               src="/img/slides/deeni-tube.jpg"
                               alt=""
                               layout="fill"
@@ -268,7 +268,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <div style={{ display: `flex` }} className="tsi_item">
-                          <Image
+                          <img
                               src="/img/slides/quran-ac_2025.jpg"
                               alt=""
                               layout="fill"
@@ -280,7 +280,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="tsi_item">
-                          <Image
+                          <img
                               src="/img/slides/hadith_ac_2025.jpg"
                               alt=""
                               layout="fill"

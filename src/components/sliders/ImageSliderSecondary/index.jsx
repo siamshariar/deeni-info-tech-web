@@ -155,7 +155,7 @@ const Slider = ({ displayButton }) => {
                             onSwiper={(swiper) => setSwiperInstance(swiper)}
                         >
                           <SwiperSlide>
-                            <div style={{ display: `flex` }} className="tsi_item">
+                            <div className="tsi_item">
                               <img
                                   src="/img/slides/quran-tube-webb.jpg"
                                   alt=""
@@ -191,7 +191,7 @@ const Slider = ({ displayButton }) => {
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
-                            <div style={{ display: `flex` }} className="tsi_item">
+                            <div className="tsi_item">
                               <img
                                   src="/img/slides/quran-ac_2025.jpg"
                                   alt=""
@@ -267,7 +267,7 @@ const Slider = ({ displayButton }) => {
                         </div>
                       </SwiperSlide>
                       <SwiperSlide>
-                        <div style={{ display: `flex` }} className="tsi_item">
+                        <div className="tsi_item">
                           <img
                               src="/img/slides/quran-ac_2025.jpg"
                               alt=""

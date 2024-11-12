@@ -12,7 +12,7 @@ export default function Page() {
                 title={`Quran.tube Apps | DeeniInfoTech.com`}
                 description="Discover the beauty of Quranic recitations with Quran.radio, a platform that provides a diverse range of live radio and reciters."
                 url={`${server}/p/quran-tube`}
-                image={`${server}/img/our_apps/quran-radio/quran-radio-social.png`}
+                image={`${server}/img/our_apps/quran-tube/quran-tube-white-logo.png`}
                 type="website"
             />
 

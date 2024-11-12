@@ -40,7 +40,7 @@ const QuranRadioDetail = () => {
         <Container>
           <div className={aboutStyles.content}>
             <div className={styles.detail_text}>
-              <h2><span className={aboutStyles.highlight}>Quran.Tube</span> Apps</h2>
+              <h2><span className={aboutStyles.highlight}>Quran.tube</span> Apps</h2>
               <p>
                   <Link href="/p/quran-tube#play_store">
                     <a>
@@ -48,20 +48,20 @@ const QuranRadioDetail = () => {
                       <span style={{ color: `#1377FD` }}>Android</span>
                     </a>
                   </Link>
-                  {/* <span style={{margin: `0 5px`}}>|</span> */}
-                  {/* <Link href="/p/quran-tube#app_store">
+                  <span style={{margin: `0 5px`}}>|</span>
+                  <Link href="/p/quran-tube#app_store">
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
-                          {/* <span style={{ color: `#1377FD` }}>iPhone</span> */}
-                      {/* </a>
-                  </Link> */}
-                  {/* <span style={{margin: `0 5px`}}>|</span>
+                          <span style={{ color: `#1377FD` }}>iPhone</span>
+                      </a>
+                  </Link>
+                  <span style={{margin: `0 5px`}}>|</span>
                   <Link href="/p/quran-tube#website">
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
-                          {/* <span style={{ color: `#1377FD` }}>Website</span>
-                      </a> */}
-                  {/* </Link> */}
+                          <span style={{ color: `#1377FD` }}>Website</span>
+                      </a>
+                  </Link>
               </p>
             </div>
           </div>
@@ -97,13 +97,13 @@ const QuranRadioDetail = () => {
                   {/*    </SwiperSlide>*/}
                   {/*))}*/}
                     <SwiperSlide>
-                        <img src="/img/our_apps/quran-tube/android/m1.webp" />
+                        <img src="/img/our_apps/quran-tube/android/m1.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="/img/our_apps/quran-tube/android/m2.webp" />
+                        <img src="/img/our_apps/quran-tube/android/m2.png" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="/img/our_apps/quran-tube/android/m3.webp" />
+                        <img src="/img/our_apps/quran-tube/android/m3.png" />
                     </SwiperSlide>
                 </Swiper>
               </div>
@@ -122,9 +122,9 @@ const QuranRadioDetail = () => {
                     {/*  <InstallMobileIcon />*/}
                     {/*</span>*/}
                     {/*<a href={app.playStore && app.playStore.link} target="_blank">*/}
-                    <a href="https://play.google.com/store/apps/details?id=com.deeniinfotech.quran.radio" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.deeniinfotech.quran.tube" target="_blank">
                       {/*<span style={{ color: `#1377FD` }}>{app.playStore && app.playStore.link}</span>*/}
-                      <span style={{ color: `#1377FD` }}>https://play.google.com/store/apps/details?id=com.deeniinfotech.quran.tube</span>
+                      <span style={{ color: `#1377FD` }}>https://play.google.com/store/apps/details?id=com.deeniinfotech.Quran.tube</span>
                     </a>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ const QuranRadioDetail = () => {
         {/*)}*/}
 
           {/*{app.playStore && (*/}
-          {/* <div style={{borderTop: `1px solid #dedede;`}} className={countriesStyles.app_in_vn_left_slider}>
+          <div style={{borderTop: `1px solid #dedede;`}} className={countriesStyles.app_in_vn_left_slider}>
               <div className={countriesStyles.image}>
                   <Swiper
                       spaceBetween={0}
@@ -151,30 +151,27 @@ const QuranRadioDetail = () => {
                       {/*      <img src={app.playStore.images[index]} />*/}
                       {/*    </SwiperSlide>*/}
                       {/*))}*/}
-                      {/* <SwiperSlide>
-                          <img src="/img/our_apps/quran-radio/iphone/ip_1.png" />
+                      <SwiperSlide>
+                          <img src="/img/our_apps/quran-tube/iphone/iphone_1.webp" />
                       </SwiperSlide>
                       <SwiperSlide>
-                          <img src="/img/our_apps/quran-radio/iphone/ip_2.png" />
+                          <img src="/img/our_apps/quran-tube/iphone/iphone_2.webp" />
                       </SwiperSlide>
                       <SwiperSlide>
-                          <img src="/img/our_apps/quran-radio/iphone/ip_3.png" />
+                          <img src="/img/our_apps/quran-tube/iphone/iphone_3.webp" />
                       </SwiperSlide>
-                      <SwiperSlide>
-                          <img src="/img/our_apps/quran-radio/iphone/ip_4.png" />
-                      </SwiperSlide>
-                  </Swiper> */}
-              {/* </div> */}
-              {/* <div id="app_store" className={countriesStyles.detail}>
+                  </Swiper>
+              </div>
+              <div id="app_store" className={countriesStyles.detail}>
                   <div className={countriesStyles.title}>
                       <h2 className={aboutStyles.highlight}>iPhone App</h2>
                       {/*<a href={app.playStore && app.playStore.link} target="_blank">*/}
-                      {/* <a>
+                      <a>
                           <img style={{height: `40px`, width: `auto`}} src="/img/app-store-badge.png" />
-                      </a> */}
+                      </a>
 
-                  {/* </div>
-                  <div className={countriesStyles.text}> */}
+                  </div>
+                  <div className={countriesStyles.text}>
 
                       {/*<div className={styles.app_info_wrapper}>*/}
                       <div>
@@ -184,25 +181,25 @@ const QuranRadioDetail = () => {
                           {/*<a href={app.playStore && app.playStore.link} target="_blank">*/}
                               {/*<span style={{ color: `#1377FD` }}>{app.playStore && app.playStore.link}</span>*/}
                           {/*</a>*/}
-                          {/* <span>(AppStore link will be updated shortly.)</span> <br/><br/>
+                          <span>(AppStore link will be updated shortly.)</span> <br/><br/>
                           <span>Installation process,</span> <br/>
                           <span>
                               1. Open Safari browser and visit
-                              <a href="https://www.quran.radio" target="_blank"><span style={{ color: `#1377FD` }}> www.Quran.radio</span></a>,
+                              <a href="https://www.Quran.tube" target="_blank"><span style={{ color: `#1377FD` }}> www.Quran.tube</span></a>,
                               click on "Share" icon at bottom-middle.
                           </span> <br/>
                           <span>2. Scroll to bottom & click on "Add to Home Screen".</span> <br/>
                           <span>3. Click on "Add" to confirm.</span> <br/>
-                      </div> */}
-                  {/* </div> */}
-              {/* </div> */} 
-          {/* </div> */} 
+                      </div>
+                  </div>
+              </div>
+          </div>
           {/*)}*/}
 
           {/*{app.website && (*/}
-          {/* <div  style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner, countriesStyles.app_in_vn_right_slider)}>
-              <div className={countriesStyles.image}> */}
-                  {/* <Swiper
+          <div  style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner2, countriesStyles.app_in_vn_right_slider)}>
+              <div className={countriesStyles.websitessc}>
+                  <Swiper
                       spaceBetween={0}
                       slidesPerView={1}
                       loop={true}
@@ -218,18 +215,18 @@ const QuranRadioDetail = () => {
                       {/*      <img src={app.website.images[index]} />*/}
                       {/*    </SwiperSlide>*/}
                       {/*))}*/}
-                      {/* <SwiperSlide>
-                          <img src="/img/our_apps/quran-radio/website/w1.png" />
+                      <SwiperSlide>
+                          <img src="/img/our_apps/quran-tube/website/w1.png" />
                       </SwiperSlide>
                       <SwiperSlide>
-                          <img src="/img/our_apps/quran-radio/website/w2.png" />
+                          <img src="/img/our_apps/quran-tube/website/w2.png" />
                       </SwiperSlide>
                       <SwiperSlide>
-                          <img src="/img/our_apps/quran-radio/website/w3.png" />
-                      </SwiperSlide> */}
-                  {/* </Swiper> */} 
+                          <img src="/img/our_apps/quran-tube/website/w3.png" />
+                      </SwiperSlide>
+                  </Swiper>
               </div>
-              {/* <div id="website" className={countriesStyles.detail}>
+              <div id="website" className={countriesStyles.detail2}>
                   <div className={countriesStyles.title}>
                       <h2 className={aboutStyles.highlight}>Website</h2>
                   </div>
@@ -239,14 +236,14 @@ const QuranRadioDetail = () => {
                     <WebsiteIcon />
                   </span>
                           {/*<a href={app.url} target="_blank">*/}
-                          {/* <a href="https://www.quran.radio" target="_blank">
+                          <a href="https://www.quran.tube" target="_blank">
                               {/*<span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>*/}
-                              {/* <span style={{ color: `#1377FD` }}>www.Quran.radio</span> */}
-                          {/* </a> */} 
-                      {/* </div> */}
-                  {/* </div> */}
-              {/* </div> */} 
-          {/* </div> */}
+                              <span style={{ color: `#1377FD` }}>www.Quran.tube</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
           {/*)}*/}
 
       </Section>

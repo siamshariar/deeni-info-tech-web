@@ -206,8 +206,8 @@ const QuranRadioDetail = () => {
           {/*)}*/}
 
           {/*{app.website && (*/}
-          <div  style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner, countriesStyles.app_in_vn_right_slider)}>
-              <div className={countriesStyles.image}>
+          <div  style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner2, countriesStyles.app_in_vn_right_slider)}>
+              <div className={countriesStyles.websitessc}>
                   <Swiper
                       spaceBetween={0}
                       slidesPerView={1}
@@ -235,7 +235,7 @@ const QuranRadioDetail = () => {
                       </SwiperSlide>
                   </Swiper>
               </div>
-              <div id="website" className={countriesStyles.detail}>
+              <div id="website" className={countriesStyles.detail2}>
                   <div className={countriesStyles.title}>
                       <h2 className={aboutStyles.highlight}>Website</h2>
                   </div>

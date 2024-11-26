@@ -13,7 +13,7 @@ export const apps = [
     name: 'Quran.radio',
     slug: 'quran-radio',
     url: 'https://www.quran.radio',
-    imgPath: '/img/our_apps/quran-radio-logo.png',
+    imgPath: '/img/our_apps/quran-radio-white.png',
     excerpt: 'Discover the beauty of Quranic recitations with Quran.radio, a platform that provides a diverse range of live radio and reciters. Immerse yourself in the authenticity of real-time broadcasts in the Live mode, or enjoy the serenity of recorded recitations in the Reciters mode. Additionally, enjoy the convenience of saving favorites and tracking your previous listening sessions. Explore the beauty of the Quran at your fingertips.',
     order: 1,
   },

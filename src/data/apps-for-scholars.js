@@ -269,7 +269,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Tafseerul Quran',
     detailPageText: 'Tafseerul Quran calls for pure faith and deeds, making Tafseer of the Surahs of Al-Qur\'an al-Kareem from the Tafseer books written on the Aqeedah of Ahlus Sunnah Wal Jama\'at. Tafseerul Quran\'s Dawah activities are directly conducted under Dr. Imam Hussain\'s (Hafizahullah) supervision.',
-    hasAllApp: true,
+    hasAndroidWebsite: true,
     website: {
       text: 'www.TafseerulQuran.com',
       images: [

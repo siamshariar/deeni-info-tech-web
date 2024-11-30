@@ -53,6 +53,24 @@ const ProjectDetail = ({ app }) => {
                                 <span style={{ color: `#1377FD` }}>Website</span>
                             </a>
                         </Link>
+                        
+                    </p>
+                )}
+
+                {app.hasAndroidWebsite && (
+                    <p>
+                        <Link href={`/p/${app.slug}#play_store`}>
+                            <a>
+                                {/*<span className={aboutStyles.highlight}>Android</span> */}
+                                <span style={{ color: `#1377FD` }}>Android | </span>
+                            </a>
+                        </Link>
+                        <Link href={`/p/${app.slug}#website`}>
+                            <a>
+                                {/*<span className={aboutStyles.highlight}>Android</span> */}
+                                <span style={{ color: `#1377FD` }}>Website</span>
+                            </a>
+                        </Link>
                     </p>
                 )}
 

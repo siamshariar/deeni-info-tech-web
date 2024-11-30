@@ -170,6 +170,11 @@
     margin-top: 80px;
   }
 
+  .app_in_vn_top_slider {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
   .app_in_vn_right_slider {
     margin-top: 80px;
   }
@@ -199,7 +204,7 @@
     padding-top: 30px;
     min-width: calc(100% - 420px - 32px);
     justify-content: center;
- 
+    align-items: center;
     //padding-right: calc(8.33333% + 16px);
   }
   .title {

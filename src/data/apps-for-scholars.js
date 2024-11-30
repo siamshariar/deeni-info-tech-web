@@ -149,6 +149,7 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    isOneWebsite: true,
     organizationName: 'Sheikh Dr Abu Bakar Zakaria',
     detailPageText: 'Prof. Dr. Abu Bakar Muhammad Zakaria Majumder is the founder of Abu Bakr As-Siddiq Radiyallahu Anhu Complex, Abubakar As-Siddiq (RA) Centre for Education and Research and Community Welfare Initiative. He is working on Islamic Shariah, Aqeedah and Comparative Theology.',
     website: {
@@ -176,7 +177,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Quranul Karim',
     detailPageText: '\'Quranul Karim\' is a Quran based application. It presents complete Quran with Tafseer in Bengali language. Moreover, it has the option of reading Quranic verses related to various important topics.',
-    hasAllApp: true,
+    isOneWebsite: true,
     website: {
       text: 'www.quranulkarim.com',
       images: [
@@ -203,7 +204,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Sheikh Dr Muhammad Saifullah',
     detailPageText: 'This page will be updated soon. in sha Allah',
-    hasAllApp: true,
+    isOneWebsite: true,
     website: {
       text: 'www.muhammadsaifullah.com',
       images: [
@@ -300,7 +301,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Khulliyatul Quran',
     detailPageText: '\'Khulliyat Quran\' is an institution of higher Islamic education and research. It was established in 2021 AD / 1442 AD. in There are educational facilities at the Sanabiyyah (Higher Secondary) and Kulliya (Higher) levels. There are also teacher training courses, Arabic language courses for different levels of people and diploma courses on different subjects. Masters and Doctorate degree holders are employed as full time and part time teachers in the institution. Kulliyatul Quranil Kareem Wad-Dirasat Al-Islamiyah is a unique institution with a modern system of pure Islamic education.',
-    hasAllApp: true,
+    isOneWebsite: true,
     website: {
       text: 'www.KulliyatulQuran.com',
       images: [
@@ -326,7 +327,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Imam Bukhari Trust',
     detailPageText: 'The \'Imam Bukhari Trust\' officially started operations on October 1, 2017, at Palashpur on the banks of the Dhaleswari River. Basically, this institution is an institution composed of renowned Ulamae Keram and distinguished academicians of Bangladesh, which is implementing multifaceted programs for education, Islamic dawah and social development.',
-    hasAllApp: true,
+    isOneWebsite: true,
     website: {
       text: 'www.ImamBukhariTrust.com',
       images: [
@@ -368,7 +369,7 @@ export const apps = [
   {
     id: '14',
     name: 'MasjidAlNoorHanoi.com',
-    slug: '“MasjidAlNoorHanoi',
+    slug: 'MasjidAlNoorHanoi',
     url: 'http://MasjidAlNoorHanoi.com/',
     imgPath: '/img/apps/mashjid-al-hanoi.jpg',
     tooltip: 'Website of Masjid Al Noor Hanoi, Vietnam',
@@ -379,7 +380,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Masjid Al Noor Hanoi',
     detailPageText: '\'Masjid Al Noor Hanoi\' located at 12 Hang Luoc, Hanoi, is the only mosque in Northern Vietnam. Built by Indian merchants in 1885 and operational since 1890, it has been a place of worship for over 100 years. Despite being closed during the war from 1964-1973, it remained undamaged. The mosque covers over 700m², with a 200m² prayer hall.',
-    hasAllApp: true,
+    isOneWebsite: true,
     website: {
       text: 'www.MasjidAlNoorHanoi.com',
       images: [

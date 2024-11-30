@@ -10,7 +10,7 @@ import { useState } from 'react';
 import WebsiteIcon from "../../icons/Website";
 import Link from 'next/link';
 
-const QuranRadioDetail = () => {
+const QuranAcDetail = () => {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const [swiperInstance2, setSwiperInstance2] = useState(null);
   const [swiperInstance3, setSwiperInstance3] = useState(null);
@@ -207,6 +207,23 @@ const QuranRadioDetail = () => {
 
           {/*{app.website && (*/}
           <div  style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner2, countriesStyles.app_in_vn_right_slider)}>
+              <div id="website" className={countriesStyles.detail2}>
+                  <div className={countriesStyles.title}>
+                      <h2 className={aboutStyles.highlight}>Website</h2>
+                  </div>
+                  <div className={countriesStyles.text}>
+                      <div className={styles.app_info_wrapper}>
+                  <span className={styles.app_icon}>
+                    <WebsiteIcon />
+                  </span>
+                          {/*<a href={app.url} target="_blank">*/}
+                          <a href="https://www.quran.radio" target="_blank">
+                              {/*<span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>*/}
+                              <span style={{ color: `#1377FD` }}>www.Quran.ac</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
               <div className={countriesStyles.websitessc}>
                   <Swiper
                       spaceBetween={0}
@@ -235,23 +252,7 @@ const QuranRadioDetail = () => {
                       </SwiperSlide>
                   </Swiper>
               </div>
-              <div id="website" className={countriesStyles.detail2}>
-                  <div className={countriesStyles.title}>
-                      <h2 className={aboutStyles.highlight}>Website</h2>
-                  </div>
-                  <div className={countriesStyles.text}>
-                      <div className={styles.app_info_wrapper}>
-                  <span className={styles.app_icon}>
-                    <WebsiteIcon />
-                  </span>
-                          {/*<a href={app.url} target="_blank">*/}
-                          <a href="https://www.quran.radio" target="_blank">
-                              {/*<span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>*/}
-                              <span style={{ color: `#1377FD` }}>www.Quran.ac</span>
-                          </a>
-                      </div>
-                  </div>
-              </div>
+             
           </div>
           {/*)}*/}
 
@@ -261,4 +262,4 @@ const QuranRadioDetail = () => {
   );
 };
 
-export default QuranRadioDetail;
+export default QuranAcDetail;

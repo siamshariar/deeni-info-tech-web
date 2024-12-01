@@ -363,8 +363,10 @@ export const apps = [
     excerpt: 'Official website of Sheikh Saifuddin Belal Madani',
     isProject: 1,
     order: 1,
-    isInProgress: 1,
+    isInProgress: 0,
     displayInSlider: 1,
+    organizationName: 'Saifuddin Belal',
+    detailPageText: 'This page will be updated soon. in sha Allah',
   },
   {
     id: '14',

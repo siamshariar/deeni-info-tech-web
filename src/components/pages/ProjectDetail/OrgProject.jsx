@@ -62,9 +62,10 @@ const ProjectDetail = ({ app }) => {
                         <Link href={`/p/${app.slug}#play_store`}>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
-                                <span style={{ color: `#1377FD` }}>Android | </span>
+                                <span style={{ color: `#1377FD` }}>Android</span>
                             </a>
                         </Link>
+                        <span style={{margin: `0 5px`}}>|</span>
                         <Link href={`/p/${app.slug}#website`}>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}

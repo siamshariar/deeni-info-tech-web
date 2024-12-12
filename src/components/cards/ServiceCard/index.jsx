@@ -28,7 +28,7 @@ const ServiceCard = ({
               <p>{text}</p>
             </div>
             <div className={styles.btn}>
-              <Link href={link}>
+              <Link href={link} legacyBehavior>
                 <a>Read more</a>
               </Link>
             </div>

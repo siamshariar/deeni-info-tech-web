@@ -27,7 +27,7 @@ const SectionDawahInCountries = () => {
             </p>
           </div>
           <div className={styles.btn}>
-            <Link href="/applications-for-non-muslim-countries">
+            <Link href="/applications-for-non-muslim-countries" legacyBehavior>
               <a>Read more</a>
             </Link>
           </div>

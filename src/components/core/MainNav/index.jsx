@@ -12,37 +12,37 @@ const MainNav = ({ open, controller }) => {
           <Container>
             <ul className={styles.pages}>
               <li className={styles.page}>
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                   <a onClick={(e) => controller(e)}>Home</a>
                 </Link>
               </li>
 
               <li className={styles.page}>
-                <Link href="/about">
+                <Link href="/about" legacyBehavior>
                   <a onClick={(e) => controller(e)}>About Us</a>
                 </Link>
               </li>
 
               <li className={styles.page}>
-                <Link href="/contact">
+                <Link href="/contact" legacyBehavior>
                   <a onClick={(e) => controller(e)}>Contact</a>
                 </Link>
               </li>
 
               <li className={styles.page}>
-                <Link href="/donate">
+                <Link href="/donate" legacyBehavior>
                   <a onClick={(e) => controller(e)}>Donation</a>
                 </Link>
               </li>
 
               <li className={styles.page}>
-                <Link href="/grateful">
+                <Link href="/grateful" legacyBehavior>
                   <a onClick={(e) => controller(e)}>Grateful</a>
                 </Link>
               </li>
 
               <li className={styles.page}>
-                <Link href="/scholars-recommendation">
+                <Link href="/scholars-recommendation" legacyBehavior>
                   <a style={{fontSize: `18px`}} onClick={(e) => controller(e)}>Scholars Recommendation</a>
                 </Link>
               </li>
@@ -55,7 +55,7 @@ const MainNav = ({ open, controller }) => {
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
-                <Link href="/applications-for-scholars-and-dawah-organizations">
+                <Link href="/applications-for-scholars-and-dawah-organizations" legacyBehavior>
                   <a onClick={(e) => controller(e)}>
                     Applications for Scholars & Da&apos;wah organizations
                   </a>
@@ -65,7 +65,7 @@ const MainNav = ({ open, controller }) => {
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
-                <Link href="/applications-for-non-muslim-countries">
+                <Link href="/applications-for-non-muslim-countries" legacyBehavior>
                   <a onClick={(e) => controller(e)}>
                     Applications for Non-Muslim Countries
                   </a>
@@ -75,7 +75,7 @@ const MainNav = ({ open, controller }) => {
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
-                <Link href="/develop-islamic-applications">
+                <Link href="/develop-islamic-applications" legacyBehavior>
                   <a onClick={(e) => controller(e)}>
                     Develop Islamic applications
                   </a>

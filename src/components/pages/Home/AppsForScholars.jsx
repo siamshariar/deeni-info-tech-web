@@ -37,7 +37,7 @@ const SectionAppsForScholars = () => {
             </p>
           </div>
           <div className={styles.btn}>
-            <Link href="/applications-for-scholars-and-dawah-organizations">
+            <Link href="/applications-for-scholars-and-dawah-organizations" legacyBehavior>
               <a>Read more</a>
             </Link>
           </div>

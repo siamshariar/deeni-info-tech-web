@@ -43,21 +43,21 @@ const HadithAcDetail = () => {
               <h2><span className={aboutStyles.highlight}>hadith.ac</span> Apps</h2>
               <h3><span className={aboutStyles.highlight}>This page will be updated soon.</span> in sha Allah</h3>
               <p>
-                  <Link href="/p/quran-radio#play_store">
+                  <Link href="/p/quran-radio#play_store" legacyBehavior>
                     <a>
                       {/*<span className={aboutStyles.highlight}>Android</span> */}
                       {/* <span style={{ color: `#1377FD` }}>Android</span> */}
                     </a>
                   </Link>
                   {/* <span style={{margin: `0 5px`}}>|</span> */}
-                  <Link href="/p/quran-radio#app_store">
+                  <Link href="/p/quran-radio#app_store" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
                           {/* <span style={{ color: `#1377FD` }}>iPhone</span> */}
                       </a>
                   </Link>
                   {/* <span style={{margin: `0 5px`}}>|</span> */}
-                  <Link href="/p/quran-radio#website">
+                  <Link href="/p/quran-radio#website" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
                           {/* <span style={{ color: `#1377FD` }}>Website</span> */}

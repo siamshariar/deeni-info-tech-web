@@ -42,21 +42,21 @@ const QuranTubeDetail = () => {
             <div className={styles.detail_text}>
               <h2><span className={aboutStyles.highlight}>Quran.tube</span> Apps</h2>
               <p>
-                  <Link href="/p/quran-tube#play_store">
+                  <Link href="/p/quran-tube#play_store" legacyBehavior>
                     <a>
                       {/*<span className={aboutStyles.highlight}>Android</span> */}
                       <span style={{ color: `#1377FD` }}>Android</span>
                     </a>
                   </Link>
                   <span style={{margin: `0 5px`}}>|</span>
-                  <Link href="/p/quran-tube#app_store">
+                  <Link href="/p/quran-tube#app_store" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
                           <span style={{ color: `#1377FD` }}>iPhone</span>
                       </a>
                   </Link>
                   <span style={{margin: `0 5px`}}>|</span>
-                  <Link href="/p/quran-tube#website">
+                  <Link href="/p/quran-tube#website" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
                           <span style={{ color: `#1377FD` }}>Website</span>

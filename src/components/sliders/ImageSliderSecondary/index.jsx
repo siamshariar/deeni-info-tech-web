@@ -140,7 +140,7 @@ const Slider = ({ displayButton }) => {
           <div className="slider img_right">
             {
               displayButton !== true
-                  ? <Link href="/develop-islamic-applications">
+                  ? <Link href="/develop-islamic-applications" legacyBehavior>
                       <div style={{ cursor: `pointer` }} className="ts_images">
                         <Swiper
                             className={styles.swiper} //
@@ -308,7 +308,7 @@ const Slider = ({ displayButton }) => {
                 {
                   displayButton !== true
                       ? <div className={styles.btn}>
-                        <Link href="/develop-islamic-applications">
+                        <Link href="/develop-islamic-applications" legacyBehavior>
                           <a>Read More</a>
                         </Link>
                       </div>

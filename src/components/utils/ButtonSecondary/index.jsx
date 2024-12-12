@@ -12,7 +12,7 @@ const Button = ({ url, text, isReverse, isActive }) => {
         isActive ? styles.active : ''
       )}
     >
-      <Link href={url}>
+      <Link href={url} legacyBehavior>
         <a className={styles.link}>
           <ArrowRightIcon />
           <span>{text}</span>

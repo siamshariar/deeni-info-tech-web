@@ -47,7 +47,7 @@ const ProjectDetail = ({ app }) => {
 
               {app.isOneWebsite && (
                     <p>
-                        <Link href={`/p/${app.slug}#website`}>
+                        <Link href={`/p/${app.slug}#website`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>Website</span>
@@ -59,14 +59,14 @@ const ProjectDetail = ({ app }) => {
 
                 {app.hasAndroidWebsite && (
                     <p>
-                        <Link href={`/p/${app.slug}#play_store`}>
+                        <Link href={`/p/${app.slug}#play_store`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>Android</span>
                             </a>
                         </Link>
                         <span style={{margin: `0 5px`}}>|</span>
-                        <Link href={`/p/${app.slug}#website`}>
+                        <Link href={`/p/${app.slug}#website`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>Website</span>
@@ -77,21 +77,21 @@ const ProjectDetail = ({ app }) => {
 
                 {app.hasAllApp && (
                     <p>
-                        <Link href={`/p/${app.slug}#play_store`}>
+                        <Link href={`/p/${app.slug}#play_store`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>Android</span>
                             </a>
                         </Link>
                         <span style={{margin: `0 5px`}}>|</span>
-                        <Link href={`/p/${app.slug}#app_store`}>
+                        <Link href={`/p/${app.slug}#app_store`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>iPhone</span>
                             </a>
                         </Link>
                         <span style={{margin: `0 5px`}}>|</span>
-                        <Link href={`/p/${app.slug}#website`}>
+                        <Link href={`/p/${app.slug}#website`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>Website</span>

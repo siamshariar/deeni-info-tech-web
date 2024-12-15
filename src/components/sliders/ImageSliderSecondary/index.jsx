@@ -155,8 +155,8 @@ const Slider = ({ displayButton }) => {
                             onSwiper={(swiper) => setSwiperInstance(swiper)}
                         >
                           <SwiperSlide>
-                            <div className="tsi_item">
-                              <img
+                            <div style={{ display: `flex` }} className="tsi_item">
+                              <Image
                                   src="/img/slides/quran-tube-webb.jpg"
                                   alt=""
                                   layout="fill"
@@ -167,8 +167,8 @@ const Slider = ({ displayButton }) => {
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
-                            <div className="tsi_item">
-                              <img
+                            <div  className="tsi_item">
+                              <Image
                                   src="/img/slides/quran-radio.jpg"
                                   alt=""
                                   layout="fill"
@@ -180,7 +180,7 @@ const Slider = ({ displayButton }) => {
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tsi_item">
-                              <img
+                              <Image
                                   src="/img/slides/deeni-tube.jpg"
                                   alt=""
                                   layout="fill"
@@ -192,7 +192,7 @@ const Slider = ({ displayButton }) => {
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tsi_item">
-                              <img
+                              <Image
                                   src="/img/slides/quran-ac_2025.jpg"
                                   alt=""
                                   layout="fill"
@@ -204,7 +204,7 @@ const Slider = ({ displayButton }) => {
                           </SwiperSlide>
                           <SwiperSlide>
                             <div className="tsi_item">
-                              <img
+                              <Image
                                   src="/img/slides/hadith_ac_2025.jpg"
                                   alt=""
                                   layout="fill"
@@ -231,8 +231,8 @@ const Slider = ({ displayButton }) => {
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                     >
                        <SwiperSlide>
-                        <div className="tsi_item">
-                          <img
+                        <div style={{ display: `flex` }} className="tsi_item">
+                          <Image
                               src="/img/slides/quran-tube-webb.jpg"
                               alt=""
                               layout="fill"
@@ -244,7 +244,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                        <SwiperSlide>
                         <div className="tsi_item">
-                          <img
+                          <Image
                               src="/img/slides/quran-radio.jpg"
                               alt=""
                               layout="fill"
@@ -256,7 +256,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="tsi_item">
-                          <img
+                          <Image
                               src="/img/slides/deeni-tube.jpg"
                               alt=""
                               layout="fill"
@@ -268,7 +268,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="tsi_item">
-                          <img
+                          <Image
                               src="/img/slides/quran-ac_2025.jpg"
                               alt=""
                               layout="fill"
@@ -280,7 +280,7 @@ const Slider = ({ displayButton }) => {
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="tsi_item">
-                          <img
+                          <Image
                               src="/img/slides/hadith_ac_2025.jpg"
                               alt=""
                               layout="fill"

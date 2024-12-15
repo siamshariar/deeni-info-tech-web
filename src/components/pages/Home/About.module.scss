@@ -1,5 +1,38 @@
+
 .wrapper {
-  width: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.videoInfo {
+  padding: 15px;
+
+}
+
+.videoTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: #333;
+  margin: 0;
 }
 
 .content {
@@ -16,6 +49,7 @@
 
 .title {
 }
+
 
 .title h1 {
   text-transform: capitalize;

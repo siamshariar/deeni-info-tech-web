@@ -167,7 +167,7 @@ const Slider = ({ displayButton }) => {
                             </div>
                           </SwiperSlide>
                           <SwiperSlide>
-                            <div  className="tsi_item">
+                            <div className="tsi_item">
                               <Image
                                   src="/img/slides/quran-radio.jpg"
                                   alt=""

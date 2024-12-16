@@ -68,14 +68,15 @@ const AppsForScholars = ({ detailPage }) => {
                                 onMouseLeave={() => setTooltipText('')}
                               >
                                 <a href={`/p/${app.slug}`} target="" rel="noopener noreferrer" className={styles.image}>
-                                  <img
-                                    src={app.imgPath}
-                                    alt={app.slug}
-                                    layout="fill"
-                                    objectFit="contain"
-                                    objectPosition="center center"
-                                    loading="eager"
-                                  />
+                                  <Image
+                                        src={app.imgPath}
+                                        alt=""
+                                        layout="fill"
+                                        objectFit="contain"
+                                        objectPosition="center center"
+                                        loading="eager"
+                                        unoptimized
+                                    />
                                 </a>
                               </div>
                             </SwiperSlide>
@@ -116,14 +117,15 @@ const AppsForScholars = ({ detailPage }) => {
                             onMouseLeave={() => setTooltipText('')}
                           >
                             <a href={`/p/${app.slug}`} target="" rel="noopener noreferrer" className={styles.image}>
-                              <img
-                                src={app.imgPath}
-                                alt={app.slug}
-                                layout="fill"
-                                objectFit="contain"
-                                objectPosition="center center"
-                                loading="eager"
-                              />
+                              <Image
+                                    src={app.imgPath}
+                                    alt=""
+                                    layout="fill"
+                                    objectFit="contain"
+                                    objectPosition="center center"
+                                    loading="eager"
+                                    unoptimized
+                                />
                             </a>
                           </div>
                         </SwiperSlide>

@@ -163,6 +163,7 @@ const Slider = ({ displayButton }) => {
                                   objectFit="cover"
                                   objectPosition="center center"
                                   loading="eager"
+                                  unoptimized
                               />
                             </div>
                           </SwiperSlide>
@@ -175,6 +176,7 @@ const Slider = ({ displayButton }) => {
                                   objectFit="cover"
                                   objectPosition="center center"
                                   loading="eager"
+                                  unoptimized
                               />
                             </div>
                           </SwiperSlide>
@@ -187,6 +189,7 @@ const Slider = ({ displayButton }) => {
                                   objectFit="cover"
                                   objectPosition="center center"
                                   loading="eager"
+                                  unoptimized
                               />
                             </div>
                           </SwiperSlide>
@@ -199,6 +202,7 @@ const Slider = ({ displayButton }) => {
                                   objectFit="cover"
                                   objectPosition="center center"
                                   loading="eager"
+                                  unoptimized
                               />
                             </div>
                           </SwiperSlide>
@@ -211,6 +215,7 @@ const Slider = ({ displayButton }) => {
                                   objectFit="cover"
                                   objectPosition="center center"
                                   loading="eager"
+                                  unoptimized
                               />
                             </div>
                           </SwiperSlide>
@@ -239,6 +244,7 @@ const Slider = ({ displayButton }) => {
                               objectFit="cover"
                               objectPosition="center center"
                               loading="eager"
+                              unoptimized
                           />
                         </div>
                       </SwiperSlide>
@@ -251,6 +257,7 @@ const Slider = ({ displayButton }) => {
                               objectFit="cover"
                               objectPosition="center center"
                               loading="eager"
+                              unoptimized
                           />
                         </div>
                       </SwiperSlide>
@@ -263,6 +270,7 @@ const Slider = ({ displayButton }) => {
                               objectFit="cover"
                               objectPosition="center center"
                               loading="eager"
+                              unoptimized
                           />
                         </div>
                       </SwiperSlide>
@@ -275,6 +283,7 @@ const Slider = ({ displayButton }) => {
                               objectFit="cover"
                               objectPosition="center center"
                               loading="eager"
+                              unoptimized
                           />
                         </div>
                       </SwiperSlide>
@@ -287,6 +296,7 @@ const Slider = ({ displayButton }) => {
                               objectFit="cover"
                               objectPosition="center center"
                               loading="eager"
+                              unoptimized
                           />
                         </div>
                       </SwiperSlide>

@@ -87,7 +87,7 @@ const ProjectDetail = ({ app }) => {
                         <Link href={`/p/${app.slug}#app_store`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
-                                <span style={{ color: `#1377FD` }}>iPhone</span>
+                                <span style={{ color: `#1377FD` }}>iOS</span>
                             </a>
                         </Link>
                         <span style={{margin: `0 5px`}}>|</span>
@@ -124,48 +124,48 @@ const ProjectDetail = ({ app }) => {
               </>
           )}
           
-          {app.mobileView && (
-              <div className={countriesStyles.inner}>
-                  <div className={countriesStyles.image}>
-                      <Swiper
-                          spaceBetween={0}
-                          slidesPerView={1}
-                          loop={true}
-                          modules={[Autoplay]}
-                          autoplay={{
-                              delay: 3000,
-                              disableOnInteraction: false,
-                          }}
-                          onSwiper={(swiper) => setSwiperInstance2(swiper)}
-                      >
-                          {app.mobileView && app.mobileView.images.map((data, index) => (
-                              <SwiperSlide>
-                                  <img src={app.mobileView.images[index]} />
-                              </SwiperSlide>
-                          ))}
-                      </Swiper>
-                  </div>
-                  <div id="play_store" className={countriesStyles.detail}>
-                      <div className={countriesStyles.title}>
-                          <h2 className={aboutStyles.highlight}>Mobile view</h2>
-                          <a href={app.playStore && app.playStore.link} target="_blank">
-                              <img style={{height: `40px`, width: `auto`}} src="/img/play-store-badge.png" />
-                          </a>
-                      </div>
-                      <div className={countriesStyles.text}>
+          {/*{app.mobileView && (*/}
+          {/*    <div className={countriesStyles.inner}>*/}
+          {/*        <div className={countriesStyles.image}>*/}
+          {/*            <Swiper*/}
+          {/*                spaceBetween={0}*/}
+          {/*                slidesPerView={1}*/}
+          {/*                loop={true}*/}
+          {/*                modules={[Autoplay]}*/}
+          {/*                autoplay={{*/}
+          {/*                    delay: 3000,*/}
+          {/*                    disableOnInteraction: false,*/}
+          {/*                }}*/}
+          {/*                onSwiper={(swiper) => setSwiperInstance2(swiper)}*/}
+          {/*            >*/}
+          {/*                {app.mobileView && app.mobileView.images.map((data, index) => (*/}
+          {/*                    <SwiperSlide>*/}
+          {/*                        <img src={app.mobileView.images[index]} />*/}
+          {/*                    </SwiperSlide>*/}
+          {/*                ))}*/}
+          {/*            </Swiper>*/}
+          {/*        </div>*/}
+          {/*        <div id="play_store" className={countriesStyles.detail}>*/}
+          {/*            <div className={countriesStyles.title}>*/}
+          {/*                <h2 className={aboutStyles.highlight}>Mobile view</h2>*/}
+          {/*                <a href={app.playStore && app.playStore.link} target="_blank">*/}
+          {/*                    <img style={{height: `40px`, width: `auto`}} src="/img/play-store-badge.png" />*/}
+          {/*                </a>*/}
+          {/*            </div>*/}
+          {/*            <div className={countriesStyles.text}>*/}
 
-                          <div className={styles.app_info_wrapper}>
-                              {/*<span className={styles.app_icon}>*/}
-                              {/*  <InstallMobileIcon />*/}
-                              {/*</span>*/}
-                              <a href={app.playStore && app.playStore.link} target="_blank">
-                                  <span style={{ color: `#1377FD` }}>{app.playStore && app.playStore.link}</span>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          )}
+          {/*                <div className={styles.app_info_wrapper}>*/}
+          {/*                    /!*<span className={styles.app_icon}>*!/*/}
+          {/*                    /!*  <InstallMobileIcon />*!/*/}
+          {/*                    /!*</span>*!/*/}
+          {/*                    <a href={app.playStore && app.playStore.link} target="_blank">*/}
+          {/*                        <span style={{ color: `#1377FD` }}>{app.playStore && app.playStore.link}</span>*/}
+          {/*                    </a>*/}
+          {/*                </div>*/}
+          {/*            </div>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
+          {/*)}*/}
           {app.playStore && (
               <div className={countriesStyles.inner}>
                   <div className={countriesStyles.image}>
@@ -232,7 +232,7 @@ const ProjectDetail = ({ app }) => {
                   </div>
                   <div id="app_store" className={countriesStyles.detail}>
                       <div className={countriesStyles.title}>
-                          <h2 className={aboutStyles.highlight}>iPhone App</h2>
+                          <h2 className={aboutStyles.highlight}>iOS App</h2>
                           {/*<a href={app.appStore && app.appStore.link} target="_blank">*/}
                           <a>
                               <img style={{height: `40px`, width: `auto`}} src="/img/app-store-badge.png" />

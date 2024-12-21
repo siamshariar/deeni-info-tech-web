@@ -9,8 +9,8 @@ export default function Page() {
     return (
         <>
             <Meta
-                title={`deeni.tube Apps | DeeniInfoTech.com`}
-                description="Discover the beauty of Quranic recitations with deeni.tube, a platform that provides only islamic videos"
+                title={`DeeniTube Apps | DeeniInfoTech.com`}
+                description="An authentic Islamic video platform featuring content from renowned scholars, available in multiple languages to cater to diverse audiences."
                 url={`${server}/p/deeni-tube`}
                 image={`${server}/img/our_apps/quran-radio/quran-radio-social.png`}
                 type="website"
@@ -18,7 +18,7 @@ export default function Page() {
 
             <Banner
                 bgImage="img/banner/banner-about.jpg"
-                title="deeni.tube"
+                title="DeeniTube"
                 subTitle=""
             />
 

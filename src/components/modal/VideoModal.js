@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import styles from './Video.module.css';
 import Share from '../share';
-import Meta from '../meta';
+import Meta from '../core/Meta';
 
 import { generateVParam } from '../pages/Home/ScholarsRecommendation';
 
@@ -24,7 +24,7 @@ export default function VideoModal({ isOpen, onClose, videoId, title, descriptio
     return (
         <>
             <Meta
-                title={title || 'Video Modal'}
+                title={title || 'Scholars Recommendation | DeeniInfoTech.com'}
                 url={videoUrl}
                 type="website"
             />
@@ -38,7 +38,7 @@ export default function VideoModal({ isOpen, onClose, videoId, title, descriptio
                         <div className={styles.iframeContainer}>
                             <iframe
                                 className={styles.iframe}
-                                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0`}
+                                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&playlist=${videoId}`}
                                 title={title}
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

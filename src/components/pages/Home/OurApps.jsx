@@ -28,6 +28,7 @@ const OurApps = () => {
                       objectFit="cover"
                       objectPosition="center center"
                       loading="eager"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -43,6 +44,7 @@ const OurApps = () => {
                       objectFit="cover"
                       objectPosition="center center"
                       loading="eager"
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -58,6 +60,7 @@ const OurApps = () => {
                       objectFit="cover"
                       objectPosition="center center"
                       loading="eager"
+                      unoptimized
                     />
                   </div>
                 </div>

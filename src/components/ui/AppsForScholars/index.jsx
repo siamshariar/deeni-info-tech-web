@@ -67,17 +67,19 @@ const AppsForScholars = ({ detailPage }) => {
                                 onMouseEnter={() => setTooltipText(app.tooltip)}
                                 onMouseLeave={() => setTooltipText('')}
                               >
-                                <a href={`/p/${app.slug}`} target="" rel="noopener noreferrer" className={styles.image}>
-                                  <Image
-                                        src={app.imgPath}
-                                        alt=""
-                                        layout="fill"
-                                        objectFit="contain"
-                                        objectPosition="center center"
-                                        loading="eager"
-                                        unoptimized
-                                    />
-                                </a>
+                                <Link key={app.id} href={`/p/${app.slug}`} legacyBehavior>
+                                  <a rel="noopener noreferrer" className={styles.image}>
+                                    <Image
+                                          src={app.imgPath}
+                                          alt=""
+                                          layout="fill"
+                                          objectFit="contain"
+                                          objectPosition="center center"
+                                          loading="eager"
+                                          unoptimized
+                                      />
+                                  </a>
+                                </Link>
                               </div>
                             </SwiperSlide>
                           ))}
@@ -116,17 +118,19 @@ const AppsForScholars = ({ detailPage }) => {
                             onMouseEnter={() => setTooltipText(app.tooltip)}
                             onMouseLeave={() => setTooltipText('')}
                           >
-                            <a href={`/p/${app.slug}`} target="" rel="noopener noreferrer" className={styles.image}>
-                              <Image
-                                    src={app.imgPath}
-                                    alt=""
-                                    layout="fill"
-                                    objectFit="contain"
-                                    objectPosition="center center"
-                                    loading="eager"
-                                    unoptimized
-                                />
-                            </a>
+                            <Link key={app.id} href={`/p/${app.slug}`} legacyBehavior>
+                              <a rel="noopener noreferrer" className={styles.image}>
+                                <Image
+                                      src={app.imgPath}
+                                      alt=""
+                                      layout="fill"
+                                      objectFit="contain"
+                                      objectPosition="center center"
+                                      loading="eager"
+                                      unoptimized
+                                  />
+                              </a>
+                            </Link>
                           </div>
                         </SwiperSlide>
                       ))}

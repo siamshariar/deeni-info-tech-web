@@ -3,5 +3,6 @@ export const server =
     ? 'http://localhost:3000'
     : 'https://www.deeniinfotech.com';
 
-export const receiverEmail = "info@deeniinfotech.com";
+// export const receiverEmail = "info@deeniinfotech.com"; / TODO: Fix Webmail
+export const receiverEmail = "deeniinfotech@gmail.com";
 export const emailSenderName = "DIT Web Client";

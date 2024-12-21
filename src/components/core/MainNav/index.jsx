@@ -43,7 +43,7 @@ const MainNav = ({ open, controller }) => {
 
               <li className={styles.page}>
                 <Link href="/scholars-recommendation" legacyBehavior>
-                  <a style={{fontSize: `18px`}} onClick={(e) => controller(e)}>Scholars Recommendation</a>
+                  <a style={{fontSize: `20px`}} onClick={(e) => controller(e)}>Scholars Recommendation</a>
                 </Link>
               </li>
 

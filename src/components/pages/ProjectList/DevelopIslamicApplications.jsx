@@ -161,7 +161,7 @@ const DevelopIslamicApplications = () => {
 
           <h2 className={aboutStyles.project_header}>
             Some of our <span className={aboutStyles.highlight}> applications</span>,
-            <span style={{ display: `block`, fontSize: `.85em` }} >We are also developing some other applications, which we will later publish.</span>
+            <span style={{ display: `block`, fontSize: `.85em` }} >We are also developing some other applications, which we will publish later.</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">

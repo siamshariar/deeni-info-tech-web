@@ -52,7 +52,7 @@ const QuranRadioDetail = () => {
                   <Link href="/p/quran-radio#app_store" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
-                          <span style={{ color: `#1377FD` }}>iPhone</span>
+                          <span style={{ color: `#1377FD` }}>iOS</span>
                       </a>
                   </Link>
                   <span style={{margin: `0 5px`}}>|</span>
@@ -173,7 +173,7 @@ const QuranRadioDetail = () => {
               </div>
               <div id="app_store" className={countriesStyles.detail}>
                   <div className={countriesStyles.title}>
-                      <h2 className={aboutStyles.highlight}>iPhone App</h2>
+                      <h2 className={aboutStyles.highlight}>iOS App</h2>
                       {/*<a href={app.playStore && app.playStore.link} target="_blank">*/}
                       <a>
                           <img style={{height: `40px`, width: `auto`}} src="/img/app-store-badge.png" />

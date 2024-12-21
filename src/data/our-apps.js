@@ -23,7 +23,7 @@ export const apps = [
     slug: 'deeni-tube',
     url: 'https://www.deenitube.com',
     imgPath: '/img/our_apps/deeni-tube-logo.png',
-    excerpt: 'Discover the beauty of Islamic videos with deeni.tube, a platform that provides a diverse range of islamic video and reciters. Immerse yourself in the authenticity of islamic videos. Additionally, enjoy the convenience of saving favorites and tracking your previous viewing sessions. Explore the beauty of the Islam at your fingertips.',
+    excerpt: 'An authentic Islamic video platform featuring content from renowned scholars, available in multiple languages to cater to diverse audiences.',
     order: 1,
   },
   {
@@ -32,7 +32,7 @@ export const apps = [
     slug: 'quran-ac',
     url: 'https://www.quran.ac',
     imgPath: '/img/our_apps/quran-ac-logo.png',
-    excerpt: 'Discover the beauty of Quranic words with Quran.ac, A platform that provides Quran translation in different languages. Immerse yourself in the authentic feeling of reading the real Quran. Additionally, enjoy the convenience of saving favorites and tracking your previous reading sessions. Explore the beauty of the Quran at your fingertips.',
+    excerpt: 'Quran application. Some of the features are Multi translations, Reader friendly UI, Custom settings, Bookmarks, User login access.',
     order: 1,
   },
   {
@@ -41,7 +41,7 @@ export const apps = [
     slug: 'hadith-ac',
     url: 'https://www.hadith.ac',
     imgPath: '/img/our_apps/hadith-ac-logo.png',
-    excerpt: 'Discover the beauty of Hadith with Hadith.ac, a platform that provides authentic Hadith source. Immerse yourself in the authenticity of real Hadith reading experience. Additionally, enjoy the convenience of saving favorites and tracking your previous reading sessions. Explore the beauty of the Hadith at your fingertips.',
+    excerpt: 'Hadith application. Some of the features are Hadith books & categories, Reader friendly UI, Custom settings, Bookmarks, User login access.',
     order: 1,
   },
 ];

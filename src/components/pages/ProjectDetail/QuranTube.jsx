@@ -52,7 +52,7 @@ const QuranTubeDetail = () => {
                   <Link href="/p/quran-tube#app_store" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
-                          <span style={{ color: `#1377FD` }}>iPhone</span>
+                          <span style={{ color: `#1377FD` }}>iOS</span>
                       </a>
                   </Link>
                   <span style={{margin: `0 5px`}}>|</span>
@@ -152,44 +152,39 @@ const QuranTubeDetail = () => {
                       {/*    </SwiperSlide>*/}
                       {/*))}*/}
                       <SwiperSlide>
-                          <img src="/img/our_apps/quran-tube/iphone/iphone_1.webp" />
+                          <img src="/img/our_apps/quran-tube/iphone/P2-Iphone-Q-tube.jpg" />
                       </SwiperSlide>
                       <SwiperSlide>
-                          <img src="/img/our_apps/quran-tube/iphone/iphone_2.webp" />
+                          <img src="/img/our_apps/quran-tube/iphone/P3-Iphone-Q-tube.jpg" />
                       </SwiperSlide>
                       <SwiperSlide>
-                          <img src="/img/our_apps/quran-tube/iphone/iphone_3.webp" />
+                          <img src="/img/our_apps/quran-tube/iphone/P4-Iphone-Q-tube.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                          <img src="/img/our_apps/quran-tube/iphone/P5-Iphone-Q-tube.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                          <img src="/img/our_apps/quran-tube/iphone/P6-Iphone-Q-tube.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide>
+                          <img src="/img/our_apps/quran-tube/iphone/P7-Iphone-Q-tube.jpg" />
                       </SwiperSlide>
                   </Swiper>
               </div>
               <div id="app_store" className={countriesStyles.detail}>
                   <div className={countriesStyles.title}>
-                      <h2 className={aboutStyles.highlight}>iPhone App</h2>
-                      {/*<a href={app.playStore && app.playStore.link} target="_blank">*/}
-                      <a>
+                      <h2 className={aboutStyles.highlight}>iOS App</h2>
+                      <a href="https://apps.apple.com/us/app/quran-tube/id6738865112" target="_blank">
                           <img style={{height: `40px`, width: `auto`}} src="/img/app-store-badge.png" />
                       </a>
 
                   </div>
                   <div className={countriesStyles.text}>
-
-                      {/*<div className={styles.app_info_wrapper}>*/}
                       <div>
-                          {/*<span className={styles.app_icon}>*/}
-                          {/*  <InstallMobileIcon />*/}
-                          {/*</span>*/}
-                          {/*<a href={app.playStore && app.playStore.link} target="_blank">*/}
+                          <a href="https://apps.apple.com/us/app/quran-tube/id6738865112" target="_blank">
                               {/*<span style={{ color: `#1377FD` }}>{app.playStore && app.playStore.link}</span>*/}
-                          {/*</a>*/}
-                          <span>(AppStore link will be updated shortly.)</span> <br/><br/>
-                          <span>Installation process,</span> <br/>
-                          <span>
-                              1. Open Safari browser and visit
-                              <a href="https://www.Quran.tube" target="_blank"><span style={{ color: `#1377FD` }}> www.Quran.tube</span></a>,
-                              click on "Share" icon at bottom-middle.
-                          </span> <br/>
-                          <span>2. Scroll to bottom & click on "Add to Home Screen".</span> <br/>
-                          <span>3. Click on "Add" to confirm.</span> <br/>
+                              <span style={{ color: `#1377FD` }}>https://apps.apple.com/us/app/quran-tube/id6738865112</span>
+                          </a>
                       </div>
                   </div>
               </div>

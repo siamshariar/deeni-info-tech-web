@@ -18,7 +18,7 @@ const Button = ({ url, text, isReverse, isActive, controller }) => {
         isActive ? styles.active : ''
       )}
     >
-      <Link href={url}>
+      <Link href={url} legacyBehavior>
         <a className={styles.link} onClick={(e) => handler(e)}>
           <span className={styles.link_svg}>
             <ArrowRightIcon />

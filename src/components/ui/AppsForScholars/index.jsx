@@ -33,7 +33,7 @@ const AppsForScholars = ({ detailPage }) => {
 
         {
           detailPage !== true
-              ? <Link href="/applications-for-scholars-and-dawah-organizations">
+              ? 
                   <div
                       className={styles.swiper_container}
                       onMouseEnter={() => setIsTooltipShown(true)}
@@ -58,31 +58,33 @@ const AppsForScholars = ({ detailPage }) => {
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                     >
                       {apps &&
-                          apps.filter((item) => item.displayInSlider === 1 ).map((app, index) => (
-                              <SwiperSlide key={index}>
-                                <div
-                                    className={styles.slide}
-                                    onMouseEnter={() => setTooltipText(app.tooltip)}
-                                    onMouseLeave={() => setTooltipText('')}
-                                >
-                                  {/*<Link href={app.url}>*/}
-                                  <a className={styles.image}>
+                        apps
+                          .filter((item) => item.displayInSlider === 1)
+                          .map((app, index) => (
+                            <SwiperSlide className={styles.slider} key={index}>
+                              <div
+                                className={styles.slide}
+                                onMouseEnter={() => setTooltipText(app.tooltip)}
+                                onMouseLeave={() => setTooltipText('')}
+                              >
+                                <Link key={app.id} href={`/p/${app.slug}`} legacyBehavior>
+                                  <a rel="noopener noreferrer" className={styles.image}>
                                     <Image
-                                        src={app.imgPath}
-                                        alt=""
-                                        layout="fill"
-                                        objectFit="contain"
-                                        objectPosition="center center"
-                                        loading="eager"
-                                    />
+                                          src={app.imgPath}
+                                          alt=""
+                                          layout="fill"
+                                          objectFit="contain"
+                                          objectPosition="center center"
+                                          loading="eager"
+                                          unoptimized
+                                      />
                                   </a>
-                                  {/*</Link>*/}
-                                </div>
-                              </SwiperSlide>
+                                </Link>
+                              </div>
+                            </SwiperSlide>
                           ))}
                     </Swiper>
                   </div>
-              </Link>
               : <div
                   className={styles.swiper_container}
                   onMouseEnter={() => setIsTooltipShown(true)}
@@ -107,27 +109,30 @@ const AppsForScholars = ({ detailPage }) => {
                     onSwiper={(swiper) => setSwiperInstance(swiper)}
                 >
                   {apps &&
-                      apps.filter((item) => item.displayInSlider === 1 ).map((app, index) => (
-                          <SwiperSlide key={index}>
-                            <div
-                                className={styles.slide}
-                                onMouseEnter={() => setTooltipText(app.tooltip)}
-                                onMouseLeave={() => setTooltipText('')}
-                            >
-                              {/*<Link href={app.url}>*/}
-                              <a className={styles.image}>
+                    apps
+                      .filter((item) => item.displayInSlider === 1)
+                      .map((app, index) => (
+                        <SwiperSlide key={index}>
+                          <div
+                            className={styles.slide}
+                            onMouseEnter={() => setTooltipText(app.tooltip)}
+                            onMouseLeave={() => setTooltipText('')}
+                          >
+                            <Link key={app.id} href={`/p/${app.slug}`} legacyBehavior>
+                              <a rel="noopener noreferrer" className={styles.image}>
                                 <Image
-                                    src={app.imgPath}
-                                    alt=""
-                                    layout="fill"
-                                    objectFit="contain"
-                                    objectPosition="center center"
-                                    loading="eager"
-                                />
+                                      src={app.imgPath}
+                                      alt=""
+                                      layout="fill"
+                                      objectFit="contain"
+                                      objectPosition="center center"
+                                      loading="eager"
+                                      unoptimized
+                                  />
                               </a>
-                              {/*</Link>*/}
-                            </div>
-                          </SwiperSlide>
+                            </Link>
+                          </div>
+                        </SwiperSlide>
                       ))}
                 </Swiper>
               </div>

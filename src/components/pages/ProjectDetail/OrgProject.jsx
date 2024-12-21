@@ -44,23 +44,54 @@ const ProjectDetail = ({ app }) => {
               <p>
                 <span className={aboutStyles.highlight}>Deeni Info Tech</span> has developed the following applications for {app.organizationName}.
               </p>
-                {app.hasAllApp && (
+
+              {app.isOneWebsite && (
                     <p>
-                        <Link href={`/p/${app.slug}#play_store`}>
+                        <Link href={`/p/${app.slug}#website`} legacyBehavior>
+                            <a>
+                                {/*<span className={aboutStyles.highlight}>Android</span> */}
+                                <span style={{ color: `#1377FD` }}>Website</span>
+                            </a>
+                        </Link>
+                        
+                    </p>
+                )}
+
+                {app.hasAndroidWebsite && (
+                    <p>
+                        <Link href={`/p/${app.slug}#play_store`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>Android</span>
                             </a>
                         </Link>
                         <span style={{margin: `0 5px`}}>|</span>
-                        <Link href={`/p/${app.slug}#app_store`}>
+                        <Link href={`/p/${app.slug}#website`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
-                                <span style={{ color: `#1377FD` }}>iPhone</span>
+                                <span style={{ color: `#1377FD` }}>Website</span>
+                            </a>
+                        </Link>
+                    </p>
+                )}
+
+                {app.hasAllApp && (
+                    <p>
+                        <Link href={`/p/${app.slug}#play_store`} legacyBehavior>
+                            <a>
+                                {/*<span className={aboutStyles.highlight}>Android</span> */}
+                                <span style={{ color: `#1377FD` }}>Android</span>
                             </a>
                         </Link>
                         <span style={{margin: `0 5px`}}>|</span>
-                        <Link href={`/p/${app.slug}#website`}>
+                        <Link href={`/p/${app.slug}#app_store`} legacyBehavior>
+                            <a>
+                                {/*<span className={aboutStyles.highlight}>Android</span> */}
+                                <span style={{ color: `#1377FD` }}>iOS</span>
+                            </a>
+                        </Link>
+                        <span style={{margin: `0 5px`}}>|</span>
+                        <Link href={`/p/${app.slug}#website`} legacyBehavior>
                             <a>
                                 {/*<span className={aboutStyles.highlight}>Android</span> */}
                                 <span style={{ color: `#1377FD` }}>Website</span>
@@ -80,7 +111,7 @@ const ProjectDetail = ({ app }) => {
             content: styles.content,
           }}
       >
-
+        
           {/*TODO: Handle slider section by condition*/}
           {app.hasAllApp && (
               <>
@@ -92,8 +123,49 @@ const ProjectDetail = ({ app }) => {
 
               </>
           )}
+          
+          {/*{app.mobileView && (*/}
+          {/*    <div className={countriesStyles.inner}>*/}
+          {/*        <div className={countriesStyles.image}>*/}
+          {/*            <Swiper*/}
+          {/*                spaceBetween={0}*/}
+          {/*                slidesPerView={1}*/}
+          {/*                loop={true}*/}
+          {/*                modules={[Autoplay]}*/}
+          {/*                autoplay={{*/}
+          {/*                    delay: 3000,*/}
+          {/*                    disableOnInteraction: false,*/}
+          {/*                }}*/}
+          {/*                onSwiper={(swiper) => setSwiperInstance2(swiper)}*/}
+          {/*            >*/}
+          {/*                {app.mobileView && app.mobileView.images.map((data, index) => (*/}
+          {/*                    <SwiperSlide>*/}
+          {/*                        <img src={app.mobileView.images[index]} />*/}
+          {/*                    </SwiperSlide>*/}
+          {/*                ))}*/}
+          {/*            </Swiper>*/}
+          {/*        </div>*/}
+          {/*        <div id="play_store" className={countriesStyles.detail}>*/}
+          {/*            <div className={countriesStyles.title}>*/}
+          {/*                <h2 className={aboutStyles.highlight}>Mobile view</h2>*/}
+          {/*                <a href={app.playStore && app.playStore.link} target="_blank">*/}
+          {/*                    <img style={{height: `40px`, width: `auto`}} src="/img/play-store-badge.png" />*/}
+          {/*                </a>*/}
+          {/*            </div>*/}
+          {/*            <div className={countriesStyles.text}>*/}
 
-
+          {/*                <div className={styles.app_info_wrapper}>*/}
+          {/*                    /!*<span className={styles.app_icon}>*!/*/}
+          {/*                    /!*  <InstallMobileIcon />*!/*/}
+          {/*                    /!*</span>*!/*/}
+          {/*                    <a href={app.playStore && app.playStore.link} target="_blank">*/}
+          {/*                        <span style={{ color: `#1377FD` }}>{app.playStore && app.playStore.link}</span>*/}
+          {/*                    </a>*/}
+          {/*                </div>*/}
+          {/*            </div>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
+          {/*)}*/}
           {app.playStore && (
               <div className={countriesStyles.inner}>
                   <div className={countriesStyles.image}>
@@ -122,9 +194,9 @@ const ProjectDetail = ({ app }) => {
                               <img style={{height: `40px`, width: `auto`}} src="/img/play-store-badge.png" />
                           </a>
                       </div>
-                      <div className={countriesStyles.text}>
+                      <div className={countriesStyles.text2}>
 
-                          <div className={styles.app_info_wrapper}>
+                          <div className={styles.app_info_wrapper2}>
                               {/*<span className={styles.app_icon}>*/}
                               {/*  <InstallMobileIcon />*/}
                               {/*</span>*/}
@@ -160,7 +232,7 @@ const ProjectDetail = ({ app }) => {
                   </div>
                   <div id="app_store" className={countriesStyles.detail}>
                       <div className={countriesStyles.title}>
-                          <h2 className={aboutStyles.highlight}>iPhone App</h2>
+                          <h2 className={aboutStyles.highlight}>iOS App</h2>
                           {/*<a href={app.appStore && app.appStore.link} target="_blank">*/}
                           <a>
                               <img style={{height: `40px`, width: `auto`}} src="/img/app-store-badge.png" />
@@ -194,8 +266,23 @@ const ProjectDetail = ({ app }) => {
           {app.website && (
               <>
                   {app.hasAllApp && (
-                      <div style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner, countriesStyles.app_in_vn_right_slider)}>
-                          <div className={countriesStyles.image}>
+                      <div style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner2, countriesStyles.app_in_vn_right_slider)}>
+                        <div id="website" className={countriesStyles.detail2}>
+                              <div className={countriesStyles.title}>
+                                  <h2 className={aboutStyles.highlight}>Website</h2>
+                              </div>
+                              <div className={countriesStyles.text}>
+                                  <div className={styles.app_info_wrapper}>
+                      <span className={styles.app_icon}>
+                        <WebsiteIcon />
+                      </span>
+                                      <a href={app.url} target="_blank">
+                                          <span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className={countriesStyles.websitessc}>
                               <Swiper
                                   spaceBetween={0}
                                   slidesPerView={1}
@@ -214,26 +301,27 @@ const ProjectDetail = ({ app }) => {
                                   ))}
                               </Swiper>
                           </div>
-                          <div id="website" className={countriesStyles.detail}>
-                              <div className={countriesStyles.title}>
-                                  <h2 className={aboutStyles.highlight}>Website</h2>
-                              </div>
-                              <div className={countriesStyles.text}>
-                                  <div className={styles.app_info_wrapper}>
-                      <span className={styles.app_icon}>
-                        <WebsiteIcon />
-                      </span>
-                                      <a href={app.url} target="_blank">
-                                          <span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
+                          
                       </div>
                   )}
                   {app.hasAllApp === "undefined" || !app.hasAllApp && (
-                      <div style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner, countriesStyles.app_in_vn_left_slider)}>
-                          <div className={countriesStyles.image}>
+                      <div style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner, countriesStyles.app_in_vn_top_slider)}>
+                          <div id="website" className={`${countriesStyles.detail2} lg:ml-8`}>
+                              <div className={countriesStyles.title}>
+                                  <h2 className={aboutStyles.highlight}>Website</h2>
+                              </div>
+                              <div className={countriesStyles.text}>
+                                  <div className={styles.app_info_wrapper}>
+                      <span className={styles.app_icon}>
+                        <WebsiteIcon />
+                      </span>
+                                      <a href={app.url} target="_blank">
+                                          <span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className={countriesStyles.websitessc}>
                               <Swiper
                                   spaceBetween={0}
                                   slidesPerView={1}
@@ -252,21 +340,7 @@ const ProjectDetail = ({ app }) => {
                                   ))}
                               </Swiper>
                           </div>
-                          <div id="website" className={countriesStyles.detail}>
-                              <div className={countriesStyles.title}>
-                                  <h2 className={aboutStyles.highlight}>Website</h2>
-                              </div>
-                              <div className={countriesStyles.text}>
-                                  <div className={styles.app_info_wrapper}>
-                      <span className={styles.app_icon}>
-                        <WebsiteIcon />
-                      </span>
-                                      <a href={app.url} target="_blank">
-                                          <span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
+                        
                       </div>
                   )}
 

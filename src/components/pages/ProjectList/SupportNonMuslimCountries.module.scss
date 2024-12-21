@@ -169,6 +169,13 @@
   align-items: center;
   gap: 5px;
 }
+.app_info_wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+}
 .app_info_wrapper .app_icon {
   display: inline-flex;
   justify-content: center;
@@ -179,6 +186,16 @@
   /* color: #a0aec0; */
   //background-color: #edf2f7;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 368px) {
+  .app_info_wrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -240,8 +257,15 @@
   .container_app_in_vn {
     padding: 0;
     width: 100%;
-    max-width: 810px;
+    max-width: 680px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .app_info_wrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: left;
   }
 }

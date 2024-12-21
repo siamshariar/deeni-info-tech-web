@@ -42,21 +42,21 @@ const QuranRadioDetail = () => {
             <div className={styles.detail_text}>
               <h2><span className={aboutStyles.highlight}>Quran.radio</span> Apps</h2>
               <p>
-                  <Link href="/p/quran-radio#play_store">
+                  <Link href="/p/quran-radio#play_store" legacyBehavior>
                     <a>
                       {/*<span className={aboutStyles.highlight}>Android</span> */}
                       <span style={{ color: `#1377FD` }}>Android</span>
                     </a>
                   </Link>
                   <span style={{margin: `0 5px`}}>|</span>
-                  <Link href="/p/quran-radio#app_store">
+                  <Link href="/p/quran-radio#app_store" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
-                          <span style={{ color: `#1377FD` }}>iPhone</span>
+                          <span style={{ color: `#1377FD` }}>iOS</span>
                       </a>
                   </Link>
                   <span style={{margin: `0 5px`}}>|</span>
-                  <Link href="/p/quran-radio#website">
+                  <Link href="/p/quran-radio#website" legacyBehavior>
                       <a>
                           {/*<span className={aboutStyles.highlight}>Android</span> */}
                           <span style={{ color: `#1377FD` }}>Website</span>
@@ -173,7 +173,7 @@ const QuranRadioDetail = () => {
               </div>
               <div id="app_store" className={countriesStyles.detail}>
                   <div className={countriesStyles.title}>
-                      <h2 className={aboutStyles.highlight}>iPhone App</h2>
+                      <h2 className={aboutStyles.highlight}>iOS App</h2>
                       {/*<a href={app.playStore && app.playStore.link} target="_blank">*/}
                       <a>
                           <img style={{height: `40px`, width: `auto`}} src="/img/app-store-badge.png" />
@@ -206,8 +206,25 @@ const QuranRadioDetail = () => {
           {/*)}*/}
 
           {/*{app.website && (*/}
-          <div  style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner, countriesStyles.app_in_vn_right_slider)}>
-              <div className={countriesStyles.image}>
+          <div  style={{borderTop: `1px solid #dedede;`}} className={classNames(countriesStyles.inner2, countriesStyles.app_in_vn_right_slider)}>
+              <div id="website" className={countriesStyles.detail2}>
+                  <div className={countriesStyles.title}>
+                      <h2 className={aboutStyles.highlight}>Website</h2>
+                  </div>
+                  <div className={countriesStyles.text}>
+                      <div className={styles.app_info_wrapper}>
+                  <span className={styles.app_icon}>
+                    <WebsiteIcon />
+                  </span>
+                          {/*<a href={app.url} target="_blank">*/}
+                          <a href="https://www.quran.radio" target="_blank">
+                              {/*<span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>*/}
+                              <span style={{ color: `#1377FD` }}>www.Quran.radio</span>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div className={countriesStyles.websitessc}>
                   <Swiper
                       spaceBetween={0}
                       slidesPerView={1}
@@ -235,23 +252,7 @@ const QuranRadioDetail = () => {
                       </SwiperSlide>
                   </Swiper>
               </div>
-              <div id="website" className={countriesStyles.detail}>
-                  <div className={countriesStyles.title}>
-                      <h2 className={aboutStyles.highlight}>Website</h2>
-                  </div>
-                  <div className={countriesStyles.text}>
-                      <div className={styles.app_info_wrapper}>
-                  <span className={styles.app_icon}>
-                    <WebsiteIcon />
-                  </span>
-                          {/*<a href={app.url} target="_blank">*/}
-                          <a href="https://www.quran.radio" target="_blank">
-                              {/*<span style={{ color: `#1377FD` }}>{app.website && app.website.text}</span>*/}
-                              <span style={{ color: `#1377FD` }}>www.Quran.radio</span>
-                          </a>
-                      </div>
-                  </div>
-              </div>
+              
           </div>
           {/*)}*/}
 

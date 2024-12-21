@@ -4,6 +4,7 @@ import Section from '../../utils/Section';
 import styles from './DevelopIslamicApplications.module.scss';
 import aboutStyles from '../Home/About.module.scss';
 import Container from "../../utils/Container";
+import Link from 'next/link';
 
 const DevelopIslamicApplications = () => {
   return (
@@ -160,18 +161,21 @@ const DevelopIslamicApplications = () => {
 
           <h2 className={aboutStyles.project_header}>
             Some of our <span className={aboutStyles.highlight}> applications</span>,
-            <span style={{ display: `block`, fontSize: `.85em` }} >We are also developing some other applications, which we will later publish.</span>
+            <span style={{ display: `block`, fontSize: `.85em` }} >We are also developing some other applications, which we will publish later.</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-            {apps.map((app, index) => (
-                <Card
-                    key={app.id}
+            {apps.map((app) => (
+              <Link key={app.id} href={`/p/${app.slug}`} legacyBehavior>
+                <a>
+                  <Card
                     name={app.name}
                     imagePath={app.imgPath}
                     url={app.url}
                     excerpt={app.excerpt}
-                />
+                  />
+                </a>
+              </Link>
             ))}
           </div>
         </div>

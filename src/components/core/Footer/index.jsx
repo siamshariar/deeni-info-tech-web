@@ -10,7 +10,7 @@ const Footer = () => {
       <Container>
         <div className={styles.content}>
           <div className={styles.logo}>
-            <Link href="/about">
+            <Link href="/about" legacyBehavior>
               <a>
                 {/* <Logo /> */}
                 <Image
@@ -25,17 +25,17 @@ const Footer = () => {
 
           <ul className={styles.menu}>
             <li>
-              <Link href="/about">
+              <Link href="/about" legacyBehavior>
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="/donate">
+              <Link href="/donate" legacyBehavior>
                 <a>Donate</a>
               </Link>
             </li>
             <li>
-              <Link href="/contact">
+              <Link href="/contact" legacyBehavior>
                 <a>Contact</a>
               </Link>
             </li>
@@ -43,7 +43,7 @@ const Footer = () => {
 
           <p className={styles.copyright}>
             <span>&copy; {new Date().getFullYear()} </span>
-            <Link href="/about">
+            <Link href="/about" legacyBehavior>
               <a>Deeni Info Tech.</a>
             </Link>
             <span> All Rights Reserved.</span>

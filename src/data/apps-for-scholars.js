@@ -11,6 +11,29 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    organizationName: 'Sheikh Dr Monzur-E-Elahi',
+    detailPageText: 'Dr. Mohammad Manzoor Elahi is a renowned Islamic scholar, researcher, and media personality, currently serving as an Associate Professor at the National University in the Department of Islamic Studies. Since 2004, he has been actively involved in Islamic preaching and discussions on TV and YouTube, nationally and internationally. He has delivered insightful talks at various universities and international Islamic centers. Dr. Elahi founded Taibah Academy and Kulliyatul Quranil Karim Wad-Dirasat Al-Islamiyah to promote Islamic education among Bengali speakers. His contributions continue to inspire through his teaching and public speaking.',
+    isOneWebsite: true,
+    website: {
+      text: 'www.MonzurEElahi.com',
+      images: [
+        '/img/apps/monzureelahi/website/w1.png',
+        '/img/apps/monzureelahi/website/w2.png',
+        '/img/apps/monzureelahi/website/w3.png',
+        '/img/apps/monzureelahi/website/w4.png',
+        '/img/apps/monzureelahi/website/w5.png',
+      ]
+    },
+    mobileView: {
+      link: '',
+      images: [
+        '/img/apps/monzureelahi/mobile/m0.png',
+        '/img/apps/monzureelahi/mobile/m1.png',
+        '/img/apps/monzureelahi/mobile/m2.png',
+        '/img/apps/monzureelahi/mobile/m3.png',
+        '/img/apps/monzureelahi/mobile/m4.png',
+      ]
+    },
   },
   {
     id: '10',
@@ -67,7 +90,16 @@ export const apps = [
     isProject: 1,
     order: 1,
     isInProgress: 0,
-    displayInSlider: 0,
+    displayInSlider: 1,
+    organizationName: 'Sheikh Hacene Chebbani',
+    detailPageText: 'Sheikh Hacene is the director of religious affairs with the Islamic Information Society of Calgary. He has been delivering regular halaqas and providing social counselling for the last 24 years in Canada.',
+    isOneWebsite: true,
+    website: {
+      text: 'www.HaceneChebbani.com',
+      images: [
+        '',
+      ]
+    },
   },
   {
     id: '2',
@@ -126,6 +158,19 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    isOneWebsite: true,
+    organizationName: 'Sheikh Dr Abu Bakar Zakaria',
+    detailPageText: 'Prof. Dr. Abu Bakar Muhammad Zakaria Majumder is the founder of Abu Bakr As-Siddiq Radiyallahu Anhu Complex, Abubakar As-Siddiq (RA) Centre for Education and Research and Community Welfare Initiative. He is working on Islamic Shariah, Aqeedah and Comparative Theology.',
+    website: {
+      text: 'www.AbuBakarZakaria.com',
+      images: [
+        '/img/apps/abubakarzakaria/website/w1.png',
+        '/img/apps/abubakarzakaria/website/w2.png',
+        '/img/apps/abubakarzakaria/website/w3.png',
+        '/img/apps/abubakarzakaria/website/w4.png',
+        '/img/apps/abubakarzakaria/website/w5.png',
+      ]
+    },
   },
   {
     id: '4',
@@ -139,6 +184,20 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    organizationName: 'Quranul Karim',
+    detailPageText: '\'Quranul Karim\' is a Quran based application. It presents complete Quran with Tafseer in Bengali language. Moreover, it has the option of reading Quranic verses related to various important topics.',
+    isOneWebsite: true,
+    website: {
+      text: 'www.quranulkarim.com',
+      images: [
+        '/img/apps/quranulkarim/website/w1.png',
+        '/img/apps/quranulkarim/website/w2.png',
+        '/img/apps/quranulkarim/website/w3.png',
+        '/img/apps/quranulkarim/website/w4.png',
+        '/img/apps/quranulkarim/website/w5.png',
+        '/img/apps/quranulkarim/website/w6.png',
+      ]
+    },
   },
   {
     id: '5',
@@ -152,6 +211,15 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    organizationName: 'Sheikh Dr Muhammad Saifullah',
+    detailPageText: 'Sheikh Dr Muhammad Saifullah is a renowned Islamic scholar, researcher, and writer. He is the founder of the Islamic Research Center, Darul Uloom, and the Islamic Research Center, Darul Uloom. He is the author of many books on Islamic issues.',
+    isOneWebsite: true,
+    website: {
+      text: 'www.muhammadsaifullah.com',
+      images: [
+        '',
+      ]
+    },
   },
   {
     id: '6',
@@ -210,6 +278,7 @@ export const apps = [
     displayInSlider: 1,
     organizationName: 'Tafseerul Quran',
     detailPageText: 'Tafseerul Quran calls for pure faith and deeds, making Tafseer of the Surahs of Al-Qur\'an al-Kareem from the Tafseer books written on the Aqeedah of Ahlus Sunnah Wal Jama\'at. Tafseerul Quran\'s Dawah activities are directly conducted under Dr. Imam Hussain\'s (Hafizahullah) supervision.',
+    hasAndroidWebsite: true,
     website: {
       text: 'www.TafseerulQuran.com',
       images: [
@@ -239,7 +308,20 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    organizationName: 'Khulliyatul Quran',
+    detailPageText: '\'Khulliyat Quran\' is an institution of higher Islamic education and research. It was established in 2021 AD / 1442 AD. in There are educational facilities at the Sanabiyyah (Higher Secondary) and Kulliya (Higher) levels. There are also teacher training courses, Arabic language courses for different levels of people and diploma courses on different subjects. Masters and Doctorate degree holders are employed as full time and part time teachers in the institution. Kulliyatul Quranil Kareem Wad-Dirasat Al-Islamiyah is a unique institution with a modern system of pure Islamic education.',
+    isOneWebsite: true,
+    website: {
+      text: 'www.KulliyatulQuran.com',
+      images: [
+        '/img/apps/kulliyatulquran/website/w1.png',
+        '/img/apps/kulliyatulquran/website/w2.png',
+        '/img/apps/kulliyatulquran/website/w3.png',
+        '/img/apps/kulliyatulquran/website/w4.png',
+      ]
+    },
   },
+  
   {
     id: '9',
     name: 'ImamBukhariTrust.com',
@@ -252,6 +334,20 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    organizationName: 'Imam Bukhari Trust',
+    detailPageText: 'The \'Imam Bukhari Trust\' officially started operations on October 1, 2017, at Palashpur on the banks of the Dhaleswari River. Basically, this institution is an institution composed of renowned Ulamae Keram and distinguished academicians of Bangladesh, which is implementing multifaceted programs for education, Islamic dawah and social development.',
+    isOneWebsite: true,
+    website: {
+      text: 'www.ImamBukhariTrust.com',
+      images: [
+        '/img/apps/imambukharitrust/website/w1.png',
+        '/img/apps/imambukharitrust/website/w2.png',
+        '/img/apps/imambukharitrust/website/w3.png',
+        '/img/apps/imambukharitrust/website/w4.png',
+        '/img/apps/imambukharitrust/website/w5.png',
+        '/img/apps/imambukharitrust/website/w6.png',
+      ]
+    },
   },
   // {
   //   id: '9',
@@ -266,23 +362,25 @@ export const apps = [
   //   isInProgress: 0,
   //   displayInSlider: 1,
   // },
-  {
-    id: '13',
-    name: 'SaifuddinBelal.com',
-    slug: 'saifuddinbelal',
-    url: 'http://saifuddinbelal.com/',
-    imgPath: '/img/apps/saifuddinbelal.png',
-    tooltip: 'Official website of Sheikh Saifuddin Belal Madani',
-    excerpt: 'Official website of Sheikh Saifuddin Belal Madani',
-    isProject: 1,
-    order: 1,
-    isInProgress: 1,
-    displayInSlider: 1,
-  },
+  // {
+  //   id: '13',
+  //   name: 'SaifuddinBelal.com',
+  //   slug: 'saifuddinbelal',
+  //   url: 'http://saifuddinbelal.com/',
+  //   imgPath: '/img/apps/saifuddinbelal.png',
+  //   tooltip: 'Official website of Sheikh Saifuddin Belal Madani',
+  //   excerpt: 'Official website of Sheikh Saifuddin Belal Madani',
+  //   isProject: 1,
+  //   order: 1,
+  //   isInProgress: 0,
+  //   displayInSlider: 1,
+  //   organizationName: 'Saifuddin Belal',
+  //   detailPageText: 'This page will be updated soon. in sha Allah',
+  // },
   {
     id: '14',
     name: 'MasjidAlNoorHanoi.com',
-    slug: '“MasjidAlNoorHanoi',
+    slug: 'MasjidAlNoorHanoi',
     url: 'http://MasjidAlNoorHanoi.com/',
     imgPath: '/img/apps/mashjid-al-hanoi.jpg',
     tooltip: 'Website of Masjid Al Noor Hanoi, Vietnam',
@@ -291,6 +389,19 @@ export const apps = [
     order: 1,
     isInProgress: 0,
     displayInSlider: 1,
+    organizationName: 'Masjid Al Noor Hanoi',
+    detailPageText: '\'Masjid Al Noor Hanoi\' located at 12 Hang Luoc, Hanoi, is the only mosque in Northern Vietnam. Built by Indian merchants in 1885 and operational since 1890, it has been a place of worship for over 100 years. Despite being closed during the war from 1964-1973, it remained undamaged. The mosque covers over 700m², with a 200m² prayer hall.',
+    isOneWebsite: true,
+    website: {
+      text: 'www.MasjidAlNoorHanoi.com',
+      images: [
+        '/img/apps/MasjidAlNoorHanoi/website/w1.png',
+        '/img/apps/MasjidAlNoorHanoi/website/w2.png',
+        '/img/apps/MasjidAlNoorHanoi/website/w3.png',
+        '/img/apps/MasjidAlNoorHanoi/website/w4.png',
+        '/img/apps/MasjidAlNoorHanoi/website/w5.png',
+      ]
+    },
   },
   // {
   //   id: '15',

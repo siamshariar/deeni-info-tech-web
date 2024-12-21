@@ -1,11 +1,20 @@
 export const apps = [
   {
+    id: '5',
+    name: 'Quran.tube',
+    slug: 'quran-tube',
+    url: 'https://www.quran.tube',
+    imgPath: '/img/our_apps/quran-tube-white-logo.png',
+    excerpt: 'Discover the beauty of Quran recitation videos with quran.tube, a platform that provides a diverse range of islamic video and reciters. Immerse yourself in the authenticity of islamic videos. Additionally, enjoy the convenience of saving favorites and tracking your previous viewing sessions. Explore the beauty of the Islam at your fingertips.',
+    order: 1,
+  },
+  {
     id: '3',
     name: 'Quran.radio',
     slug: 'quran-radio',
     url: 'https://www.quran.radio',
-    imgPath: '/img/our_apps/quran-radio-logo.png',
-    excerpt: 'Discover the beauty of Quranic recitations with Quran.radio, a platform that provides a diverse range of live radio and reciters.',
+    imgPath: '/img/our_apps/quran-radio-white.png',
+    excerpt: 'Discover the beauty of Quranic recitations with Quran.radio, a platform that provides a diverse range of live radio and reciters. Immerse yourself in the authenticity of real-time broadcasts in the Live mode, or enjoy the serenity of recorded recitations in the Reciters mode. Additionally, enjoy the convenience of saving favorites and tracking your previous listening sessions. Explore the beauty of the Quran at your fingertips.',
     order: 1,
   },
   {
@@ -14,7 +23,7 @@ export const apps = [
     slug: 'deeni-tube',
     url: 'https://www.deenitube.com',
     imgPath: '/img/our_apps/deeni-tube-logo.png',
-    excerpt: 'Islamic video application.',
+    excerpt: 'An authentic Islamic video platform featuring content from renowned scholars, available in multiple languages to cater to diverse audiences.',
     order: 1,
   },
   {

@@ -5,6 +5,7 @@ import Section from '../../utils/Section';
 import styles from './AppsForScholars.module.scss';
 import aboutStyles from '../Home/About.module.scss';
 import Container from "../../utils/Container";
+import Link from 'next/link';
 
 const AppsForScholarsAndDawahOrganizations = () => {
   return (
@@ -114,37 +115,41 @@ const AppsForScholarsAndDawahOrganizations = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {apps.filter((item) => item.isInProgress === 0 ).map((app, index) => (
-                <Card
-                    key={app.id}
-                    name={app.name}
-                    title={app.tooltip}
-                    imagePath={app.imgPath}
-                    url={app.url}
-                    excerpt={app.excerpt}
-                />
+                <Link key={app.id} href={`/p/${app.slug}`} legacyBehavior>
+                  <a rel="noopener noreferrer" className={styles.image}>
+                    <Card
+                        key={app.id}
+                        name={app.name}
+                        title={app.tooltip}
+                        imagePath={app.imgPath}
+                        url={`/p/${app.slug}`}
+                        excerpt={app.excerpt}
+                    />
+                  </a>
+                </Link>
             ))}
           </div>
         </div>
 
-        <div className={styles.grid}>
-          <h2 className={aboutStyles.project_header}>
-            Some of our in progress projects,
-          </h2>
+        {/*<div className={styles.grid}>*/}
+        {/*  <h2 className={aboutStyles.project_header}>*/}
+        {/*    Some of our in progress projects,*/}
+        {/*  </h2>*/}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {apps.filter((item) => item.isInProgress === 1 ).map((app, index) => (
-                <Card
-                    key={app.id}
-                    name={app.name}
-                    title={app.tooltip}
-                    imagePath={app.imgPath}
-                    url={app.url}
-                    excerpt={app.excerpt}
-                    isInProgress={true}
-                />
-            ))}
-          </div>
-        </div>
+        {/*  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">*/}
+        {/*    {apps.filter((item) => item.isInProgress === 1 ).map((app, index) => (*/}
+        {/*        <Card*/}
+        {/*            key={app.id}*/}
+        {/*            name={app.name}*/}
+        {/*            title={app.tooltip}*/}
+        {/*            imagePath={app.imgPath}*/}
+        {/*            url={app.url}*/}
+        {/*            excerpt={app.excerpt}*/}
+        {/*            isInProgress={true}*/}
+        {/*        />*/}
+        {/*    ))}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </Section>
     </>
   );

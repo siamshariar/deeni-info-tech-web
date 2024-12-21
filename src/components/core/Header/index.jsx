@@ -86,7 +86,7 @@ const Header = () => {
             </div>
             <div className={styles.cell}>
               <div className={styles.logo}>
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                   <a>
                     {/* <Logo /> */}
                     <Image

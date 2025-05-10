@@ -4,71 +4,65 @@ import { useState, useRef } from 'react';
 
 const Subscription = () => {
 
-  const [value, setValue] = useState({
-    email: '',
-  });
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [subscriptionStatus, setSubscriptionStatus] = useState(null);
+  const emailRef = useRef(null);
 
-  const emailEl = useRef(null);
-
-  const changeValue = (key, val) => {
-    const newValue = { ...value, [key]: val };
-    setValue(newValue);
-  };
-
-  const handleValueChange = (e, key) => {
-    // el.current.classList.remove(styles.error);
+  const handleInputChange = (e) => {
+    setEmail(e.target.value.trim());
     e.target.classList.remove(styles.error);
-    changeValue(key, e.target.value.trim());
-    // console.log(value);
+    setSubscriptionStatus(null);
   };
 
-  const handleSubmit = (e) => {
+  const validateEmail = () => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) {
+      emailRef.current.classList.add(styles.error);
+      return false;
+    } else if (!emailPattern.test(email)) {
+      emailRef.current.classList.add(styles.error);
+      return false;
+    }
+    return true;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubscriptionStatus(null);
 
-    let error = false;
-
-    const pattern =
-      /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
-
-
-    if (value.email === '') {
-      emailEl.current.classList.add(styles.error);
-      error = true;
+    if (!validateEmail()) {
+      setIsSubmitting(false);
+      setSubscriptionStatus('validation-error');
+      return;
     }
 
-    if (!pattern.test(value.email)) {
-      emailEl.current.classList.add(styles.error);
-      error = true;
-    }
-
-    if (error) return;
-
-    let data = {
-      email: value.email,
-    };
-
-    fetch('/api/emailSub', {
-    // fetch('https://ztechltd.com/w/dit-email-sub.php', {
+    try {
+      const response = await fetch('/api/emailSub', {
       method: 'POST',
       headers: {
-        Accept: 'application/json, text/plain, */*',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(data),
-    }).then((res) => {
-      // console.log("Response received");
-      if (res.status === 200) {
-        // console.log(res);
-        setValue({
-          email: '',
-        });
-      }
+      body: JSON.stringify({ email }),
     });
 
-        // setValue({
-        //   email: '',
-        // });
-  }
+      // console.log("Response received");
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setEmail('');
+        setSubscriptionStatus('success');
+      } else {
+        setSubscriptionStatus('error');
+      }
+    } catch (error) {
+      setSubscriptionStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className={styles.root}>
@@ -84,24 +78,34 @@ const Subscription = () => {
               Subscribe to receive email updates on features, new releases.
             </p>
           </div>
-          <form
-              className={styles.form}
-              action=""
-              method="POST"
-              onSubmit={(e) => handleSubmit(e)}
-          >
+          
+          <form className={styles.form} onSubmit={handleSubmit}>
             <input
-                type="text"
-                name="email"
-                placeholder="Enter your email"
-                onChange={(e) => handleValueChange(e, 'email')}
-                value={value.email}
-                ref={emailEl}
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={handleInputChange}
+              ref={emailRef}
             />
-            <button type="submit" name="submit">
-              Subscribe
+            <button 
+              type="submit"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? '...' : 'Subscribe'}
             </button>
           </form>
+
+          {subscriptionStatus === 'success' && (
+            <div className={styles.successMessage}>
+              Thank you for subscribing!
+            </div>
+          )}
+          
+          {(subscriptionStatus === 'error' || subscriptionStatus === 'validation-error') && (
+            <div className={styles.errorMessage}>
+              Please enter a valid email address
+            </div>
+          )}
         </div>
       </Container>
     </div>

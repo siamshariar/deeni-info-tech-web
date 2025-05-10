@@ -12,30 +12,33 @@
 }
 .title {
   margin-bottom: 2.5rem;
-}
-.title h2 {
+
+  h2 {
   font-family: IvyMode, sans-serif;
   font-size: 2.5rem;
   line-height: 1em;
   font-weight: 300;
   color: #4a4a49;
   text-align: center;
-}
-.title h2 span {
-  font-weight: 300;
-  color: var(--app-theme-color);
+    
+    span {
+      font-weight: 300;
+      color: var(--app-theme-color);
+    }
+  }
 }
 
 .text {
   margin-bottom: 2.5rem;
-}
-.text p {
-  font-family: Avenir, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  line-height: 1.5em;
-  color: #4a4a49;
-  text-align: center;
+
+  p {
+    font-family: Avenir, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #4a4a49;
+    text-align: center;
+  }
 }
 
 .form {
@@ -45,21 +48,56 @@
   max-width: 520px;
   border-radius: 8px;
   overflow: hidden;
-}
-.form input {
-  width: calc(100% - 100px);
-  background-color: #fff;
-  padding: 0 16px;
-  border-radius: 8px 0 0 8px;
-}
-.form button {
-  background-color: var(--app-theme-color);
-  width: 100px;
-  color: #fff;
+  
+  input {
+    width: calc(100% - 100px);
+    background-color: #fff;
+    padding: 0 16px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ddd;
+    font-family: Avenir, sans-serif;
+    font-size: 1rem;
+    
+    &:focus {
+      outline: none;
+      border-color: var(--app-theme-color);
+    }
+    
+    &.error {
+      border: 1px solid #de3940 !important;
+    }
+  }
+  
+  button {
+    background-color: var(--app-theme-color);
+    width: 100px;
+    color: #fff;
+    border: none;
+    font-family: Avenir, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+  }
 }
 
-.error {
-  border: 1px solid #de3940 !important;
+.successMessage {
+  margin-top: 1rem;
+  color: #4a4a49;
+  font-family: Avenir, sans-serif;
+  font-size: 1.5rem;
+}
+
+.errorMessage {
+  margin-top: 1rem;
+  color: #de3940;
+  font-family: Avenir, sans-serif;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -68,21 +106,26 @@
   }
   .title {
     margin-bottom: 3rem;
-  }
-  .title h2 {
-    font-size: 3.5rem;
+    
+    h2 {
+      font-size: 3.5rem;
+    }
   }
   .text {
     margin-bottom: 3rem;
   }
   .form {
     height: 58px;
-  }
-  .form input {
+  
+  input {
     width: calc(100% - 120px);
     padding: 0 20px;
-  }
-  .form button {
-    width: 120px;
+    font-size: 1.1rem;
+    }
+
+    button {
+      width: 120px;
+      font-size: 1.1rem;
+    }
   }
 }

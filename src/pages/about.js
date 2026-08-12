@@ -28,10 +28,10 @@ export default function AboutPage() {
 
         <PageContent>
             <HomeAbout />
-            <AppsForScholars />
             <DawahInCountries />
             {/* <OurApps /> */}
             <HomeImageSliderSecondary />
+            <AppsForScholars />
             <HomeFaqs />
             <HomeSubscription />
         </PageContent>

@@ -1,5 +1,14 @@
 export const apps = [
   {
+    id: '6',
+    name: 'Deeni.tv',
+    slug: 'deeni-tv',
+    url: 'https://www.deeni.tv',
+    imgPath: '/img/our_apps/deeni-tv-card-logo.png',
+    excerpt: 'Experience premium Islamic content in a revolutionary lean-back TV interface designed for modern audiences. Deeni.tv brings you high-quality spiritual programming including Quran recitations, Islamic lectures, historical documentaries, and daily reflections, with 24/7 live streaming and multi-language support.',
+    order: 1,
+  },
+  {
     id: '5',
     name: 'Quran.tube',
     slug: 'quran-tube',

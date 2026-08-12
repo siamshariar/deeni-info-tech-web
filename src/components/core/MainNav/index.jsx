@@ -55,16 +55,6 @@ const MainNav = ({ open, controller }) => {
               <li
                 className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
               >
-                <Link href="/applications-for-scholars-and-dawah-organizations" legacyBehavior>
-                  <a onClick={(e) => controller(e)}>
-                    Applications for Scholars & Da&apos;wah organizations
-                  </a>
-                </Link>
-              </li>
-
-              <li
-                className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
-              >
                 <Link href="/applications-for-non-muslim-countries" legacyBehavior>
                   <a onClick={(e) => controller(e)}>
                     Applications for Non-Muslim Countries
@@ -78,6 +68,16 @@ const MainNav = ({ open, controller }) => {
                 <Link href="/develop-islamic-applications" legacyBehavior>
                   <a onClick={(e) => controller(e)}>
                     Develop Islamic applications
+                  </a>
+                </Link>
+              </li>
+
+              <li
+                className={`${styles.page} ${styles.footer} ${styles.accessibility}`}
+              >
+                <Link href="/applications-for-scholars-and-dawah-organizations" legacyBehavior>
+                  <a onClick={(e) => controller(e)}>
+                    Applications for Scholars & Da&apos;wah organizations
                   </a>
                 </Link>
               </li>

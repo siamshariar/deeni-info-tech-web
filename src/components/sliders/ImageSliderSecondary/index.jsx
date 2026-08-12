@@ -157,6 +157,19 @@ const Slider = ({ displayButton }) => {
                           <SwiperSlide>
                             <div style={{ display: `flex` }} className="tsi_item">
                               <Image
+                                  src="/img/slides/deeni-tv-banner.jpg"
+                                  alt=""
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center center"
+                                  loading="eager"
+                                  unoptimized
+                              />
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div style={{ display: `flex` }} className="tsi_item">
+                              <Image
                                   src="/img/slides/quran-tube-webb.jpg"
                                   alt=""
                                   layout="fill"
@@ -235,6 +248,19 @@ const Slider = ({ displayButton }) => {
                         }}
                         onSwiper={(swiper) => setSwiperInstance(swiper)}
                     >
+                       <SwiperSlide>
+                        <div style={{ display: `flex` }} className="tsi_item">
+                          <Image
+                              src="/img/slides/deeni-tv-banner.jpg"
+                              alt=""
+                              layout="fill"
+                              objectFit="cover"
+                              objectPosition="center center"
+                              loading="eager"
+                              unoptimized
+                          />
+                        </div>
+                      </SwiperSlide>
                        <SwiperSlide>
                         <div style={{ display: `flex` }} className="tsi_item">
                           <Image

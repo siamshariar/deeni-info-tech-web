@@ -32,9 +32,9 @@ export default function HomePage() {
       <PageContent>
         <VerseSlider />
         <HomeAbout />
-        <DawahInCountries />
         {/* <OurApps /> */}
         <HomeImageSliderSecondary />
+        <DawahInCountries />
         <AppsForScholars />
         <HomeFaqs />
         <HomeSubscription />

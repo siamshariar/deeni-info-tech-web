@@ -28,9 +28,9 @@ export default function AboutPage() {
 
         <PageContent>
             <HomeAbout />
-            <DawahInCountries />
             {/* <OurApps /> */}
             <HomeImageSliderSecondary />
+            <DawahInCountries />
             <AppsForScholars />
             <HomeFaqs />
             <HomeSubscription />

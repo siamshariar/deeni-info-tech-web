@@ -41,9 +41,16 @@ When asked to push, push to both `origin` and `github` unless told otherwise. Gi
 **Card logo sizing gotcha**: `CardThree` applies a fixed `height: 90px !important; width: auto !important;` to logo images. Rendered width therefore depends entirely on how much transparent/white padding the source PNG has around the actual logomark — visually similar logos can render at wildly different sizes if their padding ratios differ. When adding a new app logo, check its rendered width against an existing one (e.g. `quran-tube-white-logo.png`) rather than assuming visual similarity in the source file will hold on the card.
 
 **Email/API routes** (`src/pages/api/`):
-- `emailSub.js` — subscription form backend, currently integrated with MailerLite's API (`X-MailerLite-ApiKey` header, v2 endpoint). Env vars: `MAILERLITE_API_KEY`, `MAILERLITE_GROUP_ID`.
-- `sendMail.js` — contact form backend, uses `@sendgrid/mail`. Env vars: `SENDGRID_API_KEY`, `AUTH_EMAIL`, `CONTACT_EMAIL`.
+- `emailSub.js` — subscription form backend, integrated with Sender.net's API (`POST https://api.sender.net/v2/subscribers`, `Authorization: Bearer <token>`). Env vars: `SENDER_API_KEY`, `SENDER_GROUP_ID`. (Previously used MailerLite — migrated in commit `41ff965`; if you see `MAILERLITE_*` referenced anywhere, it's stale.)
+- `sendMail.js` — contact form backend, uses `@sendgrid/mail`. Env vars: `SENDGRID_API_KEY`, `AUTH_EMAIL`, `CONTACT_EMAIL`. Unlike `emailSub.js`, this route has no input validation and no try/catch around the send call — a pre-existing inconsistency between the two routes, not something either implementation needs to match.
 - The frontend `Subscription` component (`src/components/ui/Subscription/`) is provider-agnostic — it just POSTs `{ email }` to `/api/emailSub` and shows success/error state, so swapping the email provider only requires changing the API route, not the form.
+
+## Workflow expectations
+
+- If this file doesn't exist yet at the start of a session, run `/init` before doing anything else.
+- For non-trivial changes — a new external integration, replacing an existing integration, anything touching multiple files, or anything whose exact shape depends on an external API's contract — explore the existing code and the relevant docs first, then use Plan Mode to present a concrete plan for review before writing any code. Don't go straight from research to a diff.
+- Small, obvious, single-file, easily-reversible changes (a copy/style tweak, a config value fix) don't need that ceremony — direct execution is fine.
+- When researching an external API, fetch/search its actual current documentation rather than relying on memorized knowledge of the API shape — third-party APIs change without notice.
 
 **`src/lib/config.js`**: exports `server` (env-aware base URL) and `receiverEmail`/`emailSenderName` used by the contact form. Note the `receiverEmail` currently points at a Gmail fallback with a `// TODO: Fix Webmail` comment above the real `info@deeniinfotech.com` address — the org's own mailbox has had delivery issues before.
 

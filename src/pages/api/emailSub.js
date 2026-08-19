@@ -33,7 +33,8 @@ export default async function (req, res) {
     if (!senderResponse.ok) {
       const errorData = await senderResponse.json();
       console.error('Sender API Error:', errorData);
-      throw new Error(errorData.message || 'Failed to subscribe');
+      const fieldError = errorData.errors && Object.values(errorData.errors)[0]?.[0];
+      throw new Error(fieldError || errorData.message || 'Failed to subscribe');
     }
 
     return res.status(200).json({

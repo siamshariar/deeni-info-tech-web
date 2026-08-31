@@ -13,35 +13,33 @@ export default async function (req, res) {
   try {
     const subscriberData = {
       email: email,
-      groups: [process.env.MAILERLITE_GROUP_ID],
-      resubscribe: false,
-      type: "active"
+      groups: [process.env.SENDER_GROUP_ID],
     };
 
     if (name) {
-      subscriberData.fields = {
-        name: name
-      };
+      subscriberData.firstname = name;
     }
 
-    const mailerliteResponse = await fetch('https://api.mailerlite.com/api/v2/subscribers', {
+    const senderResponse = await fetch('https://api.sender.net/v2/subscribers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-MailerLite-ApiKey': process.env.MAILERLITE_API_KEY
+        'Accept': 'application/json',
+        'Authorization': `Bearer ${process.env.SENDER_API_KEY}`
       },
       body: JSON.stringify(subscriberData)
     });
 
-    if (!mailerliteResponse.ok) {
-      const errorData = await mailerliteResponse.json();
-      console.error('MailerLite API Error:', errorData);
-      throw new Error(errorData.error?.message || 'Failed to subscribe');
+    if (!senderResponse.ok) {
+      const errorData = await senderResponse.json();
+      console.error('Sender API Error:', errorData);
+      const fieldError = errorData.errors && Object.values(errorData.errors)[0]?.[0];
+      throw new Error(fieldError || errorData.message || 'Failed to subscribe');
     }
 
-    return res.status(200).json({ 
+    return res.status(200).json({
       status: 'OK',
-      message: 'Subscription successful' 
+      message: 'Subscription successful'
     });
   } catch (error) {
     console.error('Subscription Error:', error);

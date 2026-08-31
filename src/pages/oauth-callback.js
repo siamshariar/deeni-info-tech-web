@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Meta from '../components/core/Meta';
 import { server } from '../lib/config';
@@ -41,9 +41,19 @@ function CopyableField({ label, value }) {
 
 export default function OAuthCallback() {
   const router = useRouter();
-  const { query, isReady } = router;
+  const { query } = router;
 
-  const presentFields = FIELDS.filter((key) => typeof query[key] === 'string' && query[key]);
+  // Always render the same "Loading…" markup on the server and on the client's
+  // first hydration pass — router.query can already be populated server-side in
+  // dev mode, which would otherwise mismatch the client's pre-hydration state.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const presentFields = mounted
+    ? FIELDS.filter((key) => typeof query[key] === 'string' && query[key])
+    : [];
 
   return (
     <>
@@ -60,7 +70,7 @@ export default function OAuthCallback() {
       <PageContent>
         <Container>
           <div style={{ padding: '40px 0' }}>
-            {!isReady ? (
+            {!mounted ? (
               <p>Loading…</p>
             ) : presentFields.length === 0 ? (
               <p>No authorization parameters were found in the URL.</p>

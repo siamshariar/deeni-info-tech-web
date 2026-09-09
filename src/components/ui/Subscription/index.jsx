@@ -15,12 +15,12 @@ const Subscription = () => {
     setSubscriptionStatus(null);
   };
 
-  const validateEmail = () => {
+  const validateEmail = (value) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email) {
+    if (!value) {
       emailRef.current.classList.add(styles.error);
       return false;
-    } else if (!emailPattern.test(email)) {
+    } else if (!emailPattern.test(value)) {
       emailRef.current.classList.add(styles.error);
       return false;
     }
@@ -32,7 +32,12 @@ const Subscription = () => {
     setIsSubmitting(true);
     setSubscriptionStatus(null);
 
-    if (!validateEmail()) {
+    // Read the input's current DOM value directly rather than the `email` state:
+    // browser autofill (very common for saved addresses) can populate the input
+    // without React's onChange having flushed yet, leaving `email` stale/empty.
+    const currentEmail = emailRef.current.value.trim();
+
+    if (!validateEmail(currentEmail)) {
       setIsSubmitting(false);
       setSubscriptionStatus('validation-error');
       return;
@@ -44,7 +49,7 @@ const Subscription = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email: currentEmail }),
     });
 
       // console.log("Response received");
@@ -53,7 +58,7 @@ const Subscription = () => {
 
       if (response.ok) {
         setEmail('');
-        setSubscriptionStatus('success');
+        setSubscriptionStatus(data.alreadySubscribed ? 'already-subscribed' : 'success');
       } else {
         setSubscriptionStatus('error');
       }
@@ -100,7 +105,13 @@ const Subscription = () => {
               Thank you for subscribing!
             </div>
           )}
-          
+
+          {subscriptionStatus === 'already-subscribed' && (
+            <div className={styles.successMessage}>
+              You are already subscribed!
+            </div>
+          )}
+
           {(subscriptionStatus === 'error' || subscriptionStatus === 'validation-error') && (
             <div className={styles.errorMessage}>
               Please enter a valid email address

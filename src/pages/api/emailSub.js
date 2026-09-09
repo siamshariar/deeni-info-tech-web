@@ -37,9 +37,14 @@ export default async function (req, res) {
       throw new Error(fieldError || errorData.message || 'Failed to subscribe');
     }
 
+    // Sender.net returns 201 for a newly created subscriber and 200 when the
+    // email already existed (it upserts rather than erroring on duplicates).
+    const alreadySubscribed = senderResponse.status === 200;
+
     return res.status(200).json({
       status: 'OK',
-      message: 'Subscription successful'
+      alreadySubscribed,
+      message: alreadySubscribed ? 'You are already subscribed' : 'Subscription successful'
     });
   } catch (error) {
     console.error('Subscription Error:', error);

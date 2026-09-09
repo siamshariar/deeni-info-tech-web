@@ -58,7 +58,7 @@ const Subscription = () => {
 
       if (response.ok) {
         setEmail('');
-        setSubscriptionStatus('success');
+        setSubscriptionStatus(data.alreadySubscribed ? 'already-subscribed' : 'success');
       } else {
         setSubscriptionStatus('error');
       }
@@ -105,7 +105,13 @@ const Subscription = () => {
               Thank you for subscribing!
             </div>
           )}
-          
+
+          {subscriptionStatus === 'already-subscribed' && (
+            <div className={styles.successMessage}>
+              You are already subscribed!
+            </div>
+          )}
+
           {(subscriptionStatus === 'error' || subscriptionStatus === 'validation-error') && (
             <div className={styles.errorMessage}>
               Please enter a valid email address

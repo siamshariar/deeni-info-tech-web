@@ -12,7 +12,7 @@ export default function Page() {
                 title={`Hadith.ac Apps | DeeniInfoTech.com`}
                 description="Hadith application. Some of the features are Hadith books & categories, Reader friendly UI, Custom settings, Bookmarks, User login access."
                 url={`${server}/p/hadith-ac`}
-                image={`${server}/img/our_apps/quran-radio/quran-radio-social.png`}
+                image={`${server}/img/logo/share-preview.png`}
                 type="website"
             />
 

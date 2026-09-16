@@ -47,6 +47,8 @@
 
 .image img {
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .image2 {
   width: 100%;

@@ -220,7 +220,7 @@ const SupportNonMuslimCountries = () => {
             </div>
           </div>
 
-          <div className={aboutStyles.wrapper}>
+          <div className={classNames(aboutStyles.wrapper, styles.no_wrapper_padding)}>
             <Container>
               <div style={{ paddingTop: `50px` }} className={aboutStyles.content}>
                 <div className={aboutStyles.text}>
@@ -283,7 +283,7 @@ const SupportNonMuslimCountries = () => {
         </Section>
       </div>
 
-      <div className={aboutStyles.wrapper}>
+      <div className={classNames(aboutStyles.wrapper, styles.no_wrapper_padding)}>
         <Container>
           <div className={aboutStyles.content}>
 
@@ -446,6 +446,18 @@ const SupportNonMuslimCountries = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <img src="/img/slides/branding-vn-7.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/slides/branding-vn-8.png" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/slides/branding-vn-9.png" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/slides/branding-vn-10.png" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/img/slides/branding-vn-11.png" />
               </SwiperSlide>
             </Swiper>
           </div>

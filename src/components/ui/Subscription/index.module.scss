@@ -54,35 +54,16 @@
     background-color: #fff;
     padding: 0 16px;
     border-radius: 8px 0 0 8px;
-    border: 1px solid #ddd;
-    font-family: Avenir, sans-serif;
-    font-size: 1rem;
-    
-    &:focus {
-      outline: none;
-      border-color: var(--app-theme-color);
-    }
-    
+
     &.error {
       border: 1px solid #de3940 !important;
     }
   }
-  
+
   button {
     background-color: var(--app-theme-color);
     width: 100px;
     color: #fff;
-    border: none;
-    font-family: Avenir, sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    
-    &:disabled {
-      opacity: 0.7;
-      cursor: not-allowed;
-    }
   }
 }
 
@@ -116,16 +97,14 @@
   }
   .form {
     height: 58px;
-  
+
   input {
     width: calc(100% - 120px);
     padding: 0 20px;
-    font-size: 1.1rem;
     }
 
     button {
       width: 120px;
-      font-size: 1.1rem;
     }
   }
 }

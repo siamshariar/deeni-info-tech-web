@@ -29,12 +29,22 @@ export default function VideoModal({ isOpen, onClose, videoId, title, descriptio
                 type="website"
             />
             <section className={styles.modalWrapper}>
+                <button
+                    type="button"
+                    className={styles.closeIcon}
+                    onClick={onClose}
+                    aria-label="Close"
+                >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                        <line x1="4" y1="4" x2="20" y2="20" />
+                        <line x1="20" y1="4" x2="4" y2="20" />
+                    </svg>
+                </button>
                 <div className={styles.overlay}>
                     <div
                         className={styles.content}
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <span className="close video-close" onClick={onClose}></span>
                         <div className={styles.iframeContainer}>
                             <iframe
                                 className={styles.iframe}

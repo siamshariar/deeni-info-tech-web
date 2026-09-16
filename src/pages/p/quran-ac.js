@@ -12,7 +12,7 @@ export default function Page() {
                 title={`Quran.ac Apps | DeeniInfoTech.com`}
                 description="Quran application. Some of the features are Multi translations, Reader friendly UI, Custom settings, Bookmarks, User login access."
                 url={`${server}/p/quran-ac`}
-                image={`${server}/img/logo/share-preview.png`}
+                image={`${server}/img/our_apps/quran-ac-social.png`}
                 type="website"
             />
 

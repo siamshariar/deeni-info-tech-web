@@ -12,7 +12,7 @@ export default function Page() {
                 title={`DeeniTube Apps | DeeniInfoTech.com`}
                 description="An authentic Islamic video platform featuring content from renowned scholars, available in multiple languages to cater to diverse audiences."
                 url={`${server}/p/deeni-tube`}
-                image={`${server}/img/logo/share-preview.png`}
+                image={`${server}/img/our_apps/deeni-tube-social.png`}
                 type="website"
             />
 

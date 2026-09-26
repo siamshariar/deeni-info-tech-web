@@ -5,6 +5,7 @@ import DonateContent from '../../components/pages/Donate';
 import {server} from "../../lib/config";
 import VerseSlider from "../../components/pages/Donate/VerseSlider";
 import DonationAbout from "../../components/pages/Donate/About";
+import DonateHeroCard from "../../components/pages/Donate/HeroCard";
 import HomeFaqs from "../../components/pages/Home/Faqs";
 import HomeSubscription from "../../components/pages/Home/Subscription";
 
@@ -26,6 +27,7 @@ export default function Donation() {
       />
 
       <PageContent>
+        <DonateHeroCard />
         <VerseSlider />
         <DonationAbout />
         <DonateContent />

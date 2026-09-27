@@ -10,7 +10,7 @@ import classNames from "classnames";
 const donationIcons = [
   {
     key: 'heart',
-    label: 'Sadaqah',
+    label: 'Donate',
     className: styles.icon_1,
     svg: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,103 +22,88 @@ const donationIcons = [
     ),
   },
   {
-    key: 'book',
-    label: "Da'wah",
+    key: 'hand-heart',
+    label: 'Hand Heart',
     className: styles.icon_2,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5v-13z" fill="currentColor" />
-        <path
-          d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5v-13z"
-          fill="currentColor"
-          opacity="0.6"
-        />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 14H6.5a2.5 2.5 0 0 0 0 5h7a5 5 0 0 0 4.5-2.8L20 12" />
+        <path d="M3 13l3 1" />
+        <path d="M15 6.5c-1.2-1.4-3.3-1.4-4.3.2-1 1.5-.3 3 1.1 4.1l2.2 1.7 2.2-1.7c1.4-1.1 2.1-2.6 1.1-4.1-1-1.6-3.1-1.6-4.3-.2z" />
       </svg>
     ),
   },
   {
-    key: 'water',
-    label: 'Clean Water',
+    key: 'gift',
+    label: 'Gift',
     className: styles.icon_3,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2s6.5 7.4 6.5 12A6.5 6.5 0 1 1 5.5 14C5.5 9.4 12 2 12 2z" fill="currentColor" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="8" width="18" height="4" rx="1" />
+        <path d="M12 8v13" />
+        <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+        <path d="M12 8c-1.5 0-4-1-4-3a2.2 2.2 0 0 1 4-1.3A2.2 2.2 0 0 1 16 5c0 2-2.5 3-4 3z" />
       </svg>
     ),
   },
   {
-    key: 'education',
-    label: 'Education',
+    key: 'hand-coins',
+    label: 'Give',
     className: styles.icon_4,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 3 1 8.5 12 14l9-4.5V15h2V8.5L12 3z" fill="currentColor" />
-        <path
-          d="M5 11.2V15c0 1.9 3.1 4 7 4s7-2.1 7-4v-3.8l-7 3.5-7-3.5z"
-          fill="currentColor"
-          opacity="0.6"
-        />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9" cy="6" r="3" />
+        <path d="M11 14H6.5a2.5 2.5 0 0 0 0 5h7a5 5 0 0 0 4.5-2.8L20 12" />
+        <path d="M3 13l3 1" />
+        <path d="M13 10h3a2 2 0 0 1 2 2" />
       </svg>
     ),
   },
   {
-    key: 'medical',
-    label: 'Medical Aid',
+    key: 'wallet',
+    label: 'Wallet',
     className: styles.icon_5,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-2 10h-3v3h-4v-3H7v-4h3V6h4v3h3v4z"
-          fill="currentColor"
-        />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 7a2 2 0 0 1 2-2h13a1 1 0 0 1 1 1v3" />
+        <path d="M3 7v11a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1h-4a2 2 0 0 0 0 4h5" />
       </svg>
     ),
   },
   {
-    key: 'food',
-    label: 'Food Aid',
+    key: 'life-buoy',
+    label: 'Support',
     className: styles.icon_6,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M11 2v8.5A2.5 2.5 0 0 1 8.5 13H8v9H6v-9h-.5A2.5 2.5 0 0 1 3 10.5V2h2v7h1V2h2v7h1V2h2z"
-          fill="currentColor"
-        />
-        <path
-          d="M16.5 2C14.6 2 13 4.2 13 7s1.2 4.7 2.5 5.4V21h2v-8.6C18.8 11.7 20 9.8 20 7c0-2.8-1.6-5-3.5-5z"
-          fill="currentColor"
-          opacity="0.6"
-        />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" />
+        <circle cx="12" cy="12" r="4" />
+        <path d="M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M19.1 4.9l-4.2 4.2M9.1 14.9l-4.2 4.2" />
       </svg>
     ),
   },
   {
-    key: 'orphan',
-    label: 'Orphan Care',
+    key: 'circle-help',
+    label: 'Help',
     className: styles.icon_7,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="7" r="4" fill="currentColor" />
-        <path d="M4 21v-1c0-3.9 3.6-7 8-7s8 3.1 8 7v1H4z" fill="currentColor" opacity="0.6" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M9.5 9a2.5 2.5 0 0 1 4.8 1c0 1.7-2.3 2-2.3 3.5" />
+        <path d="M12 17h.01" />
       </svg>
     ),
   },
   {
-    key: 'mosque',
-    label: 'Masjid',
+    key: 'hand-helping',
+    label: 'Volunteer',
     className: styles.icon_8,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M12 2c1.2 1.5 2 3 2 4.3A2 2 0 0 1 12 8a2 2 0 0 1-2-1.7C10 5 10.8 3.5 12 2z"
-          fill="currentColor"
-        />
-        <path
-          d="M3 21v-6.5C3 11.5 5 9 7 8v3H5v10H3zm18 0v-6.5C21 11.5 19 9 17 8v3h2v10h2z"
-          fill="currentColor"
-          opacity="0.6"
-        />
-        <path d="M7 21v-7a5 5 0 0 1 10 0v7H7z" fill="currentColor" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 14H6.5a2.5 2.5 0 0 0 0 5h7a5 5 0 0 0 4.5-2.8L20 12" />
+        <path d="M3 13l3 1" />
+        <path d="M13 10h3a2 2 0 0 1 2 2" />
+        <path d="M8 10V6a2 2 0 0 1 2-2h2l4 3" />
       </svg>
     ),
   },
@@ -139,12 +124,6 @@ const DonateContent = () => {
           <div className="col-span-1 md:col-span-8 lg:col-span-9">
             <div className={styles.left}>
               <div className={classNames(styles.card, styles.donation_container)} >
-                <div className={styles.glass_bg} aria-hidden="true">
-                  <span className={styles.blob_1} />
-                  <span className={styles.blob_2} />
-                  <span className={styles.blob_3} />
-                </div>
-
                 <div className={styles.icons_layer} aria-hidden="true">
                   {donationIcons.map((item) => (
                     <span
@@ -163,9 +142,7 @@ const DonateContent = () => {
                     and at the end, you can choose "<span style={{fontWeight: `bold`}}>Pay with Debit or Credit Card</span>".
                   </p>
                 </div>
-                <div className={styles.form_highlight}>
-                  <DonateForm />
-                </div>
+                <DonateForm />
               </div>
             </div>
           </div>

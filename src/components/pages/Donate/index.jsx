@@ -159,6 +159,64 @@ const donationIcons = [
       </svg>
     ),
   },
+  {
+    key: 'heart-plus',
+    label: 'Sadaqah Jariyah',
+    className: styles.icon_13,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 13.5c1.3-1.5 2-2.9 2-4.3A4.2 4.2 0 0 0 13.5 6.5" />
+        <path d="M12 21s-7.5-4.6-9.8-8.8A4.2 4.2 0 0 1 9 6.5c1.2 0 2.3.5 3 1.4" />
+        <path d="M19 12v6M16 15h6" />
+      </svg>
+    ),
+  },
+  {
+    key: 'circle-dollar-sign',
+    label: 'Donate Funds',
+    className: styles.icon_14,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 6.5v11M15 9.2c0-1.2-1.3-2.2-3-2.2s-3 .9-3 2.1c0 3 6 1.4 6 4.3 0 1.3-1.3 2.3-3 2.3s-3-1-3-2.2" />
+      </svg>
+    ),
+  },
+  {
+    key: 'message-question',
+    label: 'Ask a Question',
+    className: styles.icon_15,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" />
+        <path d="M9.8 9.3a2.2 2.2 0 0 1 4.2.9c0 1.5-2 1.8-2 3.1" />
+        <path d="M12 15.8h.01" />
+      </svg>
+    ),
+  },
+  {
+    key: 'hand-holding-heart',
+    label: 'Giving',
+    className: styles.icon_16,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 15c0-4.5 3.5-8 8-8s8 3.5 8 8" />
+        <path d="M2 15h4l2-2 3 3 2-4 2 3h5" />
+        <path d="M9.5 5.8c-.9-1-2.5-1-3.3.1-.7 1-.3 2.1.8 3l2 1.5 2-1.5c1.1-.9 1.5-2 .8-3-.8-1.1-2.4-1.1-3.3-.1z" />
+      </svg>
+    ),
+  },
+  {
+    key: 'badge-dollar-sign',
+    label: 'Zakat',
+    className: styles.icon_17,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2 9.5 4H6.5v3L4 9.5 6 12l-2 2.5L6.5 17v3h3L12 22l2.5-2h3v-3l2.5-2.5L18 12l2-2.5L17.5 7V4h-3L12 2z" />
+        <path d="M12 8v8M14.2 10.2c0-.9-1-1.6-2.2-1.6s-2.2.7-2.2 1.5c0 2.2 4.4 1 4.4 3.2 0 .9-1 1.6-2.2 1.6s-2.2-.7-2.2-1.6" />
+      </svg>
+    ),
+  },
 ];
 
 const DonateContent = () => {

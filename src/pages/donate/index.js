@@ -27,9 +27,9 @@ export default function Donation() {
       />
 
       <PageContent>
-        <DonateHeroCard />
         <VerseSlider />
         <DonationAbout />
+        <DonateHeroCard />
         <DonateContent />
         <HomeFaqs />
         <HomeSubscription />

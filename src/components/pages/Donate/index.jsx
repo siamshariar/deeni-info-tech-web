@@ -83,14 +83,14 @@ const donationIcons = [
     ),
   },
   {
-    key: 'circle-help',
-    label: 'Help',
+    key: 'piggy-bank',
+    label: 'Savings for Sadaqah',
     className: styles.icon_7,
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M9.5 9a2.5 2.5 0 0 1 4.8 1c0 1.7-2.3 2-2.3 3.5" />
-        <path d="M12 17h.01" />
+        <path d="M18 10a1 1 0 0 1 1 1v1.5l1.5 1V16H19a4 4 0 0 1-4 3.5V21h-3v-1.5H9V21H6v-2a5 5 0 0 1-2-4c0-3 3-6.5 8-6.5 1.7 0 3 .3 4 .8" />
+        <circle cx="16.2" cy="10.8" r="0.6" fill="currentColor" stroke="none" />
+        <path d="M11 7.5V5.5M9 6l1-1.5 1.5.8" />
       </svg>
     ),
   },
@@ -172,13 +172,16 @@ const donationIcons = [
     ),
   },
   {
-    key: 'circle-dollar-sign',
-    label: 'Donate Funds',
+    key: 'recurring-donation',
+    label: 'Monthly Giving',
     className: styles.icon_14,
     svg: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M12 6.5v11M15 9.2c0-1.2-1.3-2.2-3-2.2s-3 .9-3 2.1c0 3 6 1.4 6 4.3 0 1.3-1.3 2.3-3 2.3s-3-1-3-2.2" />
+        <path d="M4 12a8 8 0 0 1 13.7-5.7L20 8" />
+        <path d="M20 4v4h-4" />
+        <path d="M20 12a8 8 0 0 1-13.7 5.7L4 16" />
+        <path d="M4 20v-4h4" />
+        <path d="M12 9v3l2 1.5" />
       </svg>
     ),
   },
@@ -234,24 +237,6 @@ const DonateContent = () => {
           <div className="col-span-1 md:col-span-8 lg:col-span-9">
             <div className={styles.left}>
               <div className={classNames(styles.card, styles.donation_container)} >
-                <div className={styles.glass_bg} aria-hidden="true">
-                  <span className={styles.blob_1} />
-                  <span className={styles.blob_2} />
-                  <span className={styles.blob_3} />
-                </div>
-
-                <div className={styles.icons_layer} aria-hidden="true">
-                  {donationIcons.map((item) => (
-                    <span
-                      key={item.key}
-                      className={classNames(styles.floating_icon, item.className)}
-                      title={item.label}
-                    >
-                      {item.svg}
-                    </span>
-                  ))}
-                </div>
-
                 <div className={styles.donation_msg_wrapper}>
                   <p>
                     You don't need a PayPal account, just proceed by selecting PayPal,
@@ -259,6 +244,24 @@ const DonateContent = () => {
                   </p>
                 </div>
                 <div className={styles.form_highlight}>
+                  <div className={styles.glass_bg} aria-hidden="true">
+                    <span className={styles.blob_1} />
+                    <span className={styles.blob_2} />
+                    <span className={styles.blob_3} />
+                  </div>
+
+                  <div className={styles.icons_layer} aria-hidden="true">
+                    {donationIcons.map((item) => (
+                      <span
+                        key={item.key}
+                        className={classNames(styles.floating_icon, item.className)}
+                        title={item.label}
+                      >
+                        {item.svg}
+                      </span>
+                    ))}
+                  </div>
+
                   <DonateForm />
                 </div>
               </div>

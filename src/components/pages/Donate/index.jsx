@@ -107,6 +107,58 @@ const donationIcons = [
       </svg>
     ),
   },
+  {
+    key: 'gift-heart',
+    label: 'Gift of Love',
+    className: styles.icon_9,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="8" width="18" height="4" rx="1" />
+        <path d="M12 12v9" />
+        <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+        <path d="M12 8c-3-3-7-1-7 2.2M12 8c3-3 7-1 7 2.2" />
+      </svg>
+    ),
+  },
+  {
+    key: 'coins',
+    label: 'Coins',
+    className: styles.icon_10,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="9" cy="7" rx="6" ry="3" />
+        <path d="M3 7v5c0 1.7 2.7 3 6 3s6-1.3 6-3V7" />
+        <path d="M9 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" />
+        <ellipse cx="15" cy="12" rx="6" ry="3" />
+      </svg>
+    ),
+  },
+  {
+    key: 'headset',
+    label: 'Contact Support',
+    className: styles.icon_11,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 13a8 8 0 0 1 16 0" />
+        <rect x="3" y="13" width="4" height="6" rx="1.5" />
+        <rect x="17" y="13" width="4" height="6" rx="1.5" />
+        <path d="M19 19v1a3 3 0 0 1-3 3h-2" />
+      </svg>
+    ),
+  },
+  {
+    key: 'donation-box',
+    label: 'Charity',
+    className: styles.icon_12,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 10h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z" />
+        <path d="M2 7a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v3H2V7z" />
+        <path d="M12 6V3M9.5 4.5 12 6l2.5-1.5" />
+        <path d="M10 14h4" />
+      </svg>
+    ),
+  },
 ];
 
 const DonateContent = () => {
@@ -124,6 +176,12 @@ const DonateContent = () => {
           <div className="col-span-1 md:col-span-8 lg:col-span-9">
             <div className={styles.left}>
               <div className={classNames(styles.card, styles.donation_container)} >
+                <div className={styles.glass_bg} aria-hidden="true">
+                  <span className={styles.blob_1} />
+                  <span className={styles.blob_2} />
+                  <span className={styles.blob_3} />
+                </div>
+
                 <div className={styles.icons_layer} aria-hidden="true">
                   {donationIcons.map((item) => (
                     <span
@@ -142,7 +200,9 @@ const DonateContent = () => {
                     and at the end, you can choose "<span style={{fontWeight: `bold`}}>Pay with Debit or Credit Card</span>".
                   </p>
                 </div>
-                <DonateForm />
+                <div className={styles.form_highlight}>
+                  <DonateForm />
+                </div>
               </div>
             </div>
           </div>

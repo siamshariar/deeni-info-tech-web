@@ -147,18 +147,31 @@
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-.icon_1  { top: 4%;  left: 3%;  animation: donateFloatA 9s   ease-in-out infinite; }
-.icon_2  { top: 8%;  left: 91%; animation: donateFloatB 11s  ease-in-out infinite; animation-delay: 0.4s; }
-.icon_3  { top: 84%; left: 3%;  animation: donateFloatC 10s  ease-in-out infinite; animation-delay: 0.8s; }
-.icon_4  { top: 88%; left: 93%; animation: donateFloatA 12s  ease-in-out infinite; animation-delay: 1.2s; }
-.icon_5  { top: 2%;  left: 36%; animation: donateFloatB 8.5s ease-in-out infinite; animation-delay: 0.6s; }
-.icon_6  { top: 40%; left: 96%; animation: donateFloatC 13s  ease-in-out infinite; animation-delay: 1.6s; }
+@keyframes donateFloatD {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-10px, 14px) rotate(-5deg); }
+  55% { transform: translate(12px, 22px) rotate(4deg); }
+  80% { transform: translate(6px, -8px) rotate(-3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.icon_1  { top: 4%;  left: 3%;  animation: donateFloatA 9s    ease-in-out infinite; }
+.icon_2  { top: 8%;  left: 91%; animation: donateFloatB 11s   ease-in-out infinite; animation-delay: 0.4s; }
+.icon_3  { top: 84%; left: 3%;  animation: donateFloatC 10s   ease-in-out infinite; animation-delay: 0.8s; }
+.icon_4  { top: 88%; left: 93%; animation: donateFloatA 12s   ease-in-out infinite; animation-delay: 1.2s; }
+.icon_5  { top: 2%;  left: 36%; animation: donateFloatB 8.5s  ease-in-out infinite; animation-delay: 0.6s; }
+.icon_6  { top: 40%; left: 96%; animation: donateFloatC 13s   ease-in-out infinite; animation-delay: 1.6s; }
 .icon_7  { top: 95%; left: 40%; animation: donateFloatA 10.5s ease-in-out infinite; animation-delay: 0.2s; }
-.icon_8  { top: 36%; left: 1%;  animation: donateFloatB 9.5s ease-in-out infinite; animation-delay: 1s; }
+.icon_8  { top: 36%; left: 1%;  animation: donateFloatB 9.5s  ease-in-out infinite; animation-delay: 1s; }
 .icon_9  { top: 2%;  left: 60%; animation: donateFloatC 11.5s ease-in-out infinite; animation-delay: 1.4s; }
-.icon_10 { top: 62%; left: 2%;  animation: donateFloatA 9.8s ease-in-out infinite; animation-delay: 0.9s; }
+.icon_10 { top: 62%; left: 2%;  animation: donateFloatA 9.8s  ease-in-out infinite; animation-delay: 0.9s; }
 .icon_11 { top: 60%; left: 95%; animation: donateFloatB 10.8s ease-in-out infinite; animation-delay: 0.3s; }
 .icon_12 { top: 95%; left: 60%; animation: donateFloatC 12.5s ease-in-out infinite; animation-delay: 1.8s; }
+.icon_13 { top: 18%; left: 16%; animation: donateFloatD 11.2s ease-in-out infinite; animation-delay: 0.5s; }
+.icon_14 { top: 20%; left: 80%; animation: donateFloatA 10.2s ease-in-out infinite; animation-delay: 1.1s; }
+.icon_15 { top: 72%; left: 18%; animation: donateFloatB 12.8s ease-in-out infinite; animation-delay: 1.5s; }
+.icon_16 { top: 70%; left: 82%; animation: donateFloatD 9.3s  ease-in-out infinite; animation-delay: 0.1s; }
+.icon_17 { top: 46%; left: 8%;  animation: donateFloatC 13.6s ease-in-out infinite; animation-delay: 0.7s; }
 
 // ---- the highlighted payment card in the middle ----
 .form_highlight {
@@ -281,6 +294,11 @@
   .icon_10 { display: none; }
   .icon_11 { display: none; }
   .icon_12 { top: 96%; left: 40%; }
+  .icon_13 { top: 30%; left: 3%; }
+  .icon_14 { top: 30%; left: 84%; }
+  .icon_15 { display: none; }
+  .icon_16 { display: none; }
+  .icon_17 { top: 84%; left: 2%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

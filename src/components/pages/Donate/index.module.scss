@@ -16,10 +16,6 @@
 .donation_container {
   padding-left: 0 !important;
   padding-right: 0 !important;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #e4f1f1 0%, #d3e9e9 45%, #cfe6e2 100%);
-  isolation: isolate;
 }
 
 .donation_container div {
@@ -36,14 +32,15 @@
   height: auto;
 }
 
-// ---- light glassy background layer ----
+// ---- light glassy background layer, scoped to the rounded pill only ----
 .glass_bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   overflow: hidden;
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(30px);
   pointer-events: none;
+  border-radius: inherit;
 }
 
 .blob_1,
@@ -51,45 +48,45 @@
 .blob_3 {
   position: absolute;
   border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.45;
+  filter: blur(50px);
+  opacity: 0.4;
 }
 
 .blob_1 {
-  width: 380px;
-  height: 380px;
-  top: -110px;
-  left: -90px;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), rgba(45, 137, 140, 0));
+  width: 260px;
+  height: 260px;
+  top: -90px;
+  left: -70px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7), rgba(45, 137, 140, 0));
   animation: donateDrift1 16s ease-in-out infinite;
 }
 
 .blob_2 {
-  width: 320px;
-  height: 320px;
-  bottom: -120px;
-  right: -70px;
-  background: radial-gradient(circle at 60% 40%, rgba(255, 215, 140, 0.35), rgba(255, 215, 140, 0));
+  width: 220px;
+  height: 220px;
+  bottom: -90px;
+  right: -60px;
+  background: radial-gradient(circle at 60% 40%, rgba(255, 215, 140, 0.3), rgba(255, 215, 140, 0));
   animation: donateDrift2 20s ease-in-out infinite;
 }
 
 .blob_3 {
-  width: 260px;
-  height: 260px;
+  width: 200px;
+  height: 200px;
   top: 45%;
   left: 45%;
-  background: radial-gradient(circle at 50% 50%, rgba(120, 220, 220, 0.4), rgba(120, 220, 220, 0));
+  background: radial-gradient(circle at 50% 50%, rgba(120, 220, 220, 0.35), rgba(120, 220, 220, 0));
   animation: donateDrift3 18s ease-in-out infinite;
 }
 
 @keyframes donateDrift1 {
   0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(50px, 35px) scale(1.15); }
+  50% { transform: translate(30px, 20px) scale(1.15); }
 }
 
 @keyframes donateDrift2 {
   0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-40px, -25px) scale(1.1); }
+  50% { transform: translate(-25px, -15px) scale(1.1); }
 }
 
 @keyframes donateDrift3 {
@@ -97,7 +94,7 @@
   50% { transform: translate(-40%, -60%) scale(1.2); }
 }
 
-// ---- floating donate/help icons scattered around the rounded card ----
+// ---- floating donate icons scattered around the rounded pill ----
 .icons_layer {
   position: absolute;
   inset: 0;
@@ -110,18 +107,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
   color: var(--app-theme-color);
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(6px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(45, 137, 140, 0.18);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 
   svg {
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
   }
 }
 
@@ -155,40 +151,41 @@
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-.icon_1  { top: 4%;  left: 3%;  animation: donateFloatA 9s    ease-in-out infinite; }
-.icon_2  { top: 8%;  left: 91%; animation: donateFloatB 11s   ease-in-out infinite; animation-delay: 0.4s; }
-.icon_3  { top: 84%; left: 3%;  animation: donateFloatC 10s   ease-in-out infinite; animation-delay: 0.8s; }
-.icon_4  { top: 88%; left: 93%; animation: donateFloatA 12s   ease-in-out infinite; animation-delay: 1.2s; }
-.icon_5  { top: 2%;  left: 36%; animation: donateFloatB 8.5s  ease-in-out infinite; animation-delay: 0.6s; }
-.icon_6  { top: 40%; left: 96%; animation: donateFloatC 13s   ease-in-out infinite; animation-delay: 1.6s; }
-.icon_7  { top: 95%; left: 40%; animation: donateFloatA 10.5s ease-in-out infinite; animation-delay: 0.2s; }
-.icon_8  { top: 36%; left: 1%;  animation: donateFloatB 9.5s  ease-in-out infinite; animation-delay: 1s; }
-.icon_9  { top: 2%;  left: 60%; animation: donateFloatC 11.5s ease-in-out infinite; animation-delay: 1.4s; }
-.icon_10 { top: 62%; left: 2%;  animation: donateFloatA 9.8s  ease-in-out infinite; animation-delay: 0.9s; }
-.icon_11 { top: 60%; left: 95%; animation: donateFloatB 10.8s ease-in-out infinite; animation-delay: 0.3s; }
-.icon_12 { top: 95%; left: 60%; animation: donateFloatC 12.5s ease-in-out infinite; animation-delay: 1.8s; }
+.icon_1  { top: 3%;  left: 4%;  animation: donateFloatA 9s    ease-in-out infinite; }
+.icon_2  { top: 5%;  left: 88%; animation: donateFloatB 11s   ease-in-out infinite; animation-delay: 0.4s; }
+.icon_3  { top: 92%; left: 4%;  animation: donateFloatC 10s   ease-in-out infinite; animation-delay: 0.8s; }
+.icon_4  { top: 94%; left: 88%; animation: donateFloatA 12s   ease-in-out infinite; animation-delay: 1.2s; }
+.icon_5  { top: 2%;  left: 32%; animation: donateFloatB 8.5s  ease-in-out infinite; animation-delay: 0.6s; }
+.icon_6  { top: 38%; left: 94%; animation: donateFloatC 13s   ease-in-out infinite; animation-delay: 1.6s; }
+.icon_7  { top: 96%; left: 38%; animation: donateFloatA 10.5s ease-in-out infinite; animation-delay: 0.2s; }
+.icon_8  { top: 38%; left: 3%;  animation: donateFloatB 9.5s  ease-in-out infinite; animation-delay: 1s; }
+.icon_9  { top: 2%;  left: 58%; animation: donateFloatC 11.5s ease-in-out infinite; animation-delay: 1.4s; }
+.icon_10 { top: 60%; left: 3%;  animation: donateFloatA 9.8s  ease-in-out infinite; animation-delay: 0.9s; }
+.icon_11 { top: 58%; left: 95%; animation: donateFloatB 10.8s ease-in-out infinite; animation-delay: 0.3s; }
+.icon_12 { top: 96%; left: 60%; animation: donateFloatC 12.5s ease-in-out infinite; animation-delay: 1.8s; }
 .icon_13 { top: 18%; left: 16%; animation: donateFloatD 11.2s ease-in-out infinite; animation-delay: 0.5s; }
-.icon_14 { top: 20%; left: 80%; animation: donateFloatA 10.2s ease-in-out infinite; animation-delay: 1.1s; }
-.icon_15 { top: 72%; left: 18%; animation: donateFloatB 12.8s ease-in-out infinite; animation-delay: 1.5s; }
-.icon_16 { top: 70%; left: 82%; animation: donateFloatD 9.3s  ease-in-out infinite; animation-delay: 0.1s; }
-.icon_17 { top: 46%; left: 8%;  animation: donateFloatC 13.6s ease-in-out infinite; animation-delay: 0.7s; }
+.icon_14 { top: 18%; left: 78%; animation: donateFloatA 10.2s ease-in-out infinite; animation-delay: 1.1s; }
+.icon_15 { top: 78%; left: 18%; animation: donateFloatB 12.8s ease-in-out infinite; animation-delay: 1.5s; }
+.icon_16 { top: 76%; left: 80%; animation: donateFloatD 9.3s  ease-in-out infinite; animation-delay: 0.1s; }
+.icon_17 { top: 48%; left: 2%;  animation: donateFloatC 13.6s ease-in-out infinite; animation-delay: 0.7s; }
 
-// ---- the highlighted payment card in the middle ----
+// ---- the highlighted rounded pill that holds the payment form ----
 .form_highlight {
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 620px;
   border-radius: 22px;
-  padding: 18px 14px 6px;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(14px);
+  padding: 50px 56px 36px;
+  background: linear-gradient(135deg, #e4f1f1 0%, #d3e9e9 45%, #cfe6e2 100%);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.3) inset,
     0 20px 45px rgba(20, 92, 94, 0.15),
     0 0 40px rgba(255, 255, 255, 0.4);
   animation: donateCardGlow 4s ease-in-out infinite;
+  isolation: isolate;
+  overflow: visible;
 }
 
 @keyframes donateCardGlow {
@@ -211,6 +208,8 @@
   margin-bottom: -20px;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 .form iframe {
   width: 100%;
@@ -230,9 +229,14 @@
     padding-bottom: 58px;
   }
 
-  .form_highlight {
-    background: rgba(255, 255, 255, 0.55);
+  .donation_container div {
+    background: #f7f7f7;
     border-radius: 300px;
+  }
+
+  .form_highlight {
+    background: linear-gradient(135deg, #e4f1f1 0%, #d3e9e9 45%, #cfe6e2 100%);
+    border-radius: 60px;
   }
 
   .form iframe {
@@ -252,14 +256,9 @@
 }
 
 .donation_msg_wrapper {
-  position: relative;
-  z-index: 2;
-  margin: 32px 20px 25px;
+  margin-bottom: 25px;
   padding: 20px;
   border-radius: 15px !important;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .donation_msg_wrapper p {
@@ -270,35 +269,39 @@
 }
 
 @media screen and (max-width: 640px) {
+  .icons_layer {
+    inset: -40px;
+  }
+
   .floating_icon {
-    width: 36px;
-    height: 36px;
-    border-radius: 11px;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
 
     svg {
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 15px;
     }
   }
 
-  // re-pin icons to the corners/edges only, clear of the centered form card
-  .icon_1  { top: 2%;  left: 4%; }
-  .icon_2  { top: 4%;  left: 78%; }
-  .icon_3  { top: 68%; left: 2%; }
-  .icon_4  { top: 96%; left: 78%; }
+  // re-pin icons close to the pill's edges only, thinned to avoid crowding
+  .icon_1  { top: 4%;  left: -2%; }
+  .icon_2  { top: 6%;  left: 96%; }
+  .icon_3  { top: 90%; left: -2%; }
+  .icon_4  { top: 92%; left: 96%; }
   .icon_5  { display: none; }
-  .icon_6  { top: 68%; left: 88%; }
+  .icon_6  { top: 46%; left: 98%; }
   .icon_7  { display: none; }
-  .icon_8  { display: none; }
-  .icon_9  { top: 2%;  left: 40%; }
+  .icon_8  { top: 46%; left: -4%; }
+  .icon_9  { display: none; }
   .icon_10 { display: none; }
   .icon_11 { display: none; }
-  .icon_12 { top: 96%; left: 40%; }
-  .icon_13 { top: 30%; left: 3%; }
-  .icon_14 { top: 30%; left: 84%; }
+  .icon_12 { display: none; }
+  .icon_13 { display: none; }
+  .icon_14 { display: none; }
   .icon_15 { display: none; }
   .icon_16 { display: none; }
-  .icon_17 { top: 84%; left: 2%; }
+  .icon_17 { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

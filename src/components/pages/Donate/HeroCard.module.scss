@@ -1,0 +1,326 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 20px 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f3d3e 0%, #145c5e 45%, #1d7d80 100%);
+  isolation: isolate;
+}
+
+// ---- glassy animated background ----
+.glass_bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  backdrop-filter: blur(60px);
+}
+
+.blob_1,
+.blob_2,
+.blob_3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.55;
+}
+
+.blob_1 {
+  width: 420px;
+  height: 420px;
+  top: -120px;
+  left: -100px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.35), rgba(45, 137, 140, 0));
+  animation: drift1 16s ease-in-out infinite;
+}
+
+.blob_2 {
+  width: 360px;
+  height: 360px;
+  bottom: -140px;
+  right: -80px;
+  background: radial-gradient(circle at 60% 40%, rgba(255, 215, 140, 0.35), rgba(255, 215, 140, 0));
+  animation: drift2 20s ease-in-out infinite;
+}
+
+.blob_3 {
+  width: 300px;
+  height: 300px;
+  top: 40%;
+  left: 45%;
+  background: radial-gradient(circle at 50% 50%, rgba(120, 220, 220, 0.35), rgba(120, 220, 220, 0));
+  animation: drift3 18s ease-in-out infinite;
+}
+
+@keyframes drift1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, 40px) scale(1.15); }
+}
+
+@keyframes drift2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-50px, -30px) scale(1.1); }
+}
+
+@keyframes drift3 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-40%, -60%) scale(1.2); }
+}
+
+// ---- floating donation-type icons ----
+.icons_layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.floating_icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@keyframes floatA {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(14px, -22px) rotate(6deg); }
+  50% { transform: translate(-8px, -38px) rotate(-4deg); }
+  75% { transform: translate(-18px, -14px) rotate(3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes floatB {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  30% { transform: translate(-16px, -18px) rotate(-6deg); }
+  60% { transform: translate(10px, -34px) rotate(5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes floatC {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  40% { transform: translate(20px, 16px) rotate(5deg); }
+  70% { transform: translate(-10px, 28px) rotate(-6deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.icon_1 { top: 8%;  left: 8%;  animation: floatA 9s ease-in-out infinite; }
+.icon_2 { top: 16%; left: 82%; animation: floatB 11s ease-in-out infinite; animation-delay: 0.4s; }
+.icon_3 { top: 68%; left: 6%;  animation: floatC 10s ease-in-out infinite; animation-delay: 0.8s; }
+.icon_4 { top: 78%; left: 88%; animation: floatA 12s ease-in-out infinite; animation-delay: 1.2s; }
+.icon_5 { top: 4%;  left: 46%; animation: floatB 8.5s ease-in-out infinite; animation-delay: 0.6s; }
+.icon_6 { top: 40%; left: 92%; animation: floatC 13s ease-in-out infinite; animation-delay: 1.6s; }
+.icon_7 { top: 90%; left: 18%; animation: floatA 10.5s ease-in-out infinite; animation-delay: 0.2s; }
+.icon_8 { top: 34%; left: 3%;  animation: floatB 9.5s ease-in-out infinite; animation-delay: 1s; }
+
+// ---- centered card stage ----
+.card_stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 640px;
+}
+
+.headline {
+  margin-top: 42px;
+  color: #ffffff;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.subline {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  max-width: 480px;
+}
+
+// ---- the bank card itself: kept prominent + highlighted ----
+.bank_card {
+  position: relative;
+  width: 340px;
+  max-width: 86vw;
+  aspect-ratio: 1.586 / 1;
+  border-radius: 22px;
+  padding: 26px 26px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 30px 60px rgba(0, 0, 0, 0.35),
+    0 0 60px rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  animation: cardGlow 4s ease-in-out infinite;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.bank_card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+@keyframes cardGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+      0 30px 60px rgba(0, 0, 0, 0.35),
+      0 0 40px rgba(255, 255, 255, 0.12);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.12) inset,
+      0 30px 70px rgba(0, 0, 0, 0.4),
+      0 0 70px rgba(255, 255, 255, 0.28);
+  }
+}
+
+.card_shine {
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 60%;
+  height: 220%;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(20deg);
+  animation: shineSweep 5.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shineSweep {
+  0% { left: -60%; }
+  45% { left: 120%; }
+  100% { left: 120%; }
+}
+
+.card_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chip {
+  width: 40px;
+  height: 30px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ffe9a8, #d9b45c);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.card_brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card_number {
+  display: flex;
+  gap: 14px;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card_bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card_holder,
+.card_expiry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card_expiry {
+  align-items: flex-end;
+}
+
+.label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.75;
+}
+
+.value {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+  .wrapper {
+    padding: 60px 16px 80px;
+  }
+
+  .floating_icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  // re-pin icons to the corners/edges only, clear of the centered card and text
+  .icon_1 { top: 3%;  left: 6%;  }
+  .icon_2 { top: 6%;  left: 78%; }
+  .icon_3 { top: 60%; left: 3%; }
+  .icon_4 { top: 96%; left: 74%; }
+  .icon_5 { display: none; }
+  .icon_6 { top: 60%; left: 85%; }
+  .icon_7 { display: none; }
+  .icon_8 { display: none; }
+
+  .headline {
+    font-size: 1.4rem;
+  }
+
+  .subline {
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob_1,
+  .blob_2,
+  .blob_3,
+  .floating_icon,
+  .bank_card,
+  .card_shine {
+    animation: none !important;
+  }
+}

@@ -16,6 +16,10 @@
 .donation_container {
   padding-left: 0 !important;
   padding-right: 0 !important;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f3d3e 0%, #145c5e 45%, #1d7d80 100%);
+  isolation: isolate;
 }
 
 .donation_container div {
@@ -30,6 +34,159 @@
   overflow: hidden;
   padding: 32px;
   height: auto;
+}
+
+// ---- glassy animated background (applied to .donation_container) ----
+.glass_bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  backdrop-filter: blur(60px);
+  pointer-events: none;
+}
+
+.blob_1,
+.blob_2,
+.blob_3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.55;
+}
+
+.blob_1 {
+  width: 380px;
+  height: 380px;
+  top: -110px;
+  left: -90px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.35), rgba(45, 137, 140, 0));
+  animation: donateDrift1 16s ease-in-out infinite;
+}
+
+.blob_2 {
+  width: 320px;
+  height: 320px;
+  bottom: -120px;
+  right: -70px;
+  background: radial-gradient(circle at 60% 40%, rgba(255, 215, 140, 0.35), rgba(255, 215, 140, 0));
+  animation: donateDrift2 20s ease-in-out infinite;
+}
+
+.blob_3 {
+  width: 260px;
+  height: 260px;
+  top: 45%;
+  left: 45%;
+  background: radial-gradient(circle at 50% 50%, rgba(120, 220, 220, 0.35), rgba(120, 220, 220, 0));
+  animation: donateDrift3 18s ease-in-out infinite;
+}
+
+@keyframes donateDrift1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, 35px) scale(1.15); }
+}
+
+@keyframes donateDrift2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, -25px) scale(1.1); }
+}
+
+@keyframes donateDrift3 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-40%, -60%) scale(1.2); }
+}
+
+// ---- floating donation-type icons ----
+.icons_layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.floating_icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@keyframes donateFloatA {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(12px, -18px) rotate(6deg); }
+  50% { transform: translate(-7px, -30px) rotate(-4deg); }
+  75% { transform: translate(-15px, -10px) rotate(3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes donateFloatB {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  30% { transform: translate(-14px, -14px) rotate(-6deg); }
+  60% { transform: translate(8px, -28px) rotate(5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes donateFloatC {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  40% { transform: translate(16px, 13px) rotate(5deg); }
+  70% { transform: translate(-8px, 22px) rotate(-6deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.icon_1 { top: 6%;  left: 6%;  animation: donateFloatA 9s ease-in-out infinite; }
+.icon_2 { top: 10%; left: 88%; animation: donateFloatB 11s ease-in-out infinite; animation-delay: 0.4s; }
+.icon_3 { top: 80%; left: 5%;  animation: donateFloatC 10s ease-in-out infinite; animation-delay: 0.8s; }
+.icon_4 { top: 88%; left: 90%; animation: donateFloatA 12s ease-in-out infinite; animation-delay: 1.2s; }
+.icon_5 { top: 4%;  left: 46%; animation: donateFloatB 8.5s ease-in-out infinite; animation-delay: 0.6s; }
+.icon_6 { top: 40%; left: 94%; animation: donateFloatC 13s ease-in-out infinite; animation-delay: 1.6s; }
+.icon_7 { top: 92%; left: 42%; animation: donateFloatA 10.5s ease-in-out infinite; animation-delay: 0.2s; }
+.icon_8 { top: 35%; left: 2%;  animation: donateFloatB 9.5s ease-in-out infinite; animation-delay: 1s; }
+
+// ---- the highlighted payment card in the middle ----
+.form_highlight {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 500px;
+  border-radius: 22px;
+  padding: 18px 14px 6px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 30px 60px rgba(0, 0, 0, 0.35),
+    0 0 60px rgba(255, 255, 255, 0.15);
+  animation: donateCardGlow 4s ease-in-out infinite;
+}
+
+@keyframes donateCardGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+      0 30px 60px rgba(0, 0, 0, 0.35),
+      0 0 40px rgba(255, 255, 255, 0.12);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.12) inset,
+      0 30px 70px rgba(0, 0, 0, 0.4),
+      0 0 70px rgba(255, 255, 255, 0.28);
+  }
 }
 
 // donate form
@@ -56,8 +213,8 @@
     padding-bottom: 58px;
   }
 
-  .donation_container div {
-    background: #f7f7f7;
+  .form_highlight {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));
     border-radius: 300px;
   }
 
@@ -78,14 +235,53 @@
 }
 
 .donation_msg_wrapper {
-  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+  margin: 32px 20px 25px;
   padding: 20px;
   border-radius: 15px !important;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .donation_msg_wrapper p {
   border-left-width: 3px;
-  border-left-color: var(--app-theme-color);
+  border-left-color: #ffd78c;
   padding-left: 12px;
   font-size: 1.1em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
+  .floating_icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  // re-pin icons to the corners/edges only, clear of the centered form card
+  .icon_1 { top: 3%;  left: 5%; }
+  .icon_2 { top: 5%;  left: 80%; }
+  .icon_3 { top: 60%; left: 3%; }
+  .icon_4 { top: 94%; left: 78%; }
+  .icon_5 { display: none; }
+  .icon_6 { top: 60%; left: 85%; }
+  .icon_7 { display: none; }
+  .icon_8 { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob_1,
+  .blob_2,
+  .blob_3,
+  .floating_icon,
+  .form_highlight {
+    animation: none !important;
+  }
 }

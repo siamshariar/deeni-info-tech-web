@@ -135,33 +135,35 @@
 // evenly spread around the full outer ring of the pill, far from the
 // card at the center, each icon with clear breathing room from its
 // neighbors — randomized per-icon animation, not a repeating pattern
-.icon_1  { top: 5%;  left: 8%;  animation: donateFloatA 9s    ease-in-out infinite; }
-.icon_2  { top: 3%;  left: 26%; animation: donateFloatC 10.5s ease-in-out infinite; animation-delay: 0.7s; }
-.icon_3  { top: 3%;  left: 74%; animation: donateFloatB 11s   ease-in-out infinite; animation-delay: 0.4s; }
-.icon_4  { top: 5%;  left: 92%; animation: donateFloatD 9.8s  ease-in-out infinite; animation-delay: 1.3s; }
-.icon_5  { top: 2%;  left: 42%; animation: donateFloatB 8.5s  ease-in-out infinite; animation-delay: 0.6s; }
-.icon_6  { top: 2%;  left: 58%; animation: donateFloatA 12.2s ease-in-out infinite; animation-delay: 1.9s; }
-.icon_7  { top: 95%; left: 8%;  animation: donateFloatC 10s   ease-in-out infinite; animation-delay: 0.8s; }
-.icon_8  { top: 97%; left: 26%; animation: donateFloatD 9.5s  ease-in-out infinite; animation-delay: 1s; }
-.icon_9  { top: 95%; left: 74%; animation: donateFloatD 12s   ease-in-out infinite; animation-delay: 1.2s; }
-.icon_10 { top: 97%; left: 92%; animation: donateFloatB 10.8s ease-in-out infinite; animation-delay: 0.3s; }
-.icon_11 { top: 98%; left: 42%; animation: donateFloatA 10.5s ease-in-out infinite; animation-delay: 0.2s; }
-.icon_12 { top: 98%; left: 58%; animation: donateFloatC 12.5s ease-in-out infinite; animation-delay: 1.8s; }
-.icon_13 { top: 24%; left: 3%;  animation: donateFloatD 9.3s  ease-in-out infinite; animation-delay: 0.1s; }
-.icon_14 { top: 50%; left: 1%;  animation: donateFloatA 11.2s ease-in-out infinite; animation-delay: 0.5s; }
-.icon_15 { top: 24%; left: 97%; animation: donateFloatC 13s   ease-in-out infinite; animation-delay: 1.6s; }
-.icon_16 { top: 50%; left: 99%; animation: donateFloatB 12.8s ease-in-out infinite; animation-delay: 1.5s; }
-.icon_17 { top: 76%; left: 3%;  animation: donateFloatC 11.5s ease-in-out infinite; animation-delay: 1.4s; }
-.icon_18 { top: 76%; left: 97%; animation: donateFloatD 13.6s ease-in-out infinite; animation-delay: 0.9s; }
-.icon_19 { top: 37%; left: 1%;  animation: donateFloatB 9.6s  ease-in-out infinite; animation-delay: 0.6s; }
-.icon_20 { top: 63%; left: 99%; animation: donateFloatA 10.9s ease-in-out infinite; animation-delay: 1.1s; }
+.icon_1  { top: 9%;  left: 12%; animation: donateFloatA 9s    ease-in-out infinite; }
+.icon_2  { top: 6%;  left: 28%; animation: donateFloatC 10.5s ease-in-out infinite; animation-delay: 0.7s; }
+.icon_3  { top: 6%;  left: 72%; animation: donateFloatB 11s   ease-in-out infinite; animation-delay: 0.4s; }
+.icon_4  { top: 9%;  left: 88%; animation: donateFloatD 9.8s  ease-in-out infinite; animation-delay: 1.3s; }
+.icon_5  { top: 4%;  left: 42%; animation: donateFloatB 8.5s  ease-in-out infinite; animation-delay: 0.6s; }
+.icon_6  { top: 4%;  left: 58%; animation: donateFloatA 12.2s ease-in-out infinite; animation-delay: 1.9s; }
+.icon_7  { top: 91%; left: 12%; animation: donateFloatC 10s   ease-in-out infinite; animation-delay: 0.8s; }
+.icon_8  { top: 94%; left: 28%; animation: donateFloatD 9.5s  ease-in-out infinite; animation-delay: 1s; }
+.icon_9  { top: 91%; left: 72%; animation: donateFloatD 12s   ease-in-out infinite; animation-delay: 1.2s; }
+.icon_10 { top: 94%; left: 88%; animation: donateFloatB 10.8s ease-in-out infinite; animation-delay: 0.3s; }
+.icon_11 { top: 96%; left: 42%; animation: donateFloatA 10.5s ease-in-out infinite; animation-delay: 0.2s; }
+.icon_12 { top: 96%; left: 58%; animation: donateFloatC 12.5s ease-in-out infinite; animation-delay: 1.8s; }
+.icon_13 { top: 32%; left: 6%;  animation: donateFloatD 9.3s  ease-in-out infinite; animation-delay: 0.1s; }
+.icon_14 { top: 50%; left: 4%;  animation: donateFloatA 11.2s ease-in-out infinite; animation-delay: 0.5s; }
+.icon_15 { top: 32%; left: 94%; animation: donateFloatC 13s   ease-in-out infinite; animation-delay: 1.6s; }
+.icon_16 { top: 50%; left: 96%; animation: donateFloatB 12.8s ease-in-out infinite; animation-delay: 1.5s; }
+.icon_17 { top: 68%; left: 6%;  animation: donateFloatC 11.5s ease-in-out infinite; animation-delay: 1.4s; }
+.icon_18 { top: 68%; left: 94%; animation: donateFloatD 13.6s ease-in-out infinite; animation-delay: 0.9s; }
+.icon_19 { top: 41%; left: 4%;  animation: donateFloatB 9.6s  ease-in-out infinite; animation-delay: 0.6s; }
+.icon_20 { top: 59%; left: 96%; animation: donateFloatA 10.9s ease-in-out infinite; animation-delay: 1.1s; }
 
 // ---- the highlighted rounded pill that holds the payment form ----
 .form_highlight {
   position: relative;
   z-index: 2;
   margin: 0 auto;
+  width: 100%;
   max-width: 900px;
+  box-sizing: border-box;
   border-radius: 22px;
   padding: 50px 56px 36px;
   background: linear-gradient(135deg, #dcf0ef 0%, #c3e6e3 50%, #a9d9d3 100%);

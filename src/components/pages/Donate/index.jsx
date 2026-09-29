@@ -220,6 +220,45 @@ const donationIcons = [
       </svg>
     ),
   },
+  {
+    key: 'mosque',
+    label: 'Masjid',
+    className: styles.icon_18,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2c1.1 1.3 1.8 2.6 1.8 3.7A1.8 1.8 0 0 1 12 7.5a1.8 1.8 0 0 1-1.8-1.8C10.2 4.6 10.9 3.3 12 2z" />
+        <path d="M3 21v-6c0-2.5 1.6-4.5 4-5v3H5v8" />
+        <path d="M21 21v-6c0-2.5-1.6-4.5-4-5v3h2v8" />
+        <path d="M7 21v-6a5 5 0 0 1 10 0v6" />
+        <path d="M3 21h18" />
+      </svg>
+    ),
+  },
+  {
+    key: 'scale',
+    label: 'Zakat Balance',
+    className: styles.icon_19,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3v18M8 21h8" />
+        <path d="M4 7h5M15 7h5" />
+        <path d="M4 7l-2 5a2.5 2.5 0 0 0 4.9 0z" />
+        <path d="M20 7l-2 5a2.5 2.5 0 0 0 4.9 0z" />
+      </svg>
+    ),
+  },
+  {
+    key: 'food-basket',
+    label: 'Food Aid',
+    className: styles.icon_20,
+    svg: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 10h16l-1.5 9a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 10z" />
+        <path d="M2 10h20" />
+        <path d="M8 10 9.5 4M16 10 14.5 4M12 10V5" />
+      </svg>
+    ),
+  },
 ];
 
 const DonateContent = () => {
